@@ -3,7 +3,7 @@ global class grants_BudgetController implements vlocity_ins.VlocityOpenInterface
     global Boolean invokeMethod(String methodName, Map<String,Object> inputMap, Map<String,Object> outMap, Map<String,Object> options){
         
         if(methodName == 'getBudgetDetail'){
-            String data = getBudgets((String)inputMap.get('ProposalId'));
+            String data = getBudgets((String)inputMap.get('proposal'));
             outMap.put('budgetInfo', data);
         }
         if(methodName == 'upsertLineItem'){
