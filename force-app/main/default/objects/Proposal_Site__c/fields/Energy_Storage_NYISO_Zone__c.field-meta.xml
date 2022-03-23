@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Energy_Storage_NYISO_Zone__c</fullName>
+    <description>For LSR</description>
+    <externalId>false</externalId>
+    <label>Energy Storage NYISO Zone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A – West</fullName>
+                <default>false</default>
+                <label>A – West</label>
+            </value>
+            <value>
+                <fullName>B – Genessee</fullName>
+                <default>false</default>
+                <label>B – Genessee</label>
+            </value>
+            <value>
+                <fullName>C – Central</fullName>
+                <default>false</default>
+                <label>C – Central</label>
+            </value>
+            <value>
+                <fullName>D – North</fullName>
+                <default>false</default>
+                <label>D – North</label>
+            </value>
+            <value>
+                <fullName>E - Mohawk Valley</fullName>
+                <default>false</default>
+                <label>E - Mohawk Valley</label>
+            </value>
+            <value>
+                <fullName>F – Capital</fullName>
+                <default>false</default>
+                <label>F – Capital</label>
+            </value>
+            <value>
+                <fullName>G - Hudson Valley</fullName>
+                <default>false</default>
+                <label>G - Hudson Valley</label>
+            </value>
+            <value>
+                <fullName>H- Millwood</fullName>
+                <default>false</default>
+                <label>H- Millwood</label>
+            </value>
+            <value>
+                <fullName>I- Dunwoodie</fullName>
+                <default>false</default>
+                <label>I- Dunwoodie</label>
+            </value>
+            <value>
+                <fullName>J – NYC</fullName>
+                <default>false</default>
+                <label>J – NYC</label>
+            </value>
+            <value>
+                <fullName>K- Long Island</fullName>
+                <default>false</default>
+                <label>K- Long Island</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

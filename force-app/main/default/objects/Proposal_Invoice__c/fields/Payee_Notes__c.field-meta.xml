@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payee_Notes__c</fullName>
+    <description>Payee Notes; available for Project Manager or Admin view in case of Payment Assignment projects.</description>
+    <externalId>false</externalId>
+    <label>Payee Notes</label>
+    <length>2000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

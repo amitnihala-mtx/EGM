@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Construction_Method__c</fullName>
+    <description>SF-29458</description>
+    <externalId>false</externalId>
+    <label>Construction Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Modular Construction</fullName>
+                <default>false</default>
+                <label>Modular Construction</label>
+            </value>
+            <value>
+                <fullName>None of the above</fullName>
+                <default>false</default>
+                <label>None of the above</label>
+            </value>
+            <value>
+                <fullName>Panelized Construction</fullName>
+                <default>false</default>
+                <label>Panelized Construction</label>
+            </value>
+            <value>
+                <fullName>Panelized Infill</fullName>
+                <default>false</default>
+                <label>Panelized Infill</label>
+            </value>
+            <value>
+                <fullName>Panelized Rain Screen</fullName>
+                <default>false</default>
+                <label>Panelized Rain Screen</label>
+            </value>
+            <value>
+                <fullName>Structural Panel (pre-finished)</fullName>
+                <default>false</default>
+                <label>Structural Panel (pre-finished)</label>
+            </value>
+            <value>
+                <fullName>Structural Panel (unfinished)</fullName>
+                <default>false</default>
+                <label>Structural Panel (unfinished)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

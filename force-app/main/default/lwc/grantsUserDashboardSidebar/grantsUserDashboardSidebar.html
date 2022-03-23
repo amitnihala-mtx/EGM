@@ -1,0 +1,111 @@
+<template>
+    <div class="container_spacing dashboard-sidebar">
+        <div class="slds-grid slds-gutters mobile-block">
+            <div class="slds-col slds-size_2-of-12 mobile-full-width sidenav-margin">
+                <div class="grantsDashboardSideBar">
+                    <lightning-vertical-navigation>
+                        <lightning-vertical-navigation-section>
+                            
+                            <button class="padding_space_button" data-modal="updateContact" data-navigatepage="home"
+                                onclick={navigateToPage}>
+                                <div class="slds-grid slds-gutters pointer-event-none">
+                                    <div class="slds-col slds-size_1-of-12">
+                                        <lightning-icon icon-name="utility:event" size="xx-small"></lightning-icon>
+                                    </div>
+                                    <div class="slds-col slds-size_11-of-12">
+                                        Home
+                                    </div>
+                                </div>
+                            </button>
+                            
+
+                            <button class="padding_space_button" onclick={navigateToPage}
+                                data-navigatepage="grantsManagement">
+                                <div class="slds-grid slds-gutters pointer-event-none">
+                                    <div class="slds-col slds-size_1-of-12">
+                                        <lightning-icon icon-name="utility:new" size="xx-small"></lightning-icon>
+                                    </div>
+                                    <div class="slds-col slds-size_11-of-12">
+                                        Grants Management
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="padding_space_button" onclick={navigateToPage} data-navigatepage="members">
+                                <div class="slds-grid slds-gutters pointer-event-none">
+                                    <div class="slds-col slds-size_1-of-12">
+                                        <lightning-icon icon-name="utility:description" size="xx-small">
+                                        </lightning-icon>
+                                    </div>
+                                    <div class="slds-col slds-size_11-of-12">
+                                        Members
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="padding_space_button" onclick={navigateToPage} data-navigatepage="documentVault">
+                                <div class="slds-grid slds-gutters pointer-event-none">
+                                    <div class="slds-col slds-size_1-of-12">
+                                        <lightning-icon icon-name="utility:notification" size="xx-small">
+                                        </lightning-icon>
+                                    </div>
+                                    <div class="slds-col slds-size_11-of-12">
+                                        Document Vault
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="padding_space_button" onclick={navigateToPage}
+                                data-navigatepage="reports">
+                                <div class="slds-grid slds-gutters pointer-event-none">
+                                    <div class="slds-col slds-size_1-of-12">
+                                        <lightning-icon icon-name="utility:send" size="xx-small">
+                                        </lightning-icon>
+                                    </div>
+                                    <div class="slds-col slds-size_11-of-12">
+                                        Reports
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="padding_space_button" onclick={navigateToPage}
+                                data-navigatepage="activity">
+                                <div class="slds-grid slds-gutters pointer-event-none">
+                                    <div class="slds-col slds-size_1-of-12">
+                                        <lightning-icon icon-name="utility:send" size="xx-small">
+                                        </lightning-icon>
+                                    </div>
+                                    <div class="slds-col slds-size_11-of-12">
+                                        Activity
+                                    </div>
+                                </div>
+                            </button>
+                            
+                        </lightning-vertical-navigation-section>
+                    </lightning-vertical-navigation>
+                </div>
+            </div>
+            <div class="slds-col slds-size_10-of-12 side_space mobile-full-width grantsDashboardBody ">
+                <!-- <slot name="body"></slot> -->
+                <div if:true={home}>
+                    <c-grants-overview-dashboard></c-grants-overview-dashboard>
+                </div>
+                <div if:true={grantsManagement}>
+                    <c-grants-common-dashboard></c-grants-common-dashboard>
+                </div>
+                <div if:true={members}>
+                    <c-grants-manage-member></c-grants-manage-member>
+                </div>
+                <div if:true={documentVault}>
+                    IN PROGRESS
+                </div>
+                <div if:true={reports}>
+                    IN PROGRESS
+                </div>
+                <div if:true={activity}>
+                    IN PROGRESS
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slds-m-top_large text-right newfooter" if:true={showFooter}>
+        <p>{footerText}</p>
+    </div>
+</template>

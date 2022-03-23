@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Heating_System__c</fullName>
+    <description>Select the customer&apos;s primary heating system</description>
+    <externalId>false</externalId>
+    <label>Primary Heating System</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Air-Source Heat Pump</fullName>
+                <default>false</default>
+                <label>Air-Source Heat Pump</label>
+            </value>
+            <value>
+                <fullName>Baseboard Heat</fullName>
+                <default>false</default>
+                <label>Baseboard Heat</label>
+            </value>
+            <value>
+                <fullName>Central Forced Air</fullName>
+                <default>false</default>
+                <label>Central Forced Air</label>
+            </value>
+            <value>
+                <fullName>Coil</fullName>
+                <default>false</default>
+                <label>Coil</label>
+            </value>
+            <value>
+                <fullName>Fireplace</fullName>
+                <default>false</default>
+                <label>Fireplace</label>
+            </value>
+            <value>
+                <fullName>Ground Source Heat Pump</fullName>
+                <default>false</default>
+                <label>Ground Source Heat Pump</label>
+            </value>
+            <value>
+                <fullName>Hot water</fullName>
+                <default>false</default>
+                <label>Hot water</label>
+            </value>
+            <value>
+                <fullName>Portable electric heater</fullName>
+                <default>false</default>
+                <label>Portable electric heater</label>
+            </value>
+            <value>
+                <fullName>Portable Kerosene heater</fullName>
+                <default>false</default>
+                <label>Portable Kerosene heater</label>
+            </value>
+            <value>
+                <fullName>Solar panels</fullName>
+                <default>false</default>
+                <label>Solar panels</label>
+            </value>
+            <value>
+                <fullName>Steam</fullName>
+                <default>false</default>
+                <label>Steam</label>
+            </value>
+            <value>
+                <fullName>Wood/Pellet</fullName>
+                <default>false</default>
+                <label>Wood/Pellet</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

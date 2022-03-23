@@ -1,0 +1,201 @@
+<template>
+    <div >
+        <template for:each={newBudgetDetails} for:item="bud"  for:index="topindex">
+        <p key={bud.templateId} class="heading slds-p-around_large"> {bud.templateName}  </p>
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-p-horizontal_large slds-p-bottom_large  slds-table_fixed-layout" key={bud.templateId}  aria-label="Expense Budget">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Category Of Expense">Category Of Expense</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Grant Funded">Grant Funded</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Match Funds">Match Funds</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Match % Calculated">Match % Calculated</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Match % Required">Match % Required</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Other Funds">Other Funds</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Total Budgeted">Total Budgeted</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title=""></div>
+                    </th>
+                    <!-- <th class="" scope="col">
+                        <div class="slds-truncate" title=""></div>
+                    </th> -->
+                </tr>
+            </thead>
+
+            <tbody>
+                <template for:each={bud.budgetList} for:item="budget" for:index="index">
+                    <tr class="slds-hint-parent" key={budget.Id}>
+                        <td colspan="7">
+                            <div class="slds-truncate budget-name" title="Budget Name"><b>{budget.Name}</b></div>
+                        </td>
+                        <td>
+                            <lightning-icon if:true={bud.isActionAvailable} icon-name="utility:add" alternative-text="Add Budget Line Item" title="Add Budget Line Item" 
+                            size="small" class="slds-align_absolute-center" data-budget-index={index} data-budget-id={budget.Id} data-template-index={topindex}
+                            onclick={addBudgetLineItem}></lightning-icon>
+                            <lightning-icon if:true={bud.isActionAvailable} icon-name="utility:edit" alternative-text="Edit Budget Line Item" title="Edit Budget Line Item" data-template-index={topindex}
+                            size="small" class="slds-align_absolute-center" data-budget-index={index} onclick={editBudgetLineItems}></lightning-icon>
+                        </td>
+                        <!-- <td>
+                            
+                        </td> -->
+                    </tr>
+                    <template  for:each={budget.Budget_Line_Items__r.records} for:item="budgetLineItem" for:index="lineItemIndex">
+                        <tr key={budgetLineItem.Id} class="slds-hint-parent">
+                            <template if:false={budgetLineItem.editMode}>
+                                <td data-label="Category Of Expense">
+                                    <div class="slds-truncate" title="Budget Name">{budgetLineItem.Name}</div>
+                                </td>
+                                <td data-label="Grant Funded">
+                                    <lightning-formatted-number value={budgetLineItem.Grant_Funded__c} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number>
+                                </td>
+                                <td data-label="Match Funds">
+                                    <lightning-formatted-number value={budgetLineItem.Match_Funds__c} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number>
+                                </td>
+                                <td data-label="Match % Calculated">
+                                    <lightning-formatted-number value={budgetLineItem.Match_Percent_Calculated__c} format-style="percent-fixed" step="0.01" class="slds-align_absolute-center"></lightning-formatted-number>
+                                </td>
+                                <td data-label="Match % Required">
+                                    <lightning-formatted-number value={budgetLineItem.Match_Percent_Required__c} format-style="percent-fixed" step="0.01" class="slds-align_absolute-center"></lightning-formatted-number>
+                                </td>
+                                <td data-label="Other Funds">
+                                    <lightning-formatted-number value={budgetLineItem.Other_Funds__c} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number>
+                                </td>
+                                <td data-label="Total Budgeted">
+                                    <lightning-formatted-number value={budgetLineItem.Total_Budget__c} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number>
+                                </td>
+                                <td></td>
+                                <!-- <td></td> -->
+                            </template>
+
+                            <template if:true={budgetLineItem.editMode}>
+                                <td data-label="Category Of Expense">
+                                   <lightning-input variant="label-hidden" type="text" placeholder="Enter Category" data-field-api-name="Name"
+                                   value={budgetLineItem.Name} onchange={handleInput} data-template-index={topindex}
+                                   data-budget-index={index} data-line-item-index={lineItemIndex}></lightning-input>
+                                </td>
+                                <td data-label="Grant Funded">
+                                    <lightning-input variant="label-hidden" type="number" formatter="currency" step="0.01" 
+                                    class="slds-align_absolute-center" data-field-api-name="Grant_Funded__c"
+                                    value={budgetLineItem.Grant_Funded__c} onchange={handleInput} data-template-index={topindex}
+                                    data-budget-index={index} data-line-item-index={lineItemIndex}></lightning-input>
+                                </td>
+                                <td data-label="Match Funds">
+                                    <lightning-input variant="label-hidden" type="number" formatter="currency" step="0.01" 
+                                    class="slds-align_absolute-center" data-field-api-name="Match_Funds__c" data-template-index={topindex}
+                                    value={budgetLineItem.Match_Funds__c} onchange={handleInput}
+                                    data-budget-index={index} data-line-item-index={lineItemIndex}></lightning-input>
+                                </td>
+                                <td data-label="Match % Calculated">
+                                    <lightning-input variant="label-hidden" type="number" formatter="percent-fixed" step="0.01" 
+                                    class="slds-align_absolute-center" data-field-api-name="Match_Percent_Calculated__c" data-template-index={topindex}
+                                    value={budgetLineItem.Match_Percent_Calculated__c} onchange={handleInput} 
+                                    data-budget-index={index} data-line-item-index={lineItemIndex}></lightning-input>
+                                </td>
+                                <td data-label="Match % Required">
+                                    <lightning-input variant="label-hidden" type="number" formatter="percent-fixed" step="0.01" 
+                                    class="slds-align_absolute-center" data-field-api-name="Match_Percent_Required__c"
+                                    value={budgetLineItem.Match_Percent_Required__c} onchange={handleInput} data-template-index={topindex}
+                                    data-budget-index={index} data-line-item-index={lineItemIndex}></lightning-input>
+                                </td>
+                                <td data-label="Other Funds">
+                                    <lightning-input variant="label-hidden" type="number" formatter="currency" step="0.01" 
+                                    class="slds-align_absolute-center" data-field-api-name="Other_Funds__c"
+                                    value={budgetLineItem.Other_Funds__c} onchange={handleInput} data-template-index={topindex}
+                                    data-budget-index={index} data-line-item-index={lineItemIndex}></lightning-input>
+                                </td>
+                                <td data-label="Total Budgeted">
+                                    <lightning-formatted-number value={budgetLineItem.Total_Budget__c} format-style="currency"
+                                    currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number>
+                                </td>
+                                <td>
+                                    <div class="slds-align_absolute-center">
+                                        <lightning-icon icon-name="utility:success" alternative-text="Save" data-template-index={topindex}
+                                        title="Save" size="small" class=" save-icon" onclick={upsertBudgetLineItem}
+                                        data-budget-index={index} data-line-item-index={lineItemIndex}></lightning-icon>
+                                    </div>
+                                    
+                                    <div if:true={budgetLineItem.showCancel} class="slds-align_absolute-center">
+                                        <lightning-icon icon-name="utility:clear" alternative-text="Cancel" 
+                                        title="Cancel" size="small" class=" cancel-icon" onclick={handleCancel} data-template-index={topindex}
+                                        data-budget-index={index} data-line-item-index={lineItemIndex}></lightning-icon>
+                                    </div>
+                                </td>
+                                <!-- <td>
+                                    
+                                </td> -->
+                            </template>
+                        </tr>
+                    </template>
+                    <tr class="slds-hint-parent sub-total" key={budget.Id}>
+                        <td>
+                            <div class="slds-truncate" title="Subtotal">Subtotal</div>
+                        </td>
+                        <td>
+                            <lightning-formatted-number value={budget.Total_Grant_Funded__c} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number>
+                        </td>
+                        <td>
+                            <lightning-formatted-number value={budget.Total_Match_Funds__c} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number>
+                        </td>
+                        <td>
+                            <lightning-formatted-number value={budget.Total_Match_calculated__c} format-style="percent-fixed" class="slds-align_absolute-center"></lightning-formatted-number>
+                        </td>
+                        <td>
+                            <lightning-formatted-number value={budget.Total_Match_Required__c} format-style="percent-fixed" class="slds-align_absolute-center"></lightning-formatted-number>
+                        </td>
+                        <td>
+                            <lightning-formatted-number value={budget.Total_Other_Funds__c} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number>
+                        </td>
+                        <td>
+                           <b> <lightning-formatted-number value={budget.Total_Budgeted__c} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number></b>
+                        </td>
+                        <td></td>
+                        <!-- <td></td> -->
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered total-expense-budget slds-p-horizontal_large slds-p-bottom_large  slds-table_fixed-layout" key={bud.templateId}  aria-label="Expense Budget">
+            <tbody>
+                <tr class="slds-hint-parent">
+                    <td>
+                        <div class="slds-truncate" title="Subtotal">Total Expense Budget</div>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={bud.totalGrantFunded} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={bud.totalMatchFunds} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={bud.totalMatchPercent} format-style="percent-fixed" class="slds-align_absolute-center"></lightning-formatted-number>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={bud.totalMatchPercentRequired} format-style="percent-fixed" class="slds-align_absolute-center"></lightning-formatted-number>
+                    </td>
+                    <td>
+                        <lightning-formatted-number value={bud.totalOtherFunds} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number>
+                    </td>
+                    <td>
+                       <b> <lightning-formatted-number value={bud.totalBudgeted} format-style="currency" currency-code="USD" class="slds-align_absolute-center"></lightning-formatted-number></b>
+                    </td>
+                    <td></td>
+                    <!-- <td></td> -->
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    </div>
+</template>

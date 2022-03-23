@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Aide_s_Email__c</fullName>
+    <description>Financial Aide&apos;s Email: Values here for each program will be pulled from NEIS and updated on a weekly basis.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For High Volume cases : Please provide the designated email address for the program
+For Low Volume cases : Please keep this blank. Salesforce will send the invoice to the financial aide assigned to the supplier in NEIS</inlineHelpText>
+    <label>Financial Aide&apos;s Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

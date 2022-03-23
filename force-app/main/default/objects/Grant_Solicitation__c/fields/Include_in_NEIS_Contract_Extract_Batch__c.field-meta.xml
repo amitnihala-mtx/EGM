@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Include_in_NEIS_Contract_Extract_Batch__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Include in NEIS Contract Extract Batch: Flag to indicate if Program Version should be included in NEIS Contract Extractor Batch. Batch will extract Contracts to send to NEIS for Programs.</description>
+    <externalId>false</externalId>
+    <label>Include in NEIS Contract Extract Batch</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

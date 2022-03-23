@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solicitation_Beta_Review__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checking this box makes the solicitation eligible for viewing on NYSERDA&apos;s beta Current Funding Opportunities page.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checking this box makes the solicitation eligible for viewing on NYSERDA&apos;s beta Current Funding Opportunities page.</inlineHelpText>
+    <label>Solicitation Beta Review</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

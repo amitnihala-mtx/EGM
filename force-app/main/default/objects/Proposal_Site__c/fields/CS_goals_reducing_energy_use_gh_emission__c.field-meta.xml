@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_goals_reducing_energy_use_gh_emission__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Does your company have sustainability goals that include reducing energy use and/or greenhouse gas emissions (Y/N)?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Does your company have sustainability goals that include reducing energy use and/or greenhouse gas emissions (Y/N)?</inlineHelpText>
+    <label>Meets CS goals</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

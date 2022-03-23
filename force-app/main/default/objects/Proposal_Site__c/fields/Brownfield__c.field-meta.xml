@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brownfield__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field available if customer sector == &apos;Non-Residential&apos; &amp;&amp; utility company != &apos;PSEG&apos;</description>
+    <externalId>false</externalId>
+    <label>Brownfield</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

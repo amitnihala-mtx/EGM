@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFDC_Report_URL_Multi_Line_Contract__c</fullName>
+    <description>S-00403: Contracts Multiple Line Report is Report: SC Load - Under 200 - Multiple Line.</description>
+    <externalId>false</externalId>
+    <formula>$Label.Core_NYSERDA_Internal_URL + $Setup.CORE_Constants_Setting__c.Contracts_Multiple_Line_Report_Id__c +
+&apos;?pv0=&apos; + Contract_Calc_Date_Effective__c + 
+&apos;&amp;pv1=&apos; + Grant_Solicitation__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SFDC Report URL (Multi Line Contract)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

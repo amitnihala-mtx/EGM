@@ -1,0 +1,44 @@
+<template>
+    <div class="slds-card main-grid">
+        <div class="slds-p-around_medium">
+            <p class="header slds-p-horizontal_medium">
+                
+                
+
+                <span class="slds-clearfix">
+                    <span class="slds-float_left">
+                        <lightning-button-icon icon-name="standard:home"  alternative-text="Go to Home Page" title="Go to Home Page" onclick={goToHomePage} icon-class="slds-icon_small" variant="brand"></lightning-button-icon>
+                        <b if:true={grantId} class="slds-m-left_small">{grantName}</b>
+                    </span>
+                </span>
+            </p>
+            <br/>
+
+            <div if:false={grantId}>
+                <div class="slds-p-around_medium">
+                    <p class="sub-heading">You can navigate proposal listings for each solicitation. We encourage you to keep an eye on the notifications when proposals are ready for you to review. 
+                        You are required and log score on your assigned concept paper, proposals etc.</p>
+                    <br/>
+                    <br/>
+
+                    <div if:true={grantsNotFound}>
+                        <div class="slds-box">
+                            <p class="slds-align_absolute-center">Grants not found.</p>
+                        </div>
+                    </div>
+
+                    <div if:false={grantsNotFound}>
+                        <lightning-datatable key-field="Id" data={grantsArr} columns={columns} hide-checkbox-column onrowaction={handleRowAction}>
+                        </lightning-datatable>
+                    </div>
+                </div>
+            </div>
+
+            <div if:true={grantId}>
+                <div class="">
+                    <c-grants_-display-proposals grant-id={grantId} grant-name={grantName} sol-round-id={solRoundId}></c-grants_-display-proposals>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

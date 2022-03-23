@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Certifications__c</fullName>
+    <externalId>false</externalId>
+    <label>Additional Certifications</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AIA 2030 Commitment</fullName>
+                <default>false</default>
+                <label>AIA 2030 Commitment</label>
+            </value>
+            <value>
+                <fullName>Enterprise Green Communities</fullName>
+                <default>false</default>
+                <label>Enterprise Green Communities</label>
+            </value>
+            <value>
+                <fullName>EGC 2020 Green Communities</fullName>
+                <default>false</default>
+                <label>EGC 2020 Green Communities</label>
+            </value>
+            <value>
+                <fullName>Energy $mart</fullName>
+                <default>false</default>
+                <label>Energy $mart</label>
+            </value>
+            <value>
+                <fullName>Energy Star</fullName>
+                <default>false</default>
+                <label>Energy Star</label>
+            </value>
+            <value>
+                <fullName>Fitwel</fullName>
+                <default>false</default>
+                <label>Fitwel</label>
+            </value>
+            <value>
+                <fullName>Green Globes</fullName>
+                <default>false</default>
+                <label>Green Globes</label>
+            </value>
+            <value>
+                <fullName>ILFI Living Building Challenge</fullName>
+                <default>false</default>
+                <label>ILFI Living Building Challenge</label>
+            </value>
+            <value>
+                <fullName>ILFI Living Community Challenge</fullName>
+                <default>false</default>
+                <label>ILFI Living Community Challenge</label>
+            </value>
+            <value>
+                <fullName>ILFI Living Product Challenge</fullName>
+                <default>false</default>
+                <label>ILFI Living Product Challenge</label>
+            </value>
+            <value>
+                <fullName>ILFI Biophlic Design Initiative</fullName>
+                <default>false</default>
+                <label>ILFI Biophlic Design Initiative</label>
+            </value>
+            <value>
+                <fullName>LEED BD+C Certification</fullName>
+                <default>false</default>
+                <label>LEED BD+C Certification</label>
+            </value>
+            <value>
+                <fullName>LEED ID+C Certification</fullName>
+                <default>false</default>
+                <label>LEED ID+C Certification</label>
+            </value>
+            <value>
+                <fullName>LEED ND Certification</fullName>
+                <default>false</default>
+                <label>LEED ND Certification</label>
+            </value>
+            <value>
+                <fullName>LEED Homes Certification</fullName>
+                <default>false</default>
+                <label>LEED Homes Certification</label>
+            </value>
+            <value>
+                <fullName>LEED Cities and Communities Certification</fullName>
+                <default>false</default>
+                <label>LEED Cities and Communities Certification</label>
+            </value>
+            <value>
+                <fullName>LEED Recertification Certification</fullName>
+                <default>false</default>
+                <label>LEED Recertification Certification</label>
+            </value>
+            <value>
+                <fullName>LEED Zero Certification</fullName>
+                <default>false</default>
+                <label>LEED Zero Certification</label>
+            </value>
+            <value>
+                <fullName>NY-CHPS</fullName>
+                <default>false</default>
+                <label>NY-CHPS</label>
+            </value>
+            <value>
+                <fullName>RELi</fullName>
+                <default>false</default>
+                <label>RELi</label>
+            </value>
+            <value>
+                <fullName>WELL Certification</fullName>
+                <default>false</default>
+                <label>WELL Certification</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

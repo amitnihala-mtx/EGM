@@ -1,0 +1,162 @@
+<template>
+    <div class="backdrop" if:true={isLoading}>
+        <div class="spinner">
+            <lightning-spinner alternative-text="Loading..."></lightning-spinner>
+        </div>
+    </div>
+    <template if:true={ecr}>
+        <template for:each={ecr} for:item="ecrRecord" for:index="index">
+            <div key={ecrRecord.Id} class="slds-grid card-base">
+                <div class={divCss}>
+                </div>
+                <div class="slds-col slds-size_11-of-12 " style="padding: 1rem">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_3-of-12 ">
+                            <lightning-layout>
+                                <lightning-layout-item size="2">
+                                    <lightning-icon icon-name='doctype:pdf' alternative-text='download' size='medium'
+                                        title='download' style="cursor: pointer;"></lightning-icon>
+                                </lightning-layout-item>
+                                <lightning-layout-item size="10">
+                                    <p class="card_detail_section">
+                                        <b>
+                                            <a data-id={ecrRecord.Id} onclick={redirectToPermit}>{ecrRecord.Name}</a>
+                                        </b>
+                                        <br />
+                                        <span>Proposal Name</span>
+                                    </p>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12 ">
+                            <p class="card_detail_section">
+                                <b>
+                                    <a data-id={ecrRecord.Grant_Solicitation__c} onclick={redirectToGrant}>{ecrRecord.Grant_Solicitation__r.Name}</a>
+                                </b>
+                                <br />
+                                <span>Grant Name</span>
+                            </p>
+
+                        </div>
+                        <div class="slds-col slds-size_2-of-12 ">
+                            <p class="card_detail_section">
+                                <b>
+                                    <template if:true={ecrRecord.Requested_Amount__c}>$
+                                        {ecrRecord.Requested_Amount__c}</template>
+                                    <template if:false={ecrRecord.Requested_Amount__c}>$ 0</template>
+                                </b>
+                                <br />
+                                <span>Proposed Amount</span>
+                            </p>
+                        </div>
+                        <div class="slds-col slds-size_2-of-12 ">
+                            <p class="card_detail_section">
+                                <b>
+                                    <template if:true={ecrRecord.Requested_Amount__c}>$
+                                        {ecrRecord.Awarded_Amount__c}</template>
+                                    <template if:false={ecrRecord.Requested_Amount__c}>$ 0</template>
+                                </b>
+                                <br />
+                                <span>Awarded Amount</span>
+                            </p>
+                        </div>
+                        <div class="slds-col slds-size_2-of-12 ">
+                            <ul>
+                                <li if:true={isDraft}>
+                                    <div>
+                                        <lightning-button variant="brand" data-url={ecrRecord.Intake_Form_URL__c}
+                                            onclick={handleResume} label="Resume"></lightning-button>
+                                            <br/>
+                                        <lightning-button variant="brand" data-recordid={ecrRecord.Id}
+                                            onclick={handleLinkMember} label="Link Member"></lightning-button>
+                                    </div>
+                                </li>
+                                <li if:true={isSubmitted}>
+                                    <div>
+                                        <lightning-button variant="brand" data-recordid={ecrRecord.Id}
+                                            onclick={handleDownloadPDF} label="Download PDF"></lightning-button>
+                                            
+                                        <!-- <lightning-button variant="brand" onclick={handleAmendment} label="Amendment"></lightning-button> -->
+                                        <c-grants_amendments_form record-id={ecrRecord.Id}></c-grants_amendments_form>
+                                    </div>
+                                </li>
+                                <li if:true={isUnderReview}>
+                                    <div>
+
+                                    </div>
+                                </li>
+                                <li if:true={isAssignBackToGrantee}>
+                                    <div>
+                                        <lightning-button variant="brand" data-url={ecrRecord.Intake_Form_URL__c}
+                                            onclick={handleResume} label="Resume"></lightning-button>
+                                    </div>
+                                </li>
+                                <li if:true={isAwarded}>
+                                    <div>
+                                        <!-- <lightning-button variant="brand" onclick={handleAmendment} label="Amendment"></lightning-button> -->
+                                        <c-grants_amendments_form record-id={ecrRecord.Id}></c-grants_amendments_form>
+                                        <lightning-button variant="brand" if:true={ecrRecord.isReimbursement}
+                                            data-recordid={ecrRecord.Id} onclick={handleTaskDeliverable}
+                                            label="Task & Deliverables"></lightning-button>
+                                        <lightning-button variant="brand" if:true={ecrRecord.isDisbursement}
+                                            data-recordid={ecrRecord.Id} onclick={handleReCertification}
+                                            label="Re-Certification"></lightning-button>
+                                    </div>
+                                </li>
+                                <li if:true={isCompleted}>
+                                    <div>
+                                        <lightning-button variant="brand" data-recordid={ecrRecord.Id}
+                                            onclick={handleFinalReport} label="Submit Final Report"></lightning-button>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </template>
+    <!-- <template if:true={isModal}>
+        <lightning-card title="">
+            <div style="height: 500px;width:52rem !important;">
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                    aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <div class="slds-modal__header">
+                            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                                title="Close" onclick={handleCloseModal}>
+                                <lightning-icon icon-name="utility:close" variant="inverse" alternative-text="Close"
+                                    size="medium">
+                                </lightning-icon>
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"> Collaborative
+                                {modalHeader}</h2>
+                        </div>
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+
+                            <div class="slds-m-around_medium">
+                                {finalReport}
+                                {taskDeliverable}
+                                {recertification}
+                                <div if:true={finalReport}>
+                                    <c-grants-final-report></c-grants-final-report>
+                                </div>
+                                <div if:true={taskDeliverable}>
+                                    <c-grants_-landing-screen_milestone record-id={selectedEcrRecord.Id}>
+                                    </c-grants_-landing-screen_milestone>
+                                </div>
+                                <div if:true={recertification}>
+                                    <c-grant-proposal-disbursment record-id={selectedEcrRecord.Id}>
+                                    </c-grant-proposal-disbursment>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </div>
+        </lightning-card>
+    </template> -->
+</template>

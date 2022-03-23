@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Type__c</fullName>
+    <description>This field captures if the program is serving businesses or individuals or both</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select if your program serves business or individuals or both</inlineHelpText>
+    <label>Customer Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Customer_Type</valueSetName>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

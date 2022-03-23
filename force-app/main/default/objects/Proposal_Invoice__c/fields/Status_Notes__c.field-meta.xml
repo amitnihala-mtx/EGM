@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Notes__c</fullName>
+    <description>Enter in a reason for the status change. Primarily used for entering a cancel/reject reason.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter in a reason for the status change. Primarily used for entering a cancel/reject reason.</inlineHelpText>
+    <label>Status Notes</label>
+    <length>100</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

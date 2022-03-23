@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Percent_of_conditioned_area_square_feet__c</fullName>
+    <description>Enter the percentage of square footage of the area to be conditioned by the unit</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What percentage of the total square footage will be heated and cooled by the unit? Please enter a value between 0-100 (two decimals allowed).</inlineHelpText>
+    <label>Percent of conditioned area(square feet)</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

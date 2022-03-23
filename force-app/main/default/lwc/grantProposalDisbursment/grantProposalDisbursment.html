@@ -1,0 +1,104 @@
+<!-- sldsValidatorIgnore -->
+<template>
+
+    <lightning-accordion class="example-accordion"
+    onsectiontoggle={handleToggleSection}
+    active-section-name={accordianSection}
+    allow-multiple-sections-open>
+    <lightning-accordion-section name="Disbursement Details" label="Disbursement Details">
+   
+    <lightning-datatable data={disbursementrecords} columns={columnsDisbursement} key-field="Id" hide-checkbox-column="true" onrowaction={Monthlyrecertification}>
+    </lightning-datatable>
+
+</lightning-accordion-section>
+</lightning-accordion>
+
+<template if:true={isModalOpen} >
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+        aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_small">
+        <div class="slds-modal__container">
+           
+
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+   <p><b>*CERTIFICATION: The Grantee certifies to the best of its knowledge and belief, that it and its principals:</b></p>
+<br/>
+   <p>*are not presently debarred, suspended, proposed for debarment, declared ineligible, or voluntarily excluded from covered transactions by any Federal department or agency;</p>
+<p>*have not within a three-year period preceding this Grant been convicted of or had a civil judgment rendered against them for commission of fraud or a criminal offense in connection with obtaining, attempting to obtain, or performing a public (Federal, State or local) transaction or a contract under a public transaction; violation of Federal or State antitrust statutes or commission of embezzlement, theft, forgery, bribery, falsification or destruction of records, making false statements, or receiving stolen property;</p>
+<p>*are not presently indicted for otherwise criminally or civilly charged by a governmental entity
+</p>
+<p>*(Federal, State or local) with commission of any of the offenses enumerated in paragraph (l) (b) of this certification; and
+</p>
+<p>*have not, within a three-year period preceding this Grant, had one or more public transactions (Federal, State or local) terminated for cause or default.</p>
+<br/>
+<p><b>*As provided in the application for Agricultural funds, the Grantee will cooperate with the New Jersey State Departement of Agriculture regarding the following goals:</b></p>
+<br/>
+<p>*Submission of data to document the impacts and outcomes of Agricultural funding on your program to be provided through, but not limited to, the invoices, progress inquiries, surveys and the final report;</p>
+<p>* Participation in the invoice and accountability webinar</p>
+<p>* Adherence to the invoice and accountability system and following the timeline for submission as outlined in the invoice and accountability instructions.
+</p>
+<p>* Confirmation, through self-attestation, of compliance with this agreement and the appropriate use of these funds on each invoice submission and the final report</p>
+<br/>
+<div class="slds-form-element  slds-float--none">
+    <div class="slds-form-element__control">
+        <lightning-input type="checkbox" label="By signing this document, the Grantee is accepting the grants fund as listed in provision 1.9 and acknowledges they have read and will comply with the terms herein." name="input2" checked required></lightning-input>
+    </div>
+  </div><br/>
+  <div class="slds-card">
+  <lightning-record-edit-form
+
+                         object-api-name={Disbursementobject}  
+                        record-id={record.Id}
+                        onsubmit={handleSubmit}
+                         onsuccess={handleSuccess}>
+                         <lightning-messages></lightning-messages>
+
+                          <div class="slds-grid slds-wrap">
+                              <div class="slds-size_1-of-2">
+
+                                  <lightning-input-field field-name={field1}></lightning-input-field>
+                                  
+                                  </div>
+                                  <!--div class="slds-col slds-size_4-of-12">
+
+                                    <lightning-input-field field-name={field3}></lightning-input-field>
+                                    
+                                    </div-->
+                              
+                              <div class="slds-size_1-of-2">
+                                <lightning-input-field field-name={field2}></lightning-input-field>
+                               
+                            </div>
+                            <div class="slds-size_1-of-1">
+                              <div class="slds-align_absolute-center slds-m-top_large">
+                                <lightning-button class="button1 slds-m-right_small" type="submit" variant="brand" label="Submit"></lightning-button>
+                                <lightning-button class="button2" label="Close" onclick={closeModal}></lightning-button>
+                            </div>
+                            </div>
+                              </div>
+                          <div class="slds-m-top_large"></div>
+                      </lightning-record-edit-form>
+
+</div>
+</div>
+<!--div class="slds-p-left_medium slds-p-right_medium">
+    <div class="slds-gutters_medium">
+      <div  class="slds-grid slds-wrap">
+        <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+            <div class="slds-form-element"><label class="slds-form-element__label" >*Legal Name</label>
+                <div class="slds-form-element__control"><input type="text" id="inputText" placeholder="Placeholder Text" class="slds-input" /></div>
+              </div>
+        </div>
+        <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+            <div class="slds-form-element"><label class="slds-form-element__label">Recertification Date</label>
+                <div class="slds-form-element__control"><input type="Date" id="inputDate" placeholder="Placeholder Text" class="slds-input" /></div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div-->
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</template>
+    
+</template>

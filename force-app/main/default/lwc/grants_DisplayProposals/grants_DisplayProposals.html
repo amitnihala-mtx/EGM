@@ -1,0 +1,73 @@
+<template>
+    <!--p class="slds-text-title_caps slds-p-horizontal_medium">{grantName}</p-->
+    <div class="slds-grid main-grid slds-wrap slds-m-around_medium ">
+        <div class="slds-size_5-of-12">
+            <lightning-tabset>
+                <lightning-tab label="All" title="All" value="All" onactive={handleActiveTab}>
+                </lightning-tab>
+                <lightning-tab label="Submitted" title="Submitted" value="Submitted" onactive={handleActiveTab}>
+                </lightning-tab>
+                <lightning-tab label="Pending Review" title="Pending Review" value="Pending Review" onactive={handleActiveTab}>
+                </lightning-tab>
+                <lightning-tab label="Under Review" title="Under Review" value="Under Review" onactive={handleActiveTab}>
+                </lightning-tab>
+            </lightning-tabset>
+
+            <div if:false={proposalsNotFound}>
+                <div class="slds-p-horizontal_medium slds-p-bottom_medium">
+                    <div class="slds-box proposal-card">
+                        <lightning-datatable key-field="Id" data={proposalsArr} columns={columns} hide-checkbox-column onrowaction={handleRowAction}>
+                        </lightning-datatable>
+                    </div>
+                </div>
+            </div>
+
+            <div if:true={proposalsNotFound}>
+                <div class="slds-box slds-m-horizontal_medium slds-m-bottom_medium">
+                    <p class="slds-align_absolute-center">Proposals not found.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slds-size_7-of-12">
+            <div if:true = {proposalRecId}>
+                <div class="slds-p-left_medium slds-p-right_medium slds-p-bottom_medium proposal-deatils">
+                    <lightning-accordion active-section-name="Review Section">
+                        <lightning-accordion-section name="Review Section" label={getReviewSectionHeading}>
+                            <lightning-record-form record-id={proposalRecId} object-api-name="Proposal__c"
+                                fields={getSfFieldsToDisplay} mode="view" onsuccess={handleSuccess}>
+                            </lightning-record-form>
+                        </lightning-accordion-section>
+                        <lightning-accordion-section name="02 - Past Scoring" label="02 - Scoring">
+                            <c-grants_-display-scorecards-for-proposal proposal-rec-id = {proposalRecId}></c-grants_-display-scorecards-for-proposal>
+                        </lightning-accordion-section>
+                        <lightning-accordion-section name="03 - Document" label="03 - Document">
+                            <div class="slds-p-top_small">
+                                <c-grants_-file-preview record-id={proposalRecId}></c-grants_-file-preview>
+                            </div>
+                        </lightning-accordion-section>
+                    </lightning-accordion>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <template if:true={openCorrectiveActionModal}>
+        <div class="slds-modal slds-fade-in-open slds-backdrop">  
+            <div class="slds-modal__container">  
+                <div class="slds-modal__content slds-modal__content_headless slds-p-around_small">
+                    <lightning-record-edit-form record-id={proposalRecId} object-api-name="Proposal__c" onsuccess={closeCorrectiveActionModal}>
+                        <lightning-messages> </lightning-messages>
+                        <lightning-input-field field-name="Type_of_Correction__c" required> </lightning-input-field>
+                        <lightning-input-field field-name="Reason_for_Correction__c" required> </lightning-input-field>
+                        <div class="slds-p-around_xx-small slds-align_absolute-center">
+                            <lightning-button variant="brand" 
+                            type="submit" name="save" label="Save">
+                            </lightning-button>
+                        </div>
+                    </lightning-record-edit-form>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

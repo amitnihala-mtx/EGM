@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Array_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Array Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dual Axis Tracking</fullName>
+                <default>false</default>
+                <label>Dual Axis Tracking</label>
+            </value>
+            <value>
+                <fullName>Fixed Ground Mount</fullName>
+                <default>false</default>
+                <label>Fixed Ground Mount</label>
+            </value>
+            <value>
+                <fullName>Fixed Parking Canopy</fullName>
+                <default>false</default>
+                <label>Fixed Parking Canopy</label>
+            </value>
+            <value>
+                <fullName>Fixed Roof Mount</fullName>
+                <default>false</default>
+                <label>Fixed Roof Mount</label>
+            </value>
+            <value>
+                <fullName>Single Axis Tracking</fullName>
+                <default>false</default>
+                <label>Single Axis Tracking</label>
+            </value>
+            <value>
+                <fullName>Fixed Rooftop Canopy</fullName>
+                <default>false</default>
+                <label>Fixed Rooftop Canopy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

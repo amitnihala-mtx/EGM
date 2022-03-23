@@ -1,0 +1,83 @@
+<template>
+
+
+    <lightning-card>
+        <div style="width:100%">
+            <template if:true={showSpinner}>
+                <lightning-spinner variant="brand" size="medium"></lightning-spinner>
+            </template>
+
+            <template if:true={showOwnerMessage}>
+                <div class="ownererr slds-align_absolute-center">
+
+                    <lightning-formatted-text value={OwnerError}>
+                    </lightning-formatted-text>
+                </div>
+            </template>
+
+
+            <div class="slds-var-p-around_small">
+
+                <!-- <div class="status slds-text-align_right slds-var-p-around_small slds-var-p-bottom_large">
+                    <b>Scorecard Status: </b>{scorestatus}
+                </div> -->
+
+                <template if:true={scoremetrics} for:each={scoremetrics} for:item="sm" for:index="index">
+
+                    <div key={sm.Id} class={sm.questionclass}>
+
+                        <div>
+                            <lightning-formatted-text value={sm.Question_Description__c}>
+                            </lightning-formatted-text>
+                        </div>
+
+                        <div class="slds-var-m-left_small">
+                            <template if:true={sm.isNumber}>
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-size_3-of-4">
+                                        <lightning-slider class="slidercls" data-indval={sm.indval} value={sm.Points__c}
+                                            max={sm.Maximum_Points__c} onchange={handleSliderChange}>
+                                        </lightning-slider>
+                                    </div>
+                                </div>
+                            </template>
+
+                            <template if:true={sm.isTextArea}>
+                                <div>
+                                    <div class="slds-var-m-bottom_xx-small">
+                                        <lightning-slider class="slidercls" data-indval={sm.indval} value={sm.Points__c}
+                                            max={sm.Maximum_Points__c} onchange={handleSliderChange}>
+                                        </lightning-slider>
+                                    </div>
+
+                                    <div class="slds-var-m-bottom_x-small">
+                                        <lightning-textarea data-indval={sm.indval} value={sm.Answer__c} label="Comment"
+                                            onchange={handleTextAreaChange}>
+                                        </lightning-textarea>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+
+                    </div>
+
+                </template>
+
+                <template if:true={showButtons}>
+                    <div class="slds-var-p-around_small slds-align_absolute-center">
+
+                        <div class="slds-var-p-right_small">
+                            <lightning-button variant="brand" label="Save" title="Save" onclick={handleSaveClick}>
+                            </lightning-button>
+                        </div>
+                        <div>
+                            <lightning-button variant="brand" label="Submit" title="Submit" onclick={handleSubmitClick}>
+                            </lightning-button>
+                        </div>
+
+                    </div>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

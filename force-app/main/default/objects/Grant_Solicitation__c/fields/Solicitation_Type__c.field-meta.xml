@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solicitation_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Due Date / Multi-Round or Rolling Solicitation. Due Date solicitations can be edited up until the due date/time, but rolling solicitations can&apos;t be edited after submit. Rolling Solicitations flip the status to Pending Review upon Submit.</inlineHelpText>
+    <label>Solicitation Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Due Date / Multi Round</fullName>
+                <default>false</default>
+                <label>Due Date / Multi Round</label>
+            </value>
+            <value>
+                <fullName>Rolling Solicitation</fullName>
+                <default>false</default>
+                <label>Rolling Solicitation</label>
+            </value>
+            <value>
+                <fullName>Open Enrollment</fullName>
+                <default>false</default>
+                <label>Open Enrollment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

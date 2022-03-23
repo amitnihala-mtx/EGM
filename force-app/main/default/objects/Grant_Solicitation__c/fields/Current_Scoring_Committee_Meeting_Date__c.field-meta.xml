@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Scoring_Committee_Meeting_Date__c</fullName>
+    <description>Scoring committee meeting date from current open solicitation round.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Scoring committee meeting date from current open solicitation round.</inlineHelpText>
+    <label>Current Scoring Committee Meeting Date</label>
+    <summarizedField>Grant_Solicitation_Rounds__c.Scoring_Committee_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>Grant_Solicitation_Rounds__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Grant_Solicitation_Rounds__c.Solicitation__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,205 @@
+<template>
+    <div class="backdrop" if:true={showSpinner}>
+        <div class="spinner">
+            <lightning-spinner alternative-text="Loading..."></lightning-spinner>
+        </div>
+    </div>
+
+    <!-- <c-grants-user-dashboard-sidebar selected-tab="Home" show-footer>  slot="body"-->
+        <div >
+            <!-- <div class="pageTextCenter">
+                <span>
+                    <h2>Massachusetts Department of Elementary & Secondary Education</h2>
+                </span>
+                <hr class="headerbottom">
+            </div> -->
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-grid statuscard">
+                    <div class="slds-col slds-size_1-of-3 approveddarken ">
+                        <span class="custom_icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="arrow-alt-circle-left"
+                                class="svg-inline--fa fa-arrow-alt-circle-left fa-w-16" role="img"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm116-292H256v-70.9c0-10.7-13-16.1-20.5-8.5L121.2 247.5c-4.7 4.7-4.7 12.2 0 16.9l114.3 114.9c7.6 7.6 20.5 2.2 20.5-8.5V300h116c6.6 0 12-5.4 12-12v-64c0-6.6-5.4-12-12-12z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-3 approved">
+                        <div class="card-content">
+                            <div class="row">
+                                <h3 class="card-stats-number">1</h3>
+                                <p class="card-stats-heading">Action Items Past Due</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-grid statuscard">
+                    <div class="slds-col slds-size_1-of-3 submitteddarken">
+                        <span class="custom_icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clipboard-list"
+                                class="svg-inline--fa fa-clipboard-list fa-w-12" role="img" viewBox="0 0 384 512">
+                                <path fill="currentColor"
+                                    d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM96 424c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm0-96c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm0-96c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm96-192c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm128 368c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-3 submitted">
+                        <div class="card-content">
+                            <div class="row">
+                                <h3 class="card-stats-number">2</h3>
+                                <p class="card-stats-heading">Action Items Due</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-grid statuscard">
+                    <div class="slds-col slds-size_1-of-3 draftdarken">
+                        <span class="custom_icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tasks"
+                                class="svg-inline--fa fa-tasks fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M139.61 35.5a12 12 0 0 0-17 0L58.93 98.81l-22.7-22.12a12 12 0 0 0-17 0L3.53 92.41a12 12 0 0 0 0 17l47.59 47.4a12.78 12.78 0 0 0 17.61 0l15.59-15.62L156.52 69a12.09 12.09 0 0 0 .09-17zm0 159.19a12 12 0 0 0-17 0l-63.68 63.72-22.7-22.1a12 12 0 0 0-17 0L3.53 252a12 12 0 0 0 0 17L51 316.5a12.77 12.77 0 0 0 17.6 0l15.7-15.69 72.2-72.22a12 12 0 0 0 .09-16.9zM64 368c-26.49 0-48.59 21.5-48.59 48S37.53 464 64 464a48 48 0 0 0 0-96zm432 16H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_2-of-3 draft">
+                        <div class="card-content">
+                            <div class="row">
+                                <h3 class="card-stats-number">5</h3>
+                                <p class="card-stats-heading">Days Remaining for<br />Final Report Submission</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div if:true={showStatus} class="tab slds-m-around_large">
+                <div class="permits_header">
+                    <span>
+                        <lightning-icon icon-name="standard:picklist_type" class="permits_icon">
+                        </lightning-icon>
+                    </span>
+                    <span style="font-size: 1.2rem">Grants Application</span>
+                    <!-- <span style="font-size: 1.2rem">{Portal_Dashboard_Application_Component_Header_Help_Text}</span> -->
+                </div>
+                <div class="slds-grid slds-wrap">
+                    <div class={createdButtonClass}>
+                        <button class={var1} name="" onclick={openTab} data-state="Draft">
+                            <div class="slds-grid slds-gutters tablinks">
+                                <div class="slds-col slds-size_4-of-12">
+                                    <lightning-icon icon-name="utility:note" class="icon-orange">
+                                    </lightning-icon>
+                                </div>
+
+                                <div class="slds-col slds-size_8-of-12 text_style_left">
+                                    <p class="tab_title">Created</p>
+                                    <p class="tab_desc">{createdStatus} Draft</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class={submittedButtonClass}>
+                        <button class={var2} onclick={openTab} data-state="Submitted">
+                            <div class="slds-grid slds-gutters tablinks">
+                                <div class="slds-col slds-size_4-of-12">
+                                    <lightning-icon icon-name="utility:package_org">
+                                    </lightning-icon>
+                                </div>
+                                <div class="slds-col slds-size_8-of-12 text_style_left">
+                                    <p class="tab_title">Submitted</p>
+                                    <p class="tab_desc">{submittedStatus} Submitted</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class={underReviewButtonClass}>
+                        <button class={var3} onclick={openTab} data-state="underReview">
+                            <div class="slds-grid slds-gutters tablinks">
+                                <div class="slds-col slds-size_4-of-12">
+                                    <lightning-icon icon-name="utility:spinner">
+                                    </lightning-icon>
+                                </div>
+                                <div class="slds-col slds-size_8-of-12 text_style_left">
+                                    <p class="tab_title">In Progress</p>
+                                    <p class="tab_desc">{underReviewStatus} Under Review</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class={assignBackToGranteeClass}>
+                        <button class={var4} onclick={openTab} data-state="assignBackToGrantee">
+                            <div class="slds-grid slds-gutters tablinks">
+                                <div class="slds-col slds-size_4-of-12">
+                                    <lightning-icon icon-name="utility:success">
+                                    </lightning-icon>
+                                </div>
+                                <div class="slds-col slds-size_8-of-12 text_style_left">
+                                    <p class="tab_title">Action Required</p>
+                                    <p class="tab_desc">{assignBackToGranteeStatus} Action Required</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class={approvedButtonClass}>
+                        <button class={var4} onclick={openTab} data-state="Approved">
+                            <div class="slds-grid slds-gutters tablinks">
+                                <div class="slds-col slds-size_4-of-12">
+                                    <lightning-icon icon-name="utility:success">
+                                    </lightning-icon>
+                                </div>
+                                <div class="slds-col slds-size_8-of-12 text_style_left">
+                                    <p class="tab_title">Awarded</p>
+                                    <p class="tab_desc">{approvedStatus} Awarded</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class={completedButtonClass}>
+                        <button class={var5} onclick={openTab} data-state="Completed">
+                            <div class="slds-grid slds-gutters tablinks">
+                                <div class="slds-col slds-size_4-of-12">
+                                    <lightning-icon icon-name="utility:success">
+                                    </lightning-icon>
+                                </div>
+                                <div class="slds-col slds-size_8-of-12 text_style_left">
+                                    <p class="tab_title">Completed</p>
+                                    <p class="tab_desc">{completedStatus} complete</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div if:true={showStatus}>
+                <template if:true={draft}>
+                    <c-grants-status-card status="Draft"></c-grants-status-card>
+                </template>
+                <template if:true={submitted}>
+                    <c-grants-status-card status="Submitted"></c-grants-status-card>
+                </template>
+                <template if:true={underReview}>
+                    <c-grants-status-card status="Under Review"></c-grants-status-card>
+                </template>
+                <template if:true={approved}>
+                    <c-grants-status-card status="Awarded"></c-grants-status-card>
+                </template>
+                <template if:true={completed}>
+                    <c-grants-status-card status="Completed"></c-grants-status-card>
+                </template>
+                <template if:true={assignBackToGrantee}>
+                    <c-grants-status-card status="Assign Back To Grantee"></c-grants-status-card>
+                </template>
+            </div>
+            <div class="bottom_spacing"> </div>
+        </div>
+    <c-grants-overview-dashboard></c-grants-overview-dashboard>
+
+    <!-- </c-grants-user-dashboard-sidebar> -->
+</template>

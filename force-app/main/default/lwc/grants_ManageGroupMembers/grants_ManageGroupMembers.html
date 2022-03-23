@@ -1,0 +1,41 @@
+<template>
+    <h2 class="slds-text-heading_medium slds-m-bottom_medium">Existing Group Members</h2>
+    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered">
+        <thead>
+            <tr class=" slds-line-height_reset">
+                <th >Member Id</th>
+                <th >Member Name</th>
+                <th >Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={existingmembers} for:item='item'>
+                <tr key={item.Id} class=" slds-line-height_reset">
+                    <td >{item.Name}</td>
+                    <td >{item.Grant_Solicitation_Review_Team__r.Member__r.Name}</td>
+                    <td ><lightning-button variant="destructive" label="Delete" title={item.Id} onclick={handleDeleteClick} class=""></lightning-button></td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+
+    <h2 class="slds-text-heading_medium slds-m-bottom_medium slds-m-top_xx-large">Add Group Members</h2>
+    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-m-bottom_xx-large">
+        <thead>
+            <tr class=" slds-line-height_reset">
+                <th >Member</th>
+                <th >Scoring Committee</th>
+                <th >Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={newmembers} for:item='item'>
+                <tr key={item.Id} class=" slds-line-height_reset">
+                    <td >{item.Member__r.Name}</td>
+                    <td >{item.Scoring_Committee__c}</td>
+                    <td ><lightning-button variant="brand" label="Add" title={item.Id} onclick={handleAddClick} class=""></lightning-button></td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+</template>

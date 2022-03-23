@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incentive_Region__c</fullName>
+    <description>S-00483: CHP Incentive Application: Project Site related</description>
+    <externalId>false</externalId>
+    <label>Incentive Region</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>County__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Upstate</fullName>
+                <default>true</default>
+                <label>Upstate</label>
+            </value>
+            <value>
+                <fullName>Down State</fullName>
+                <default>false</default>
+                <label>Down State</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Rockland</controllingFieldValue>
+            <controllingFieldValue>Saratoga</controllingFieldValue>
+            <controllingFieldValue>Schenectady</controllingFieldValue>
+            <controllingFieldValue>Schoharie</controllingFieldValue>
+            <controllingFieldValue>Schuyler</controllingFieldValue>
+            <controllingFieldValue>Seneca</controllingFieldValue>
+            <controllingFieldValue>St. Lawrence</controllingFieldValue>
+            <controllingFieldValue>Steuben</controllingFieldValue>
+            <controllingFieldValue>Suffolk</controllingFieldValue>
+            <controllingFieldValue>Sullivan</controllingFieldValue>
+            <controllingFieldValue>Clinton</controllingFieldValue>
+            <controllingFieldValue>Tioga</controllingFieldValue>
+            <controllingFieldValue>Columbia</controllingFieldValue>
+            <controllingFieldValue>Tompkins</controllingFieldValue>
+            <controllingFieldValue>Cortland</controllingFieldValue>
+            <controllingFieldValue>Ulster</controllingFieldValue>
+            <controllingFieldValue>Delaware</controllingFieldValue>
+            <controllingFieldValue>Warren</controllingFieldValue>
+            <controllingFieldValue>Dutchess</controllingFieldValue>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <controllingFieldValue>Erie</controllingFieldValue>
+            <controllingFieldValue>Wayne</controllingFieldValue>
+            <controllingFieldValue>Essex</controllingFieldValue>
+            <controllingFieldValue>Franklin</controllingFieldValue>
+            <controllingFieldValue>Fulton</controllingFieldValue>
+            <controllingFieldValue>Genesee</controllingFieldValue>
+            <controllingFieldValue>Albany</controllingFieldValue>
+            <controllingFieldValue>Allegany</controllingFieldValue>
+            <controllingFieldValue>Broome</controllingFieldValue>
+            <controllingFieldValue>Cattaraugus</controllingFieldValue>
+            <controllingFieldValue>Cayuga</controllingFieldValue>
+            <controllingFieldValue>Chautauqua</controllingFieldValue>
+            <controllingFieldValue>Chemung</controllingFieldValue>
+            <controllingFieldValue>Chenango</controllingFieldValue>
+            <controllingFieldValue>Wyoming</controllingFieldValue>
+            <controllingFieldValue>Yates</controllingFieldValue>
+            <controllingFieldValue>Greene</controllingFieldValue>
+            <controllingFieldValue>Hamilton</controllingFieldValue>
+            <controllingFieldValue>Herkimer</controllingFieldValue>
+            <controllingFieldValue>Jefferson</controllingFieldValue>
+            <controllingFieldValue>Lewis</controllingFieldValue>
+            <controllingFieldValue>Livingston</controllingFieldValue>
+            <controllingFieldValue>Madison</controllingFieldValue>
+            <controllingFieldValue>Monroe</controllingFieldValue>
+            <controllingFieldValue>Montgomery</controllingFieldValue>
+            <controllingFieldValue>Nassau</controllingFieldValue>
+            <controllingFieldValue>Niagara</controllingFieldValue>
+            <controllingFieldValue>Oneida</controllingFieldValue>
+            <controllingFieldValue>Onondaga</controllingFieldValue>
+            <controllingFieldValue>Ontario</controllingFieldValue>
+            <controllingFieldValue>Orange</controllingFieldValue>
+            <controllingFieldValue>Orleans</controllingFieldValue>
+            <controllingFieldValue>Oswego</controllingFieldValue>
+            <controllingFieldValue>Otsego</controllingFieldValue>
+            <controllingFieldValue>Putnam</controllingFieldValue>
+            <controllingFieldValue>Rensselaer</controllingFieldValue>
+            <valueName>Upstate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bronx</controllingFieldValue>
+            <controllingFieldValue>Westchester</controllingFieldValue>
+            <controllingFieldValue>Kings</controllingFieldValue>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <controllingFieldValue>Queens</controllingFieldValue>
+            <controllingFieldValue>Richmond</controllingFieldValue>
+            <valueName>Down State</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

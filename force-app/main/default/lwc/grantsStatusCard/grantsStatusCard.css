@@ -1,0 +1,42 @@
+.card-base {
+    margin-top: 1.5rem;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-base:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.card-sidecolor-orange {
+    max-width: 1%;
+    background-color: #ff7b00;
+}
+.card-sidecolor-pink {
+    max-width: 1%;
+    background-color: #ff3c9e;
+}
+.card-sidecolor-blue {
+    max-width: 1%;
+    background-color: #0084ff;
+}
+.card-sidecolor-purple {
+    max-width: 1%;
+    background-color: #7339ac;
+}
+.card-sidecolor-green {
+    max-width: 1%;
+    background-color: #00a82a;
+}
+.slds-modal__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 52rem;
+    min-width: 20rem;
+}
+.discussion-text-link {
+    color: rgb(98, 96, 230);
+}
+.card_detail_section {
+    margin-bottom: 0.5rem;
+}

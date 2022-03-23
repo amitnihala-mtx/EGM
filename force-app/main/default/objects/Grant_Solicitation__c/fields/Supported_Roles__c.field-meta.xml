@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supported_Roles__c</fullName>
+    <externalId>false</externalId>
+    <label>Supported Roles</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+                <label>Contractor</label>
+            </value>
+            <value>
+                <fullName>Quality Assurance</fullName>
+                <default>false</default>
+                <label>Quality Assurance</label>
+            </value>
+            <value>
+                <fullName>Builder</fullName>
+                <default>false</default>
+                <label>Builder</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+            <value>
+                <fullName>Stakeholder</fullName>
+                <default>false</default>
+                <label>Stakeholder</label>
+            </value>
+            <value>
+                <fullName>Implementation Partner</fullName>
+                <default>false</default>
+                <label>Implementation Partner</label>
+            </value>
+            <value>
+                <fullName>NYSERDA Project Manager</fullName>
+                <default>false</default>
+                <label>NYSERDA Project Manager</label>
+            </value>
+            <value>
+                <fullName>Subcontractor</fullName>
+                <default>false</default>
+                <label>Subcontractor</label>
+            </value>
+            <value>
+                <fullName>Payee</fullName>
+                <default>false</default>
+                <label>Payee</label>
+            </value>
+            <value>
+                <fullName>System Owner</fullName>
+                <default>false</default>
+                <label>System Owner</label>
+            </value>
+            <value>
+                <fullName>Site Owner</fullName>
+                <default>false</default>
+                <label>Site Owner</label>
+            </value>
+            <value>
+                <fullName>Advisor</fullName>
+                <default>false</default>
+                <label>Advisor</label>
+            </value>
+            <value>
+                <fullName>Developer</fullName>
+                <default>false</default>
+                <label>Developer</label>
+            </value>
+            <value>
+                <fullName>Reporting Contact</fullName>
+                <default>false</default>
+                <label>Reporting Contact</label>
+            </value>
+            <value>
+                <fullName>Property Manager</fullName>
+                <default>false</default>
+                <label>Property Manager</label>
+            </value>
+            <value>
+                <fullName>Tenant</fullName>
+                <default>false</default>
+                <label>Tenant</label>
+            </value>
+            <value>
+                <fullName>Primary Energy Consultant</fullName>
+                <default>false</default>
+                <label>Primary Energy Consultant</label>
+            </value>
+            <value>
+                <fullName>Sub Contracting Energy Consultant</fullName>
+                <default>false</default>
+                <label>Sub Contracting Energy Consultant</label>
+            </value>
+            <value>
+                <fullName>NYSERDA Project Co-ordinator</fullName>
+                <default>false</default>
+                <label>NYSERDA Project Co-ordinator</label>
+            </value>
+            <value>
+                <fullName>Proposer</fullName>
+                <default>false</default>
+                <label>Proposer</label>
+            </value>
+            <value>
+                <fullName>Designer</fullName>
+                <default>false</default>
+                <label>Designer</label>
+            </value>
+            <value>
+                <fullName>Installer</fullName>
+                <default>false</default>
+                <label>Installer</label>
+            </value>
+            <value>
+                <fullName>Driller</fullName>
+                <default>false</default>
+                <label>Driller</label>
+            </value>
+            <value>
+                <fullName>Project Sponsor</fullName>
+                <default>false</default>
+                <label>Project Sponsor</label>
+            </value>
+            <value>
+                <fullName>Authorized Representative</fullName>
+                <default>false</default>
+                <label>Authorized Representative</label>
+            </value>
+            <value>
+                <fullName>Designated Agent</fullName>
+                <default>false</default>
+                <label>Designated Agent</label>
+            </value>
+            <value>
+                <fullName>Legal Notice</fullName>
+                <default>false</default>
+                <label>Legal Notice</label>
+            </value>
+            <value>
+                <fullName>Seller</fullName>
+                <default>false</default>
+                <label>Seller</label>
+            </value>
+            <value>
+                <fullName>Government Official</fullName>
+                <default>false</default>
+                <label>Government Official</label>
+            </value>
+            <value>
+                <fullName>Landlord</fullName>
+                <default>false</default>
+                <label>Landlord</label>
+            </value>
+            <value>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+                <label>Integrator</label>
+            </value>
+            <value>
+                <fullName>Portfolio Owner</fullName>
+                <default>false</default>
+                <label>Portfolio Owner</label>
+            </value>
+            <value>
+                <fullName>New Employee</fullName>
+                <default>false</default>
+                <label>New Employee</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

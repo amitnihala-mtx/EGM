@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fuel_Replaced__c</fullName>
+    <externalId>false</externalId>
+    <label>Fuel Replaced</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>#2 Oil</fullName>
+                <default>false</default>
+                <label>#2 Oil</label>
+            </value>
+            <value>
+                <fullName>#4 Oil</fullName>
+                <default>false</default>
+                <label>#4 Oil</label>
+            </value>
+            <value>
+                <fullName>#6 Oil</fullName>
+                <default>false</default>
+                <label>#6 Oil</label>
+            </value>
+            <value>
+                <fullName>Steam</fullName>
+                <default>false</default>
+                <label>Steam</label>
+            </value>
+            <value>
+                <fullName>Natural Gas</fullName>
+                <default>false</default>
+                <label>Natural Gas</label>
+            </value>
+            <value>
+                <fullName>Electric</fullName>
+                <default>false</default>
+                <label>Electric</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

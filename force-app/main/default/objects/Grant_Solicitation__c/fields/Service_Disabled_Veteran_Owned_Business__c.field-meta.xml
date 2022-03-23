@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Disabled_Veteran_Owned_Business__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this box if Service-Disabled Veteran-Owned Business (SDVOB)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if this solicitation has Service-Disabled Veteran-Owned Business (SDVOB) goals. If so, also go to the appropriate checklist question in the Program Contents and set the question to active.</inlineHelpText>
+    <label>Service-Disabled Vet-Owned Bus. Goals?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

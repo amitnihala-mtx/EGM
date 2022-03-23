@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZZ_Account_lookup_in_sync_Contact__c</fullName>
+    <description>T-02464 - Ajay Gautam - Temporary field for critical data fix in prod</description>
+    <externalId>false</externalId>
+    <formula>ZZ_AccountId_fromContact__c  = Account__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Account lookup in sync? (Contact)</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

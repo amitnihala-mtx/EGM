@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>Draft, Open, or Closed. 
+
+Draft: Solicitation creation and configuration stage. Nothing is exposed to the public. 
+Open: Solicitation is open to the public and visible on the Current Funding Opportunities website.
+Closed: Solicitation is closed and nDraft, Open, or Closed. 
+Draft: Solicitation creation and configuration stage. Nothing is exposed to the public. 
+Open: Solicitation is open to the public and visible on the website.
+Closed: Solicitation is closed and not visible on the website.ot visible on the Current Funding Opportunities website.Solicitations Status is set to &quot;Closed&quot; automatically exactly at 5 pm on the day of the latest round due date. 
+ A change mod is needed to set it back to open.
+
+Canceled status SF-30800</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Draft: Creation and config stage. Nothing is shown to the public. 
+Open: Open to the public and visible on website.
+Closed: Closed and not visible on the website.Closed automatically at 3pm on the day of the latest round due date. Change mod to re-open</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft</fullName>
+                <default>true</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Pending Approval</fullName>
+                <default>false</default>
+                <label>Pending Approval</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <label>Canceled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

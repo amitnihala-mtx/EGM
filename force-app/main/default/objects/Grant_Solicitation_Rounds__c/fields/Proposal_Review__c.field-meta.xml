@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposal_Review__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&apos;/apex/CORE_Proposal_Review_Page?solicitationID=&apos;&amp;CASESAFEID(Solicitation__c)&amp;&apos;&amp;round=&apos;&amp; Id, &apos;Proposal Review&apos;)</formula>
+    <label>Proposal Review</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

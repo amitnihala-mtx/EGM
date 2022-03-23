@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Historic_Preservation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Historic Preservation is the rehabilitation and use of buildings and structures that have been designated as a historic landmark by either the New York State Historic Preservation Office (SHPO) or another local preservation office.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Historic Preservation is the rehabilitation and use of buildings and structures that have been designated as a historic landmark by either the New York State Historic Preservation Office (SHPO) or another local preservation office.</inlineHelpText>
+    <label>Historic preservation site?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

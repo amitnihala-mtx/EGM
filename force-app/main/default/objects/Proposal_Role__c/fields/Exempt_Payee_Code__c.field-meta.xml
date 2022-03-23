@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exempt_Payee_Code__c</fullName>
+    <description>If you are exempt from backup withholding and/or FATCA reporting, provide any EPC that may apply to you. For EPC and additional instructions, please refer to the instructions located on IRS Form W-9, which can be found on the IRS website under Forms and Publications.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If you are exempt from backup withholding and/or FATCA reporting, provide any EPC that may apply to you. For EPC and additional instructions, please refer to the instructions located on IRS Form W-9 in the IRS website under Forms and Publications.</inlineHelpText>
+    <label>Exempt Payee Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsProposal_Threshold__c</fullName>
+    <description>T-02462: Rollup all validations onto Solicitation level</description>
+    <externalId>false</externalId>
+    <formula>NOT(ISBLANK(Proposal_Threshold__c))</formula>
+    <label>Proposal Threshold?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

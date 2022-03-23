@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_best_describes_you__c</fullName>
+    <description>Used by WFD</description>
+    <externalId>false</externalId>
+    <inlineHelpText>NYS = New York State.
+
+For the definition of Priority Population and Disadvantaged Communities, including an interactive map of Disadvantaged Communities, see the &quot;Definitions&quot; page of the NYSERDA Workforce Development website: https://www.nyserda.ny.gov/All-Programs/Programs/Clean-Energy-Workforce-Development/Definitions</inlineHelpText>
+    <label>What best describes you</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Current student at a college or university in NYS</fullName>
+                <default>false</default>
+                <label>Current student at a college or university in NYS</label>
+            </value>
+            <value>
+                <fullName>Current student at a college or university outside of NYS</fullName>
+                <default>false</default>
+                <label>Current student at a college or university outside of NYS</label>
+            </value>
+            <value>
+                <fullName>Graduate from a college or university in NYS (within the last 12 months)</fullName>
+                <default>false</default>
+                <label>Graduate from a college or university in NYS (within the last 12 months)</label>
+            </value>
+            <value>
+                <fullName>Graduate from a college or university outside NYS (within the last 12 months)</fullName>
+                <default>false</default>
+                <label>Graduate from a college or university outside NYS (within the last 12 months)</label>
+            </value>
+            <value>
+                <fullName>Other - Priority Population / Disadvantaged Community Member</fullName>
+                <default>false</default>
+                <label>Other - Priority Population / Disadvantaged Community Member</label>
+            </value>
+            <value>
+                <fullName>Current student at a college or university outside of NY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Current student at a college or university outside of NY</label>
+            </value>
+            <value>
+                <fullName>I am 16-24 years old and enrolled in or completed (within the past 12 months) a comprehensive energy-related work preparedness training program</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I am 16-24 years old and enrolled in or completed (within the past 12 months) a comprehensive energy-related work preparedness training program</label>
+            </value>
+            <value>
+                <fullName>I am a military veteran.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I am a military veteran.</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

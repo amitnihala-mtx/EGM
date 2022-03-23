@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SkipProjectNamingConvention__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>T-01171
+Clean Transportation: Refactor project naming convention</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If checked then child Project(&quot;Clean Transportation&quot;) name will not be overwritten</inlineHelpText>
+    <label>Skip Project Naming Convention</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

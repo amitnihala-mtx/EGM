@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Score_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of Rank: All Review Team Members are required to score the proposal. 
+
+Batch Rank: Solicitation Manager will categorize Review Team Members into groups. After doing so, groups are assigned to proposals for scoring.</inlineHelpText>
+    <label>Score Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sum of Rank</fullName>
+                <default>false</default>
+                <label>Sum of Rank</label>
+            </value>
+            <value>
+                <fullName>Batch Rank</fullName>
+                <default>false</default>
+                <label>Batch Rank</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

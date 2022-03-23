@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NYISO_Zone__c</fullName>
+    <externalId>false</externalId>
+    <label>NYISO Zone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Zone A</fullName>
+                <default>false</default>
+                <label>Zone A</label>
+            </value>
+            <value>
+                <fullName>Zone B</fullName>
+                <default>false</default>
+                <label>Zone B</label>
+            </value>
+            <value>
+                <fullName>Zone C</fullName>
+                <default>false</default>
+                <label>Zone C</label>
+            </value>
+            <value>
+                <fullName>Zone D</fullName>
+                <default>false</default>
+                <label>Zone D</label>
+            </value>
+            <value>
+                <fullName>Zone E</fullName>
+                <default>false</default>
+                <label>Zone E</label>
+            </value>
+            <value>
+                <fullName>Zone F</fullName>
+                <default>false</default>
+                <label>Zone F</label>
+            </value>
+            <value>
+                <fullName>Zone G</fullName>
+                <default>false</default>
+                <label>Zone G</label>
+            </value>
+            <value>
+                <fullName>Zone H</fullName>
+                <default>false</default>
+                <label>Zone H</label>
+            </value>
+            <value>
+                <fullName>Zone I</fullName>
+                <default>false</default>
+                <label>Zone I</label>
+            </value>
+            <value>
+                <fullName>Zone J</fullName>
+                <default>false</default>
+                <label>Zone J</label>
+            </value>
+            <value>
+                <fullName>Zone K</fullName>
+                <default>false</default>
+                <label>Zone K</label>
+            </value>
+            <value>
+                <fullName>A - West</fullName>
+                <default>false</default>
+                <label>A - West</label>
+            </value>
+            <value>
+                <fullName>B - Genessee</fullName>
+                <default>false</default>
+                <label>B - Genessee</label>
+            </value>
+            <value>
+                <fullName>C - Central</fullName>
+                <default>false</default>
+                <label>C - Central</label>
+            </value>
+            <value>
+                <fullName>D - North</fullName>
+                <default>false</default>
+                <label>D - North</label>
+            </value>
+            <value>
+                <fullName>E - Mohawk Valley</fullName>
+                <default>false</default>
+                <label>E - Mohawk Valley</label>
+            </value>
+            <value>
+                <fullName>F - Capital</fullName>
+                <default>false</default>
+                <label>F - Capital</label>
+            </value>
+            <value>
+                <fullName>G - Hudson Valley</fullName>
+                <default>false</default>
+                <label>G - Hudson Valley</label>
+            </value>
+            <value>
+                <fullName>H- Millwood</fullName>
+                <default>false</default>
+                <label>H- Millwood</label>
+            </value>
+            <value>
+                <fullName>I- Dunwoodie</fullName>
+                <default>false</default>
+                <label>I- Dunwoodie</label>
+            </value>
+            <value>
+                <fullName>J - NYC</fullName>
+                <default>false</default>
+                <label>J - NYC</label>
+            </value>
+            <value>
+                <fullName>K- Long Island</fullName>
+                <default>false</default>
+                <label>K- Long Island</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

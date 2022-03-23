@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Concept_Paper_Scoring_Committee_Reminder__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>S-00724: When set to true from false, will invoke the reminder calculations.</description>
+    <externalId>false</externalId>
+    <label>Concept Paper Scoring Committee Reminder</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

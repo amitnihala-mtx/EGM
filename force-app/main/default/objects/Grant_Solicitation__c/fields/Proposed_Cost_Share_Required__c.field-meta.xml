@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposed_Cost_Share_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>By checking this box, Non-NYSERDA Cost Share amount will be a required field during the proposal submission process</description>
+    <externalId>false</externalId>
+    <inlineHelpText>By checking this box, non-NYSERDA Cost Share amount will be a required field during the proposal submission process</inlineHelpText>
+    <label>Proposed Cost Share Required?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

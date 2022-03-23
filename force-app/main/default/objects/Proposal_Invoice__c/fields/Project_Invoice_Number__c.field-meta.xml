@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Invoice_Number__c</fullName>
+    <description>The ordinal number of this invoice for the project, starting with 1</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The ordinal number of this invoice for the project, starting with 1</inlineHelpText>
+    <label>Project Invoice Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

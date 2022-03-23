@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Systems_to_be_monitored__c</fullName>
+    <externalId>false</externalId>
+    <label>Systems to be monitored</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Air Handler(s)</fullName>
+                <default>false</default>
+                <label>Air Handler(s)</label>
+            </value>
+            <value>
+                <fullName>Boiler(s)</fullName>
+                <default>false</default>
+                <label>Boiler(s)</label>
+            </value>
+            <value>
+                <fullName>Bottling/canning</fullName>
+                <default>false</default>
+                <label>Bottling/canning</label>
+            </value>
+            <value>
+                <fullName>Chiller(s)</fullName>
+                <default>false</default>
+                <label>Chiller(s)</label>
+            </value>
+            <value>
+                <fullName>Compressed Air Systems</fullName>
+                <default>false</default>
+                <label>Compressed Air Systems</label>
+            </value>
+            <value>
+                <fullName>Computer/Network Equipment</fullName>
+                <default>false</default>
+                <label>Computer/Network Equipment</label>
+            </value>
+            <value>
+                <fullName>Cooking/Food Prep</fullName>
+                <default>false</default>
+                <label>Cooking/Food Prep</label>
+            </value>
+            <value>
+                <fullName>Cooling Tower(s)</fullName>
+                <default>false</default>
+                <label>Cooling Tower(s)</label>
+            </value>
+            <value>
+                <fullName>Dryer(s)</fullName>
+                <default>false</default>
+                <label>Dryer(s)</label>
+            </value>
+            <value>
+                <fullName>Fabrication Equipment</fullName>
+                <default>false</default>
+                <label>Fabrication Equipment</label>
+            </value>
+            <value>
+                <fullName>Furnace(s)</fullName>
+                <default>false</default>
+                <label>Furnace(s)</label>
+            </value>
+            <value>
+                <fullName>General AC</fullName>
+                <default>false</default>
+                <label>General AC</label>
+            </value>
+            <value>
+                <fullName>Heat Pumps</fullName>
+                <default>false</default>
+                <label>Heat Pumps</label>
+            </value>
+            <value>
+                <fullName>HVAC</fullName>
+                <default>false</default>
+                <label>HVAC</label>
+            </value>
+            <value>
+                <fullName>Lighting</fullName>
+                <default>false</default>
+                <label>Lighting</label>
+            </value>
+            <value>
+                <fullName>Machining Equipment</fullName>
+                <default>false</default>
+                <label>Machining Equipment</label>
+            </value>
+            <value>
+                <fullName>Molding Equipment</fullName>
+                <default>false</default>
+                <label>Molding Equipment</label>
+            </value>
+            <value>
+                <fullName>Motors/Pumps</fullName>
+                <default>false</default>
+                <label>Motors/Pumps</label>
+            </value>
+            <value>
+                <fullName>Package Units</fullName>
+                <default>false</default>
+                <label>Package Units</label>
+            </value>
+            <value>
+                <fullName>Plug Loads</fullName>
+                <default>false</default>
+                <label>Plug Loads</label>
+            </value>
+            <value>
+                <fullName>Process</fullName>
+                <default>false</default>
+                <label>Process</label>
+            </value>
+            <value>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+                <label>Refrigeration</label>
+            </value>
+            <value>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+                <label>Terminal</label>
+            </value>
+            <value>
+                <fullName>Utility Meters</fullName>
+                <default>false</default>
+                <label>Utility Meters</label>
+            </value>
+            <value>
+                <fullName>Woodworking Equipment</fullName>
+                <default>false</default>
+                <label>Woodworking Equipment</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Building Weather Station</fullName>
+                <default>false</default>
+                <label>Building Weather Station</label>
+            </value>
+            <value>
+                <fullName>Elevator(s)</fullName>
+                <default>false</default>
+                <label>Elevator(s)</label>
+            </value>
+            <value>
+                <fullName>Electric Meter</fullName>
+                <default>false</default>
+                <label>Electric Meter</label>
+            </value>
+            <value>
+                <fullName>Indoor Environmental Quality Monitoring</fullName>
+                <default>false</default>
+                <label>Indoor Environmental Quality Monitoring</label>
+            </value>
+            <value>
+                <fullName>Lighting Controls</fullName>
+                <default>false</default>
+                <label>Lighting Controls</label>
+            </value>
+            <value>
+                <fullName>Natural Gas Meter</fullName>
+                <default>false</default>
+                <label>Natural Gas Meter</label>
+            </value>
+            <value>
+                <fullName>Occupancy Counting</fullName>
+                <default>false</default>
+                <label>Occupancy Counting</label>
+            </value>
+            <value>
+                <fullName>Onsite Generation</fullName>
+                <default>false</default>
+                <label>Onsite Generation</label>
+            </value>
+            <value>
+                <fullName>Packaged / Split AC(s)</fullName>
+                <default>false</default>
+                <label>Packaged / Split AC(s)</label>
+            </value>
+            <value>
+                <fullName>Packaged / Split HP(s)</fullName>
+                <default>false</default>
+                <label>Packaged / Split HP(s)</label>
+            </value>
+            <value>
+                <fullName>Steam Meter</fullName>
+                <default>false</default>
+                <label>Steam Meter</label>
+            </value>
+            <value>
+                <fullName>Tenant Submetering</fullName>
+                <default>false</default>
+                <label>Tenant Submetering</label>
+            </value>
+            <value>
+                <fullName>Water Meter</fullName>
+                <default>false</default>
+                <label>Water Meter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

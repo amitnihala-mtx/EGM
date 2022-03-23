@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsConcept_Paper_Threshold__c</fullName>
+    <description>T-02462: Rollup all validations onto Solicitation level</description>
+    <externalId>false</externalId>
+    <formula>NOT(ISBLANK(Concept_Paper_Pass_Score__c))</formula>
+    <label>Concept Paper Threshold?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

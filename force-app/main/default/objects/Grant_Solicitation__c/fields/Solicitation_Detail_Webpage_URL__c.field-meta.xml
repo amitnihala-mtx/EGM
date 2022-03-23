@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solicitation_Detail_Webpage_URL__c</fullName>
+    <description>Field to prepare the URL for NYSERDA webpage. This is being used on notifications.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  NY_Green_Bank_RFP__c,
+  $Label.CORE_Branded_NY_Green_Bank_Portal_URL,
+  $Label.CORE_Branded_NYSERDA_Portal_URL 
+)
+&amp; &apos;CORE_Solicitation_Detail_Page?SolicitationId=&apos; &amp;  Id</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Solicitation Detail Webpage URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regulatory_Agencies__c</fullName>
+    <externalId>false</externalId>
+    <label>Regulatory Agencies</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HCR</fullName>
+                <default>false</default>
+                <label>HCR</label>
+            </value>
+            <value>
+                <fullName>HDC 80/20</fullName>
+                <default>false</default>
+                <label>HDC 80/20</label>
+            </value>
+            <value>
+                <fullName>HFA 80/20</fullName>
+                <default>false</default>
+                <label>HFA 80/20</label>
+            </value>
+            <value>
+                <fullName>HPD</fullName>
+                <default>false</default>
+                <label>HPD</label>
+            </value>
+            <value>
+                <fullName>HUD</fullName>
+                <default>false</default>
+                <label>HUD</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>SONYMA</fullName>
+                <default>false</default>
+                <label>SONYMA</label>
+            </value>
+            <value>
+                <fullName>USDA</fullName>
+                <default>false</default>
+                <label>USDA</label>
+            </value>
+            <value>
+                <fullName>WAP</fullName>
+                <default>false</default>
+                <label>WAP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

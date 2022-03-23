@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compliance_Path_Certifications__c</fullName>
+    <externalId>false</externalId>
+    <label>Compliance Path Certifications(picklist)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Enterprise Green Communities</fullName>
+                <default>false</default>
+                <label>Enterprise Green Communities</label>
+            </value>
+            <value>
+                <fullName>Green Globes</fullName>
+                <default>false</default>
+                <label>Green Globes</label>
+            </value>
+            <value>
+                <fullName>LEED certification</fullName>
+                <default>false</default>
+                <label>LEED certification</label>
+            </value>
+            <value>
+                <fullName>Modified Prescriptive Path</fullName>
+                <default>false</default>
+                <label>Modified Prescriptive Path</label>
+            </value>
+            <value>
+                <fullName>NY-CHPS</fullName>
+                <default>false</default>
+                <label>NY-CHPS</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Passive House</fullName>
+                <default>false</default>
+                <label>Passive House</label>
+            </value>
+            <value>
+                <fullName>Passive House Institute (PHI) Path</fullName>
+                <default>false</default>
+                <label>Passive House Institute (PHI) Path</label>
+            </value>
+            <value>
+                <fullName>Passive House Institute US (PHIUS) Path</fullName>
+                <default>false</default>
+                <label>Passive House Institute US (PHIUS) Path</label>
+            </value>
+            <value>
+                <fullName>Performance Path with ENERGY STAR</fullName>
+                <default>false</default>
+                <label>Performance Path with ENERGY STAR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scored_Points__c</fullName>
+    <externalId>false</externalId>
+    <label>Scored Points</label>
+    <summarizedField>Scorecard_Metric__c.Points__c</summarizedField>
+    <summaryFilterItems>
+        <field>Scorecard_Metric__c.Layout_Type__c</field>
+        <operation>equals</operation>
+        <value>Field</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Scorecard_Metric__c.Scorecard__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

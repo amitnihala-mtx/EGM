@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Template_Type__c</fullName>
+    <description>Each program may have multiple types of process.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Each program may have multiple types of process.</inlineHelpText>
+    <label>Template Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Application Intake</fullName>
+                <default>false</default>
+                <label>Application Intake</label>
+            </value>
+            <value>
+                <fullName>Change Modification Application</fullName>
+                <default>false</default>
+                <label>Change Modification Application</label>
+            </value>
+            <value>
+                <fullName>Contractor Application</fullName>
+                <default>false</default>
+                <label>Contractor Application</label>
+            </value>
+            <value>
+                <fullName>Payee Application</fullName>
+                <default>false</default>
+                <label>Payee Application</label>
+            </value>
+            <value>
+                <fullName>Proposal Application</fullName>
+                <default>false</default>
+                <label>Proposal Application</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

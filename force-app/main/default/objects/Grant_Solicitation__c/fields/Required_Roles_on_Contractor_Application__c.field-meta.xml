@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Roles_on_Contractor_Application__c</fullName>
+    <description>Required_Roles_on_Contractor_Application</description>
+    <externalId>false</externalId>
+    <label>Required Roles on Contractor Application</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Primary Contact</fullName>
+                <default>false</default>
+                <label>Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Account Receivable Contact</fullName>
+                <default>false</default>
+                <label>Account Receivable Contact</label>
+            </value>
+            <value>
+                <fullName>Authorized Signatory Contact</fullName>
+                <default>false</default>
+                <label>Authorized Signatory Contact</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

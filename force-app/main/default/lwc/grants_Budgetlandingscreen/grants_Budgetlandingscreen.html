@@ -1,0 +1,36 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="slds-card">
+        <p><b>EXPENSE BUDGET</b></p>
+    </div>                
+        <lightning-card>
+            
+                    <template for:each={Budget} for:item="BudgetRecord" for:index="indexVar" >
+                        <tr key={BudgetRecord.id}>
+                            <td><p><b>{BudgetRecord.Name}</b></p><br /></td>
+                        
+                    </tr>
+                    
+                    <tr key={BudgetRecord.id}>
+                                <td >
+
+                                    <lightning-layout horizontal-align="center" key={BudgetRecord.id}>
+                                        <lightning-layout-Item>
+                                            <lightning-datatable    
+                                            key-field="Id"
+                                            data={BudgetRecord.BudgetLineItems}
+                                            columns={BudgetLineItem_COLS}
+                                            onsave={handleSave}
+                                            draft-values={draftValues}>
+                                        </lightning-datatable>
+                                        </lightning-layout-Item>
+                                      
+                                    </lightning-layout>          
+                                </td>
+                            </tr>
+                            
+
+                </template>
+
+        </lightning-card>
+</template>

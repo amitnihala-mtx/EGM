@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_best_describes_you_Other__c</fullName>
+    <description>Added for SF-33555</description>
+    <externalId>false</externalId>
+    <label>What best describes you - Other</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Resident of Disadvantaged Community</fullName>
+                <default>false</default>
+                <label>Resident of Disadvantaged Community</label>
+            </value>
+            <value>
+                <fullName>Veteran</fullName>
+                <default>false</default>
+                <label>Veteran</label>
+            </value>
+            <value>
+                <fullName>Individual with disability</fullName>
+                <default>false</default>
+                <label>Individual with disability</label>
+            </value>
+            <value>
+                <fullName>Low-income individual</fullName>
+                <default>false</default>
+                <label>Low-income individual</label>
+            </value>
+            <value>
+                <fullName>Incumbent or unemployed power plant worker</fullName>
+                <default>false</default>
+                <label>Incumbent or unemployed power plant worker</label>
+            </value>
+            <value>
+                <fullName>Previously incarcerated</fullName>
+                <default>false</default>
+                <label>Previously incarcerated</label>
+            </value>
+            <value>
+                <fullName>Student in qualifying work preparedness program</fullName>
+                <default>false</default>
+                <label>Student in qualifying work preparedness program</label>
+            </value>
+            <value>
+                <fullName>Homeless individual</fullName>
+                <default>false</default>
+                <label>Homeless individual</label>
+            </value>
+            <value>
+                <fullName>Single parent</fullName>
+                <default>false</default>
+                <label>Single parent</label>
+            </value>
+            <value>
+                <fullName>Native American</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Native American</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

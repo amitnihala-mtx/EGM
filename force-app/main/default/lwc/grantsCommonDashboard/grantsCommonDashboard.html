@@ -1,0 +1,67 @@
+<template>
+    <div class="topSpace"></div>
+    <div>
+        <lightning-input variant="label-hidden" placeholder="Search Grants" onchange={handleSearchGrants}></lightning-input>
+    </div>
+    <template for:each={grantsList} for:item="grant">
+        <div class="slds-grid slds-wrap dashboardCard" data-id={grant.Id} onclick={handleViewDetails} key={grant.Id}>
+            <div class="slds-col slds-align_absolute-center slds-wrap slds-size_2-of-12">
+                <img src={grantImage}/>
+            </div>
+            <div class="slds-col slds-wrap slds-size_10-of-12">
+                <div class="row">
+                        <h3>{grant.Name}</h3>
+                        <div class="dueDate">Due Date: <strong>{grant.Due_Date__c}</strong></div>
+                </div>
+                <b>Purpose</b>
+                <p>{grant.Short_Description__c}</p>
+            </div>
+            <div class="slds-size_1-of-12 footer">
+    
+    
+                <!-- <div class="slds-col slds-wrap slds-size_2-of-12">
+    
+                </div> -->
+    
+    
+                <div class="slds-col slds-wrap slds-size_12-of-12">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_1-of-3">
+                            <div class="slds-align_absolute-center">
+                                <lightning-icon icon-name="utility:identity" alternative-text="Approved" title="Approved">
+                                </lightning-icon> Federal Grant Programs
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-3">
+                            <div class="slds-align_absolute-center">
+                                <lightning-icon icon-name="utility:email" alternative-text="Approved" title="Approved">
+                                </lightning-icon> federalgrantprograms@mass.gov
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-3">
+                            <div class="slds-align_absolute-center">
+                                <lightning-icon icon-name="utility:call" alternative-text="Approved" title="Approved">
+                                </lightning-icon>781-338-6230
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <span>
+                        <lightning-icon icon-name="utility:identity" alternative-text="Approved" title="Approved">
+                        </lightning-icon> Federal Grant Programs
+                    </span>
+                    <span>
+                        <lightning-icon icon-name="utility:email" alternative-text="Approved" title="Approved">
+                        </lightning-icon> federalgrantprograms@mass.gov
+                    </span>
+                    <span>
+                        <lightning-icon icon-name="utility:call" alternative-text="Approved" title="Approved">
+                        </lightning-icon>781-338-6230
+                    </span> -->
+                </div>
+    
+    
+            </div>
+        </div>
+    </template>
+    <div class="topSpace"></div>
+</template>

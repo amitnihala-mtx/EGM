@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Lead_Error_Message__c</fullName>
+    <description>Formula field to be used on Email Template. This will have message conditionally.</description>
+    <externalId>false</externalId>
+    <formula>IF( Total_Records_Flagged__c  &gt; 0, 
+&quot;*** Action Required ***&quot; &amp; BR() &amp; &quot;One or more leads did not get uploaded properly and requires your attention. You can look at the errors by going to the Transaction Log.&quot; &amp; BR(),
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Referral Lead Error Message</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

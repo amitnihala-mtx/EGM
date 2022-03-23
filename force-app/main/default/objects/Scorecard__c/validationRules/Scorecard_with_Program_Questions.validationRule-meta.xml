@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scorecard_with_Program_Questions</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK(Grant_Solicitation__c )) &amp;&amp; 
+ISBLANK( Proposal__c ) &amp;&amp;
+TEXT(Scoring_Type__c) != &apos;Score Questions&apos;</errorConditionFormula>
+    <errorDisplayField>Scoring_Type__c</errorDisplayField>
+    <errorMessage>Scoring Type should be score questions.</errorMessage>
+</ValidationRule>

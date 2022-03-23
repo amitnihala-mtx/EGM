@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>CORE Constants Setting: Contains outside-the-code values for Constant variables to be used in Apex classes or other config. Used in generic mode across all implementations of this Organization but can be utilized per Profile/User if needed.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>CORE Constants Setting</label>
+    <visibility>Public</visibility>
+</CustomObject>

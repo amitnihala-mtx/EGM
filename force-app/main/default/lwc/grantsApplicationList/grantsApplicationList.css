@@ -1,0 +1,45 @@
+.instructionBox{
+    font-size: 18px;
+    background: #FFFBF0;
+    color: #BB8E00;
+}
+
+.grantContainer{
+    background: #F3F6F9;
+}
+
+.grantHeading{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: -0.015em;
+    text-align: left;
+
+}
+
+.grantDetail{
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    text-align: left;
+
+}
+
+.tableContainer{
+    font-size: 16px;
+}
+
+.backButton{
+    margin: 5% 0px;
+    color:#000;
+    font-size: 20px;
+    --sds-c-icon-color-foreground-default: #000;
+    width: 92%;
+    margin: 2% auto;
+}
+
+.backButton span{
+    cursor: pointer;
+}

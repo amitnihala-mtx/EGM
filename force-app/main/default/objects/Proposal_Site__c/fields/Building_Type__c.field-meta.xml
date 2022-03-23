@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Building_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Building Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agriculture and Forestry</fullName>
+                <default>false</default>
+                <label>Agriculture and Forestry</label>
+            </value>
+            <value>
+                <fullName>Assisted Living/Nursing Home</fullName>
+                <default>false</default>
+                <label>Assisted Living/Nursing Home</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Communications facilities</fullName>
+                <default>false</default>
+                <label>Communications facilities</label>
+            </value>
+            <value>
+                <fullName>Education – Colleges &amp; Universities</fullName>
+                <default>false</default>
+                <label>Education – Colleges &amp; Universities</label>
+            </value>
+            <value>
+                <fullName>Education – K-12</fullName>
+                <default>false</default>
+                <label>Education – K-12</label>
+            </value>
+            <value>
+                <fullName>Facility of refuge/emergency evacuation shelter</fullName>
+                <default>false</default>
+                <label>Facility of refuge/emergency evacuation shelter</label>
+            </value>
+            <value>
+                <fullName>Federal Government</fullName>
+                <default>false</default>
+                <label>Federal Government</label>
+            </value>
+            <value>
+                <fullName>Food and medicine warehousing and retail distribution centers</fullName>
+                <default>false</default>
+                <label>Food and medicine warehousing and retail distribution centers</label>
+            </value>
+            <value>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+                <label>Healthcare</label>
+            </value>
+            <value>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+                <label>Hospital</label>
+            </value>
+            <value>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+                <label>Hospitality</label>
+            </value>
+            <value>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+                <label>Hotel</label>
+            </value>
+            <value>
+                <fullName>Industrial / Manufacturing</fullName>
+                <default>false</default>
+                <label>Industrial / Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Industry</fullName>
+                <default>false</default>
+                <label>Industry</label>
+            </value>
+            <value>
+                <fullName>Local Government</fullName>
+                <default>false</default>
+                <label>Local Government</label>
+            </value>
+            <value>
+                <fullName>Mixed Use</fullName>
+                <default>false</default>
+                <label>Mixed Use</label>
+            </value>
+            <value>
+                <fullName>Mixed-Use</fullName>
+                <default>false</default>
+                <label>Mixed-Use</label>
+            </value>
+            <value>
+                <fullName>Multifamily</fullName>
+                <default>false</default>
+                <label>Multifamily</label>
+            </value>
+            <value>
+                <fullName>Not for Profit</fullName>
+                <default>false</default>
+                <label>Not for Profit</label>
+            </value>
+            <value>
+                <fullName>Nursing Home</fullName>
+                <default>false</default>
+                <label>Nursing Home</label>
+            </value>
+            <value>
+                <fullName>Office</fullName>
+                <default>false</default>
+                <label>Office</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Public safety facilities</fullName>
+                <default>false</default>
+                <label>Public safety facilities</label>
+            </value>
+            <value>
+                <fullName>Residential</fullName>
+                <default>false</default>
+                <label>Residential</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>State Government</fullName>
+                <default>false</default>
+                <label>State Government</label>
+            </value>
+            <value>
+                <fullName>Transportation and heating fuel storage depots and retail dispensing centers</fullName>
+                <default>false</default>
+                <label>Transportation and heating fuel storage depots and retail dispensing centers</label>
+            </value>
+            <value>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <label>Utilities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

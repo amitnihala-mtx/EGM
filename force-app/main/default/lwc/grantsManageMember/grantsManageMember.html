@@ -1,0 +1,132 @@
+<template>
+    <template if:true={showSpinner}>
+        <lightning-spinner size="medium"></lightning-spinner>
+    </template>
+    <template if:true={showPageAccessError}>
+        <div class="slds-box slds-align_absolute-center">
+            YOU DO NOT HAVE ACCESS TO THIS PARTICULAR PAGE
+        </div>
+    </template>
+    <template if:false={showPageAccessError}>
+        <div class="member-details">
+            <lightning-card title="List of Member" >
+                <div slot="actions">
+                   <div class="slds-grid actions slds-wrap slds-gutters">
+                       <div class="slds-col slds-size_1-of2">
+                        <lightning-input variant="label-hidden" placeholder="Search Members" onchange={handleSearchMembersInput}></lightning-input>
+                       </div>
+                       <div class="slds-col slds-size_1-of2">
+                        <button class="slds-button slds-button_brand" onclick={handleNewMember}>Add New Member</button>
+                       </div>
+                   </div>
+                </div>
+                <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered" aria-label="Example table of Opportunities with no row hovers">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Name">Name</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Email">Email</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Role">Role</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Stage">Active</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Contact">Contact</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Action">Action</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={membersList} for:item="member" for:index="index">
+                            <tr key={member.contactId} class="slds-hint-parent">
+                                <th data-label="Name" scope="row">
+                                    <div class="slds-truncate" title={member.contactName}>
+                                        {member.contactName}
+                                    </div>
+                                </th>
+                                <td data-label="Email">
+                                    <div class="slds-truncate" title={member.contactEmail}>{member.contactEmail}</div>
+                                </td>
+                                <td data-label="Role">
+                                    <div class="slds-truncate" title={member.contactRole}>{member.contactRole}</div>
+                                </td>
+                                <td data-label="Active">
+                                    <div class="slds-truncate" title={member.isActive}>{member.isActive}</div>
+                                </td>
+                                <td data-label="Contact">
+                                    <div class="slds-truncate" title={member.contactNumber}>{member.contactNumber}</div>
+                                </td>
+                                <td data-label="Action">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-size_1-of-2 edit" onclick={handleEdit} data-index={index}>
+                                            <lightning-icon icon-name="utility:edit" onclick={handleEdit} data-index={index} alternative-text="Edit" title="Edit" class="slds-p-right_small"></lightning-icon>
+                                            Edit 
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <button class="slds-button slds-button_brand" data-index={index} data-contactid={member.contactId} if:false={member.isUserActive} onclick={handleActivate}>Activate</button>
+                                            <button class="slds-button slds-button_destructive" data-index={index} data-contactid={member.contactId} if:true={member.isUserActive} onclick={handleDeactivate}>Deactivate</button>
+                                        </div>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </lightning-card>
+        </div>
+        
+    </template>
+
+    <template if:true={showEditModal}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeEditModal}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h1 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Edit Contact Details</h1>
+                </div>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div class="slds-grid  slds-wrap">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input label="First Name" value={editContactRecord.contactFirstName} name="FirstName" onchange={handleEditChange}></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input label="Last Name" value={editContactRecord.contactLastName} name="LastName" onchange={handleEditChange}></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input type="email" label="Email" value={editContactRecord.contactEmail} name="Email" onchange={handleEditChange}></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input type="tel" label="Contact" value={editContactRecord.contactNumber} name="ContactNumber" onchange={handleEditChange}></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-combobox options={contactRoleOptions} label="Role" value={editContactRecord.contactRole} name="Role" onchange={handleEditChange} dropdown-alignment="auto"></lightning-combobox>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <div class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={closeEditModal} title="Cancel">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick={saveContactDetails} title="Save">Save</button>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+
+    </template>
+</template>

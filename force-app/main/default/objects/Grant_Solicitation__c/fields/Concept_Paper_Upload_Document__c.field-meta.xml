@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Concept_Paper_Upload_Document__c</fullName>
+    <description>T-02462/T-02793: Rollup all validations onto Solicitation level</description>
+    <externalId>false</externalId>
+    <formula>Total_Documents_for_Submission_Concept__c &gt; 0</formula>
+    <label>Concept Paper Upload Document?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

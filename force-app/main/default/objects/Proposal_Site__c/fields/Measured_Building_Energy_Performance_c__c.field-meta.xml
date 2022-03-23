@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Measured_Building_Energy_Performance_c__c</fullName>
+    <description>Changed from Measured Energy Use Intensity (EUI) to Measured Building Energy Performance for ticket #SF-30463</description>
+    <externalId>false</externalId>
+    <label>Measured Building Energy Performance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

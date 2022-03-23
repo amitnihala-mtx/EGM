@@ -1,0 +1,427 @@
+<template>
+    <div if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading..." variant="brand">
+        </lightning-spinner>
+    </div>
+    <div class="slds-card slds-p-horizontal_medium">
+        <div class="slds-p-around_medium">
+            <div class="slds-grid header-grid slds-wrap">
+                <div class="slds-col slds-large-size_8-of-12">
+                    <p>{ProposalNameAndNumber}</p>
+                </div>
+                <div class="slds-col  slds-large-size_4-of-12">
+                    <lightning-button label="Expand All" onclick={expandAll} variant="brand">
+                    </lightning-button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <lightning-card>
+        <lightning-accordion allow-multiple-sections-open class="slds-m-around_medium"
+            active-section-name={activeSections}>
+            <template for:each={Tasks} for:item="MilesRec" for:index="indexVar">
+                <lightning-accordion-section class="slds-p-bottom_x-large" key={MilesRec.Name} name={MilesRec.Name}
+                    label={MilesRec.Name__c}>
+                    <div class="slds-p-top_medium slds-text-align_right cost-date"><b>Cost Per Unit</b>: {MilesRec.Cost_Per_Unit__c}
+                        <div class="vline"></div>
+                        <b>Date Value</b>: {MilesRec.Date_Value__c}
+                    </div>
+                    <p class="heading"><b>Description</b> </p>
+                    <p class="desription">{MilesRec.Description__c}</p>
+                    <br />
+                    <div class="line "></div>
+                    <div class="slds-p-vertical_large">
+                        <div class="slds-gutters_medium">
+                            <div class="slds-grid slds-wrap">
+                                <div
+                                    class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                                    <p class="heading slds-p-bottom_medium"><b>Deliverables</b></p>
+                                </div>
+                                <div
+                                    class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                                    <table
+                                        class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_fixed-layout"
+                                        aria-label="Example default base table of Opportunities ">
+                                        <thead>
+                                            <tr class="slds-line-height_reset">
+                                                <th class="" scope="col">
+                                                    <div class="slds-truncate" title="Deliverable Name">Deliverable Name
+                                                    </div>
+                                                </th>
+                                                <th class="" scope="col">
+                                                    <div class="slds-truncate" title="Status">Status</div>
+                                                </th>
+                                                <th>
+                                                    
+                                                </th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <template for:each={MilesRec.deliverables} for:item="deliverables">
+                                                <tr key={deliverables.Id} class="slds-hint-parent">
+                                                    <td data-label="Name">
+                                                        <div class="slds-truncate">{deliverables.Name__c}</div>
+                                                    </td>
+                                                    <td data-label="Status">
+                                                        <div class="slds-truncate">{deliverables.Status__c}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="slds-truncate icons">
+                                                            <lightning-icon icon-name="utility:preview"
+                                                                data-id={deliverables.Id} size="small"
+                                                                alternative-text="Preview" class="previewIcon"
+                                                                title="deliverables" onclick={getFileData}>
+                                                            </lightning-icon>
+                                                            <lightning-button-icon icon-name="utility:edit"
+                                                                class="slds-m-left_medium" alternative-text="edit"
+                                                                title="deliverables" onclick={handleEditClick}
+                                                                data-id={deliverables.Id}
+                                                                data-template-index={indexVar}>
+                                                            </lightning-button-icon>
+                                                            <lightning-file-upload label="" name="fileUploader"
+                                                            accept={acceptedFormats} record-id={deliverables.Id}
+                                                            data-id={deliverables.Id}
+                                                            onuploadfinished={handleUploadFinished}
+                                                            onclick={handleClick}>
+                                                        </lightning-file-upload>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </template>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line "></div>
+                    <div class="slds-p-vertical_large">
+                        <div class="slds-gutters_medium">
+                            <div class="slds-grid slds-wrap ">
+                                <div
+                                    class="slds-col task slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-bottom_medium">
+                                    <p class="heading"><b>Tasks</b></p>
+                                </div>
+                                <div
+                                    class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                                    <table
+                                        class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_fixed-layout"
+                                        aria-label="Example default base table of Opportunities">
+                                        <thead>
+                                            <tr class="slds-line-height_reset">
+                                                <th class="" scope="col">
+                                                    <div class="slds-truncate" title="Tasks Name">Task Name
+                                                    </div>
+                                                </th>
+                                                <th class="" scope="col">
+                                                    <div class="slds-truncate" title="Status">Status</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Due Date">Due Date
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Completed Date">Completed Date
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Description">Description
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Edit">Edit</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <template for:each={MilesRec.task} for:item="task">
+                                                <tr key={task.Id} class="slds-hint-parent">
+                                                    <td data-label="Name">
+                                                        <div class="slds-truncate">{task.Name__c}</div>
+                                                    </td>
+                                                    <td data-label="Start_date">
+                                                        <div class="slds-truncate">{task.Status__c}</div>
+                                                    </td>
+                                                    <td data-label="Due_date">
+                                                        <div class="slds-truncate">{task.Due_Date__c}</div>
+                                                    </td>
+                                                    <td data-label="Due_date">
+                                                        <div class="slds-truncate">{task.Submitted_Date__c}</div>
+                                                    </td>
+                                                    <td data-label="Due_date">
+                                                        <div class="slds-truncate">{task.Description__c}</div>
+                                                    </td>
+                                                    <td>
+                                                        <div if:true={task.editIcon} class="slds-truncate">
+                                                            <lightning-button-icon icon-name="utility:edit"
+                                                                alternative-text="edit" title="task"
+                                                                onclick={handleEditClick} data-id={task.Id}
+                                                                data-template-index={indexVar}>
+                                                            </lightning-button-icon>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </template>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line "></div>
+                    <div class="slds-p-vertical_large">
+                        <div class="slds-gutters_medium">
+                            <div class="slds-grid slds-wrap ">
+                                <div
+                                    class="slds-col task slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-bottom_medium">
+                                    <p class="heading"><b>Invoice</b></p>
+                                    <lightning-button label="Add Invoice" variant="brand"
+                                        data-invoice-index={indexVar} data-template-index={MilesRec.Id} onclick={createInvoice}
+                                        class="slds-float_right">
+                                    </lightning-button>
+                                </div>
+                                <div
+                                    class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                                    <table
+                                        class="slds-table slds-table_cell-buffer slds-table_bordered "
+                                        aria-label="Example default base table of Opportunities">
+                                        <thead>
+                                            <tr class="slds-line-height_reset">
+                                                <th class="" scope="col">
+                                                    <div class="slds-truncate" title="Invoice Number">Invoice Number
+                                                    </div>
+                                                </th>
+                                                <th class="" scope="col">
+                                                    <div class="slds-truncate" title="Invoice Name">Invoice Name
+                                                    </div>
+                                                </th>
+                                                <th class="" scope="col">
+                                                    <div class="slds-truncate" title="Amount">Amount</div>
+                                                </th>
+                                                <th class="" scope="col">
+                                                    <div class="slds-truncate" title="Amount">Submitted Date</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Status">Status</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Upload">Documents</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <template for:each={MilesRec.invoiceData} for:item="invoice"
+                                                for:index="index">
+                                                <tr key={invoice.Id} class="slds-hint-parent">
+                                                    <template if:false={invoice.showEdit}>
+                                                        <td data-label="Name">
+                                                            <div class="slds-truncate">{invoice.AutoNumber}</div>
+                                                        </td>
+                                                        <td data-label="Name">
+                                                            <div class="slds-truncate">{invoice.Name}</div>
+                                                        </td>
+                                                        <td data-label="Name">
+                                                            <div class="slds-truncate">{invoice.Amount}</div>
+                                                        </td>
+                                                        <td data-label="Name">
+                                                            <div class="slds-truncate">{invoice.Invoice_Date}</div>
+                                                        </td>
+                                                        <td data-label="Name">
+                                                            <div class="slds-truncate">{invoice.Status}</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="slds-truncate icons">
+                                                            <lightning-icon icon-name="utility:preview"
+                                                                data-id={invoice.Id} size="small"
+                                                                alternative-text="Preview" class="previewIcon"
+                                                                title="invoice" onclick={getFileData}>
+                                                            </lightning-icon>
+                                                            <lightning-button-icon icon-name="utility:edit"
+                                                                alternative-text="edit" title="invoice"
+                                                                onclick={handleEditClick} data-id={invoice.Id}
+                                                                data-template-index={index}
+                                                                data-invoice-index={indexVar}>
+                                                            </lightning-button-icon>
+                                                            <lightning-file-upload label="" name="fileUploader"
+                                                                accept={acceptedFormats} record-id={invoice.Id}
+                                                                onuploadfinished={handleUploadFinished}>
+                                                            </lightning-file-upload>
+                                                            </div>
+                                                        </td>
+                                                    </template>
+                                                    <template if:true={invoice.showEdit}>
+                                                        <td>
+                                                            <lightning-input type="text" label="Invoice Number"
+                                                                value={invoice.AutoNumber} disabled>
+                                                            </lightning-input>
+                                                        </td>
+                                                        <td>
+                                                            <lightning-input type="text" label="Invoice Name"
+                                                                placeholder="Enter Invoice Name"
+                                                                data-template-index={index}
+                                                                data-invoice-index={indexVar} name="Name"
+                                                                value={invoice.Name} onchange={handleChange}
+                                                                data-id={invoice.Id}>
+                                                            </lightning-input>
+                                                        </td>
+                                                        <td>
+                                                            <lightning-input type="currency" label="Amount"
+                                                                placeholder="Enter Amount" data-template-index={index}
+                                                                data-invoice-index={indexVar} name="Amount"
+                                                                value={invoice.Amount} onchange={handleChange}
+                                                                data-id={invoice.Id}>
+                                                            </lightning-input>
+                                                        </td>
+                                                        <td>
+                                                            <lightning-input type="date" label="Invoice Date"
+                                                                placeholder="Enter Invoice Date"
+                                                                data-template-index={index}
+                                                                data-invoice-index={indexVar} name="Invoice_Date"
+                                                                value={invoice.Invoice_Date} onchange={handleChange}
+                                                                data-id={invoice.Id}>
+                                                            </lightning-input>
+                                                        </td>
+                                                        <td>
+                                                            <div if:true={showCombobox}>
+                                                                <lightning-combobox class="status-field" label="Status"
+                                                                    name="Status" dropdown-alignment="auto"
+                                                                    value={invoice.Status} data-template-index={index}
+                                                                    data-invoice-index={indexVar}
+                                                                    options={statusOptions.data.values}
+                                                                    onchange={handleChange} data-id={invoice.Id} disabled>
+                                                                </lightning-combobox>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="icons">
+                                                                <div class="">
+                                                                    <lightning-icon icon-name="utility:success"
+                                                                        alternative-text="Save" title="Save" size="small"
+                                                                        class=" save-icon" data-template-index={index}
+                                                                        data-invoice-index={indexVar}
+                                                                        onclick={upsertInvoiceLineItem}
+                                                                        data-id={invoice.Id}>
+                                                                    </lightning-icon>
+                                                                </div>
+    
+                                                                <div class="">
+    
+                                                                    <lightning-icon icon-name="utility:clear"
+                                                                        alternative-text="Cancel" title="Cancel"
+                                                                        size="small" class=" cancel-icon"
+                                                                        onclick={handleDelete} data-template-index={index}
+                                                                        data-invoice-index={indexVar} data-id={invoice.Id}>
+                                                                    </lightning-icon>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </template>
+                                                </tr>
+                                            </template>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </lightning-accordion-section>
+            </template>
+        </lightning-accordion>
+
+    </lightning-card>
+
+    <!-- Pop up for file upload data preview  -->
+    <template if:true={filePopup}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            class="slds-modal slds-fade-in-open slds-modal_small">
+            <div class="slds-modal__container uploaded-files">
+                <div class="slds-modal__content slds-p-around_medium">
+                    <div class="slds-text-heading_medium">Uploaded Files</div>
+                    <lightning-card>
+                        <template for:each={fileData} for:item="file">
+                            <div key={file.Id} class="slds-grid fileUploadCard ">
+                                <div class="fileName slds-col slds-size_2-of-3">
+                                    {file.fileName}
+                                    <lightning-icon icon-name="utility:preview" size="small" alternative-text="Preview"
+                                        data-id={file.ContentVerId} class="previewIcon" title="Preview"
+                                        onclick={handlePreviewFile}>
+                                    </lightning-icon>
+                                </div>
+                            </div>
+                        </template>
+                    </lightning-card>
+                    <lightning-button class="button2" label="Close" onclick={closeModal}></lightning-button>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <!-- for Proposal consent object deliveribal -->
+    <template if:true={isModal2Open}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_small">
+            <div class="slds-modal__container">
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <lightning-record-edit-form object-api-name='Proposal_Content__c' record-id={proposalId}
+                        record-type-id={recordTypeId} onsuccess={handleCreated}>
+                        <lightning-messages></lightning-messages>
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_2-of-2">
+                                <lightning-input-field field-name='Proposal__c' value={recordId}>
+                                </lightning-input-field>
+                                <lightning-input-field field-name='Name__c'></lightning-input-field>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="modal-footer">
+                            <lightning-button class="button1" type="submit" variant="brand" label="Save">
+                            </lightning-button>
+                            <lightning-button class="button2" label="Close" onclick={closeModal}></lightning-button>
+                        </div>
+                    </lightning-record-edit-form>
+
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <!-- for Proposal consent object task -->
+    <template if:true={isModalOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_small">
+            <div class="slds-modal__container">
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                    <lightning-record-edit-form object-api-name='Proposal_Content__c' record-id={proposalId}
+                        record-type-id={recordTypeId} onsuccess={handleCreated} onsubmit={handleSubmitTask}>
+                        <lightning-messages></lightning-messages>
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_2-of-2">
+                                <lightning-input-field field-name='Proposal__c' value={recordId} readonly>
+                                </lightning-input-field>
+                                <lightning-input-field field-name='Name__c' readonly></lightning-input-field>
+                                <lightning-input-field field-name='Due_Date__c'></lightning-input-field>
+                                <lightning-input-field field-name='Description__c'></lightning-input-field>
+                                <lightning-input-field field-name='Status__c' value="In Progress" class="slds-hide"></lightning-input-field>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="modal-footer">
+                            <lightning-button class="button1" onclick={handleSaveTask} variant="brand" label="Save" data-name='Save'>
+                            </lightning-button>
+                            <lightning-button class="button1" type="submit" variant="brand" label="Submit" data-name='Submit'>
+                            </lightning-button>
+                            <lightning-button class="button2" label="Close" onclick={closeModal}></lightning-button>
+                        </div>
+                    </lightning-record-edit-form>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

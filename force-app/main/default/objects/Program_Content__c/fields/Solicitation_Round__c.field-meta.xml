@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solicitation_Round__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SF-27887</description>
+    <externalId>false</externalId>
+    <label>Solicitation Round</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Grant_Solicitation_Rounds__c.Solicitation__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Grant_Solicitation__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Grant_Solicitation_Rounds__c.Solicitation__r.Score_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Sum of Rank</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Grant_Solicitation_Rounds__c</referenceTo>
+    <relationshipLabel>Program Contents</relationshipLabel>
+    <relationshipName>Program_Contents</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

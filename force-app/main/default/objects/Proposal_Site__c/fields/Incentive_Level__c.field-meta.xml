@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incentive_Level__c</fullName>
+    <externalId>false</externalId>
+    <label>Incentive Level</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Option A</fullName>
+                <default>false</default>
+                <label>Option A</label>
+            </value>
+            <value>
+                <fullName>Option B</fullName>
+                <default>false</default>
+                <label>Option B</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

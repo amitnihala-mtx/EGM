@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_not_create_contracts_on_submission__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>I-03711: Do not Create Contracts on submission - if checked- code will not create contracts on submission. 
+Default value - unchecked</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Do not Create Contracts on submission: if checked- code will not create contracts on submission. 
+Default value - unchecked</inlineHelpText>
+    <label>Do not create contracts on submission</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

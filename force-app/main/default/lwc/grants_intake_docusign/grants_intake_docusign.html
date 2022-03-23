@@ -1,0 +1,9 @@
+<template>
+    <template if:true={showSpinner}>
+        <lightning-spinner variant="brand" size="large"></lightning-spinner>
+    </template>
+    <div>
+        <lightning-button label="Electronic Signature" class=" signature-btn" variant="brand"
+            title="Start embedded signing session" onclick={handleClick}></lightning-button>
+    </div>
+</template>

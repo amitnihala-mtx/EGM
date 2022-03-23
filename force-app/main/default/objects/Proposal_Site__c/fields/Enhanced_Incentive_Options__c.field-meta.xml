@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enhanced_Incentive_Options__c</fullName>
+    <description>SF-29457</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Applicants need to upload the supporting documentation for the requested incentive enhancements as attachments on Step 7 in the Optional Documents section.</inlineHelpText>
+    <label>Enhanced Incentive Options</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>-None-</fullName>
+                <default>false</default>
+                <label>-None-</label>
+            </value>
+            <value>
+                <fullName>Design Support for Unique Low-carbon Solutions</fullName>
+                <default>false</default>
+                <label>Design Support for Unique Low-carbon Solutions</label>
+            </value>
+            <value>
+                <fullName>Innovative Technologies Support</fullName>
+                <default>false</default>
+                <label>Innovative Technologies Support</label>
+            </value>
+            <value>
+                <fullName>Mentoring Support</fullName>
+                <default>false</default>
+                <label>Mentoring Support</label>
+            </value>
+            <value>
+                <fullName>Project Cost-Related Data Sharing</fullName>
+                <default>false</default>
+                <label>Project Cost-Related Data Sharing</label>
+            </value>
+            <value>
+                <fullName>Smart Building Solutions</fullName>
+                <default>false</default>
+                <label>Smart Building Solutions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

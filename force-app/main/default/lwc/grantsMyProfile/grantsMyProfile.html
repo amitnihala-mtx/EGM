@@ -1,0 +1,307 @@
+<template>
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+    </template>
+    <div class="my-profile">
+        <lightning-tabset>
+            <lightning-tab label="Profile Details">
+                <div class="slds-wrap slds-grid  slds-wrap textCenter">
+                    <div class="slds-wrap  slds-grid slds-col slds-size_3-of-12 ">
+                        <div class="slds-col slds-size_12-of-12 slds-align_absolute-center">
+                           <div class="profile-upload">
+                            <img src={profileUrl} alt="profile picture">                               
+                            <img src={profileUpload} alt="profile Upload icon" class="profile-upload-icon slds-align_absolute-center">
+                            <lightning-file-upload name="fileUploader" accept={acceptedFormats}
+                            onuploadfinished={handleFileUpload}></lightning-file-upload>                               
+                           </div>
+    
+                        </div>
+                    </div>
+                    <div class=" slds-wrap  slds-grid slds-col slds-size_9-of-12 ">
+                        <div class="slds-col slds-size_12-of-12">
+                            <div class="form-content">
+                                <div class="custom-form-group">
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="slds-col slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <lightning-input type="text" name="FirstName" value={getData.FirstName}
+                                                        onchange={handleChange} label="First Name">
+                                                    </lightning-input>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <!-- <div class="slds-col slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <lightning-input type="text" name="MiddleName"
+                                                        value={getData.MiddleName} onchange={handleChange}
+                                                        label="Middle Name">
+                                                    </lightning-input>
+                                                </div>
+                                            </span>
+                                        </div> -->
+                                        <div class="slds-col slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <lightning-input type="text" name="LastName" value={getData.LastName}
+                                                        onchange={handleChange} label="Last Name">
+                                                    </lightning-input>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clearSpace"></div>
+                                    <div class="slds-grid slds-m-top_xx-large slds-gutters">
+                                        <div class="slds-col slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <lightning-input type="tel" name="PhoneNumber"
+                                                        value={getData.PhoneNumber} onchange={handleChange}
+                                                        label="Phone Number">
+                                                    </lightning-input>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="slds-col slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <lightning-input type="date" name="DateofBirth"
+                                                        value={getData.DateofBirth} onchange={handleChange}
+                                                        label="Date of Birth">
+                                                    </lightning-input>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="slds-col slds-m-top_xx-large slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <!-- <lightning-input type="text" name="LastName" value={getData.LastName}
+                                                        onchange={handleChange} label="Last Name">
+                                                    </lightning-input> -->
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clearSpace"></div>
+                                    <div class="slds-grid slds-m-top_xx-large slds-gutters">
+                                        <div class="slds-col slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <lightning-input type="tel" name="EmergencyPhoneNumber"
+                                                        value={getData.EmergencyPhoneNumber} onchange={handleChange}
+                                                        label="Emergency Phone Number">
+                                                    </lightning-input>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="slds-col slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <lightning-input type="text" name="Email" value={getData.Email}
+                                                        onchange={handleChange} label="E-mail Address">
+                                                    </lightning-input>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="slds-col slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <!-- <lightning-input type="text" name="LastName" value={getData.LastName}
+                                                        onchange={handleChange} label="Last Name">
+                                                    </lightning-input> -->
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clearSpace"></div>
+                                    <div class="slds-grid slds-m-top_xx-large slds-gutters">
+                                        <div class="slds-col slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <lightning-input type="text" name="StreetAddress"
+                                                        value={getData.StreetAddress} onchange={handleChange}
+                                                        label="Street Address">
+                                                    </lightning-input>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="slds-col slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <lightning-input type="text" name="City" value={getData.City}
+                                                        onchange={handleChange} label="City">
+                                                    </lightning-input>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clearSpace"></div>
+                                    <div class="slds-grid slds-m-top_xx-large slds-gutters">
+                                        
+                                        <div class="slds-col slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <lightning-input type="text" name="Province" value={getData.Province}
+                                                        onchange={handleChange} label="Province">
+                                                    </lightning-input>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="slds-col  slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="input-group">
+                                                    <lightning-input type="text" name="PostalCode"
+                                                        value={getData.PostalCode} onchange={handleChange}
+                                                        label="Postal Code">
+                                                    </lightning-input>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-m-top_large slds-gutters">
+                                        <div class="slds-col slds-large-size_8-of-12">
+                                            <div class="checkbox">
+                                                <lightning-input type="checkbox" label="GRANTS GOV ALERTS">
+                                                </lightning-input>
+                                                <p class="slds-m-left_x-large">Yes, I want to recieve email messages containing time-sensitive information about Grants.gov changes that potentially impact users.</p>
+        
+                                            </div >
+                                            <div class="checkbox slds-m-top_large">
+                                                <lightning-input type="checkbox" label="GRANTS GOV NEWSLETTER">
+                                                </lightning-input>
+                                                <p class="slds-m-left_x-large"> I want to recieve occassional emails highlighting system enhancements, training resources and other topics relevent to the federal grant. community</p>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="slds-grid slds-m-top_xx-large slds-gutters">
+                                        
+                                        <div class="slds-col slds-large-size_4-of-12">
+                                        </div>
+                                        <div class="slds-col  slds-large-size_4-of-12">
+                                            <span>
+                                                <div class="save-btn">
+                                                    <lightning-button variant="brand" label="Save" title="Profile" onclick={handleSave}
+                                                        class=""></lightning-button>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </lightning-tab>
+            <lightning-tab label="Organization Details">
+                <!-- 1st -->
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col  slds-size_3-of-12">
+                        <span>
+                            <lightning-input type="text" name="OrganizationID" value={getData.OrganizationID}
+                                onchange={handleChange} label="Organization ID" placeholder="Enter Organization ID"
+                                >
+                            </lightning-input>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12">
+                        <span>
+                            <lightning-input type="text" name="OrganizationName" value={getData.OrganizationName}
+                                onchange={handleChange} label="Organization Name" placeholder="Enter Organization Name">
+                            </lightning-input>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12">
+                        <span>
+                            <lightning-input type="text" name="OrganizationType" value={getData.OrganizationType}
+                                onchange={handleChange} label="Organization Type" placeholder="Enter Organization Type">
+                            </lightning-input>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12">
+                        <span>
+                            <lightning-input type="tel" name="OrganizationPhoneNumber"
+                            value={getData.OrganizationPhoneNumber} onchange={handleChange} label="Phone Number"
+                            placeholder="Enter Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </lightning-input>
+                        </span>
+                    </div>
+                </div>
+                <!-- 2nd -->
+                <div class="slds-grid slds-m-top_xx-large slds-gutters">
+                    <div class="slds-col slds-size_3-of-12">
+                        <span>
+                            <lightning-input type="text" name="OrganizationEmail" value={getData.OrganizationEmail}
+                                onchange={handleChange} label="Email Address" placeholder="Enter Email">
+                            </lightning-input>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12">
+                        <span>
+                            <lightning-input type="text" name="OrganizationWebsite" value={getData.OrganizationWebsite}
+                                onchange={handleChange} label="Website" placeholder="Enter Website">
+                            </lightning-input>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12">
+                        <span>
+                            <lightning-input type="text" name="OrganizationAddressLine1"
+                                value={getData.OrganizationAddressLine1} onchange={handleChange} label="Address Line 1"
+                                placeholder="Enter Address Line 1">
+                            </lightning-input>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12">
+                        <span>
+                            <lightning-input type="text" name="OrganizationAddressLine2"
+                                value={getData.OrganizationAddressLine2} onchange={handleChange} label="Address Line 2"
+                                placeholder="Enter Address Line 2">
+                            </lightning-input>
+                        </span>
+                    </div>
+                </div>
+                <!-- 3rd -->
+                <div class="slds-grid slds-m-top_xx-large slds-gutters">
+                    <div class="slds-col slds-size_3-of-12">
+                        <span>
+                            <lightning-input type="text" name="OrganizationCity" value={getData.OrganizationCity}
+                                onchange={handleChange} label="City" placeholder="Enter City">
+                            </lightning-input>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12">
+                        <span>
+                            <lightning-input type="text" name="OrganizationState" value={getData.OrganizationState}
+                                onchange={handleChange} label="State/Province" placeholder="Enter State/Province">
+                            </lightning-input>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12">
+                        <span>
+                            <lightning-input type="text" name="OrganizationPostalCode"
+                                value={getData.OrganizationPostalCode} onchange={handleChange} label="Postal Code"
+                                placeholder="Enter Postal Code">
+                            </lightning-input>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12">
+                        <span>
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="slds-m-top_xx-large save-btn">
+                    <lightning-button variant="brand" label="Save" title="Organization" onclick={handleSave}
+                        class="">
+                    </lightning-button>
+                </div>
+            </lightning-tab>
+        </lightning-tabset>
+    </div>
+    
+</template>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>High_Impact_Action_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>High Impact Action Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>100% Renewable Electricity</fullName>
+                <default>false</default>
+                <label>100% Renewable Electricity</label>
+            </value>
+            <value>
+                <fullName>Benchmarking</fullName>
+                <default>false</default>
+                <label>Benchmarking</label>
+            </value>
+            <value>
+                <fullName>Clean Energy Upgrades</fullName>
+                <default>false</default>
+                <label>Clean Energy Upgrades</label>
+            </value>
+            <value>
+                <fullName>Clean Fleets</fullName>
+                <default>false</default>
+                <label>Clean Fleets</label>
+            </value>
+            <value>
+                <fullName>Clean Heating and Cooling Demo</fullName>
+                <default>false</default>
+                <label>Clean Heating and Cooling Demo</label>
+            </value>
+            <value>
+                <fullName>Climate Smart Communities Certification</fullName>
+                <default>false</default>
+                <label>Climate Smart Communities Certification</label>
+            </value>
+            <value>
+                <fullName>Community Campaigns</fullName>
+                <default>false</default>
+                <label>Community Campaigns</label>
+            </value>
+            <value>
+                <fullName>Community Choice Aggregation</fullName>
+                <default>false</default>
+                <label>Community Choice Aggregation</label>
+            </value>
+            <value>
+                <fullName>PACE Financing</fullName>
+                <default>false</default>
+                <label>PACE Financing</label>
+            </value>
+            <value>
+                <fullName>Energy Code Enforcement Training</fullName>
+                <default>false</default>
+                <label>Energy Code Enforcement Training</label>
+            </value>
+            <value>
+                <fullName>LED Street Lights</fullName>
+                <default>false</default>
+                <label>LED Street Lights</label>
+            </value>
+            <value>
+                <fullName>NYStretch Energy Code</fullName>
+                <default>false</default>
+                <label>NYStretch Energy Code</label>
+            </value>
+            <value>
+                <fullName>Unified Solar Permit</fullName>
+                <default>false</default>
+                <label>Unified Solar Permit</label>
+            </value>
+            <value>
+                <fullName>Solarize</fullName>
+                <default>false</default>
+                <label>Solarize</label>
+            </value>
+            <value>
+                <fullName>Energize NY Finance</fullName>
+                <default>false</default>
+                <label>Energize NY Finance</label>
+            </value>
+            <value>
+                <fullName>Climate Justice Initiative</fullName>
+                <default>false</default>
+                <label>Climate Justice Initiative</label>
+            </value>
+            <value>
+                <fullName>County Hosted Training</fullName>
+                <default>false</default>
+                <label>County Hosted Training</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

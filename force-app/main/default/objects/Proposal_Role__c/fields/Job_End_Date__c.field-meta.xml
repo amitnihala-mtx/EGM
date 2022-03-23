@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_End_Date__c</fullName>
+    <description>WFD / OJT : Used for both the New Hire and Intern Applications.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The anticipated date the OJT period ends. This is 16 weeks after the start date for traditional workers and 24 weeks after the start date for members of priority populations and disadvantaged communities.</inlineHelpText>
+    <label>Job End Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

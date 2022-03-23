@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contractor Application</fullName>
+                <default>false</default>
+                <label>Contractor Application</label>
+            </value>
+            <value>
+                <fullName>Project Application</fullName>
+                <default>false</default>
+                <label>Project Application</label>
+            </value>
+            <value>
+                <fullName>NYSERDA Incentive</fullName>
+                <default>false</default>
+                <label>NYSERDA Incentive</label>
+            </value>
+            <value>
+                <fullName>Yearly Performance Payment</fullName>
+                <default>false</default>
+                <label>Yearly Performance Payment</label>
+            </value>
+            <value>
+                <fullName>Project Deliverable</fullName>
+                <default>false</default>
+                <label>Project Deliverable</label>
+            </value>
+            <value>
+                <fullName>Yearly Report Deliverable</fullName>
+                <default>false</default>
+                <label>Yearly Report Deliverable</label>
+            </value>
+            <value>
+                <fullName>Contractor Checklist</fullName>
+                <default>false</default>
+                <label>Contractor Checklist</label>
+            </value>
+            <value>
+                <fullName>Project Manager Checklist</fullName>
+                <default>false</default>
+                <label>Project Manager Checklist</label>
+            </value>
+            <value>
+                <fullName>Proposal Checklist Questions</fullName>
+                <default>false</default>
+                <label>Proposal Checklist Questions</label>
+            </value>
+            <value>
+                <fullName>Proposal Disclosure Questions</fullName>
+                <default>false</default>
+                <label>Proposal Disclosure Questions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

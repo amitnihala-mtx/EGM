@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Net_Source_Energy_Use_Intensity_EUI__c</fullName>
+    <description>Source EUI minus source RPI.</description>
+    <externalId>false</externalId>
+    <formula>Source_Energy_Use_Intensity_EUI__c  -  Source_Renewable_Production_Intensity__c</formula>
+    <inlineHelpText>Source EUI minus source RPI.</inlineHelpText>
+    <label>Net Source Energy Use Intensity</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

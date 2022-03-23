@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Home_s_primary_system_fuel_type__c</fullName>
+    <description>Select the customer&apos;s primary fuel type</description>
+    <externalId>false</externalId>
+    <label>Home&apos;s primary system fuel type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coal</fullName>
+                <default>false</default>
+                <label>Coal</label>
+            </value>
+            <value>
+                <fullName>Electric</fullName>
+                <default>false</default>
+                <label>Electric</label>
+            </value>
+            <value>
+                <fullName>Natural Gas</fullName>
+                <default>false</default>
+                <label>Natural Gas</label>
+            </value>
+            <value>
+                <fullName>Non-Utility Generated Steam (off site)</fullName>
+                <default>false</default>
+                <label>Non-Utility Generated Steam (off site)</label>
+            </value>
+            <value>
+                <fullName>Non-Utility Generated Steam (on site)</fullName>
+                <default>false</default>
+                <label>Non-Utility Generated Steam (on site)</label>
+            </value>
+            <value>
+                <fullName>Oil</fullName>
+                <default>false</default>
+                <label>Oil</label>
+            </value>
+            <value>
+                <fullName>Propane</fullName>
+                <default>false</default>
+                <label>Propane</label>
+            </value>
+            <value>
+                <fullName>Solar</fullName>
+                <default>false</default>
+                <label>Solar</label>
+            </value>
+            <value>
+                <fullName>Utility Generated Steam</fullName>
+                <default>false</default>
+                <label>Utility Generated Steam</label>
+            </value>
+            <value>
+                <fullName>Wood/Wood Pellets</fullName>
+                <default>false</default>
+                <label>Wood/Wood Pellets</label>
+            </value>
+            <value>
+                <fullName>Kerosene</fullName>
+                <default>false</default>
+                <label>Kerosene</label>
+            </value>
+            <value>
+                <fullName>Wood</fullName>
+                <default>false</default>
+                <label>Wood</label>
+            </value>
+            <value>
+                <fullName>Wood Pellets</fullName>
+                <default>false</default>
+                <label>Wood Pellets</label>
+            </value>
+            <value>
+                <fullName>I don&apos;t know</fullName>
+                <default>false</default>
+                <label>I don&apos;t know</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Measured_Consumption_Ending_Date__c</fullName>
+    <description>Enter the ending date of the data. For monthly data the day portion of the date will establish the 30-day billing cycle.
+SF-30463</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the ending date of the data. For monthly data the day portion of the date will establish the 30-day billing cycle.</inlineHelpText>
+    <label>Measured Consumption: Ending Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

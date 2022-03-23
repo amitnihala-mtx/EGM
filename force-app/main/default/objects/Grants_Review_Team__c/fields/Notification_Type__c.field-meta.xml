@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notification_Type__c</fullName>
+    <description>T-03099 - Notification Type</description>
+    <externalId>false</externalId>
+    <label>Notification Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internal Reviewer NDA Notification</fullName>
+                <default>false</default>
+                <label>Internal Reviewer NDA Notification</label>
+            </value>
+            <value>
+                <fullName>Membered External Reviewer NDA Notification</fullName>
+                <default>false</default>
+                <label>Membered External Reviewer NDA Notification</label>
+            </value>
+            <value>
+                <fullName>Non Member External Reviewer NDA Notification</fullName>
+                <default>false</default>
+                <label>Non Member External Reviewer NDA Notification</label>
+            </value>
+            <value>
+                <fullName>Non Member External Reviewer NDA 2Day Reminder Notification</fullName>
+                <default>false</default>
+                <label>Non Member External Reviewer NDA 2Day Reminder Notification</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

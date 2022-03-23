@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Page_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Page Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Certification and Submission</fullName>
+                <default>false</default>
+                <label>Certification and Submission</label>
+            </value>
+            <value>
+                <fullName>Company Information</fullName>
+                <default>false</default>
+                <label>Company Information</label>
+            </value>
+            <value>
+                <fullName>Contact Information</fullName>
+                <default>false</default>
+                <label>Contact Information</label>
+            </value>
+            <value>
+                <fullName>Contractor/Installer Selection</fullName>
+                <default>false</default>
+                <label>Contractor/Installer Selection</label>
+            </value>
+            <value>
+                <fullName>Contractor Credentials</fullName>
+                <default>false</default>
+                <label>Contractor Credentials</label>
+            </value>
+            <value>
+                <fullName>Contractor Details</fullName>
+                <default>false</default>
+                <label>Contractor Details</label>
+            </value>
+            <value>
+                <fullName>CT_CONAPP_Document_Page</fullName>
+                <default>false</default>
+                <label>CT_CONAPP_Document_Page</label>
+            </value>
+            <value>
+                <fullName>Customer Contacts</fullName>
+                <default>false</default>
+                <label>Customer Contacts</label>
+            </value>
+            <value>
+                <fullName>Documents</fullName>
+                <default>false</default>
+                <label>Documents</label>
+            </value>
+            <value>
+                <fullName>Installer Details</fullName>
+                <default>false</default>
+                <label>Installer Details</label>
+            </value>
+            <value>
+                <fullName>Program Selection</fullName>
+                <default>false</default>
+                <label>Program Selection</label>
+            </value>
+            <value>
+                <fullName>Project Application Review</fullName>
+                <default>false</default>
+                <label>Project Application Review</label>
+            </value>
+            <value>
+                <fullName>Project Completion</fullName>
+                <default>false</default>
+                <label>Project Completion</label>
+            </value>
+            <value>
+                <fullName>Project Component</fullName>
+                <default>false</default>
+                <label>Project Component</label>
+            </value>
+            <value>
+                <fullName>Project Contacts</fullName>
+                <default>false</default>
+                <label>Project Contacts</label>
+            </value>
+            <value>
+                <fullName>Project Document</fullName>
+                <default>false</default>
+                <label>Project Document</label>
+            </value>
+            <value>
+                <fullName>Project Final Deliverables</fullName>
+                <default>false</default>
+                <label>Project Final Deliverables</label>
+            </value>
+            <value>
+                <fullName>Project Financials</fullName>
+                <default>false</default>
+                <label>Project Financials</label>
+            </value>
+            <value>
+                <fullName>Project Incentive</fullName>
+                <default>false</default>
+                <label>Project Incentive</label>
+            </value>
+            <value>
+                <fullName>Project Site</fullName>
+                <default>false</default>
+                <label>Project Site</label>
+            </value>
+            <value>
+                <fullName>Project Site Info</fullName>
+                <default>false</default>
+                <label>Project Site Info</label>
+            </value>
+            <value>
+                <fullName>Qualifications</fullName>
+                <default>false</default>
+                <label>Qualifications</label>
+            </value>
+            <value>
+                <fullName>References</fullName>
+                <default>false</default>
+                <label>References</label>
+            </value>
+            <value>
+                <fullName>Reservation Request</fullName>
+                <default>false</default>
+                <label>Reservation Request</label>
+            </value>
+            <value>
+                <fullName>RTEM Vendor</fullName>
+                <default>false</default>
+                <label>RTEM Vendor</label>
+            </value>
+            <value>
+                <fullName>Scope of Work</fullName>
+                <default>false</default>
+                <label>Scope of Work</label>
+            </value>
+            <value>
+                <fullName>Site Info</fullName>
+                <default>false</default>
+                <label>Site Info</label>
+            </value>
+            <value>
+                <fullName>Submit Application</fullName>
+                <default>false</default>
+                <label>Submit Application</label>
+            </value>
+            <value>
+                <fullName>Terms and Conditions</fullName>
+                <default>false</default>
+                <label>Terms and Conditions</label>
+            </value>
+            <value>
+                <fullName>Vehicles</fullName>
+                <default>false</default>
+                <label>Vehicles</label>
+            </value>
+            <value>
+                <fullName>Vehicle Selection</fullName>
+                <default>false</default>
+                <label>Vehicle Selection</label>
+            </value>
+            <value>
+                <fullName>Project Schedule</fullName>
+                <default>false</default>
+                <label>Project Schedule</label>
+            </value>
+            <value>
+                <fullName>Proposal Information</fullName>
+                <default>false</default>
+                <label>Proposal Information</label>
+            </value>
+            <value>
+                <fullName>Proposal Review</fullName>
+                <default>false</default>
+                <label>Proposal Review</label>
+            </value>
+            <value>
+                <fullName>Budget</fullName>
+                <default>false</default>
+                <label>Budget</label>
+            </value>
+            <value>
+                <fullName>Project Type</fullName>
+                <default>false</default>
+                <label>Project Type</label>
+            </value>
+            <value>
+                <fullName>Project Work</fullName>
+                <default>false</default>
+                <label>Project Work</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

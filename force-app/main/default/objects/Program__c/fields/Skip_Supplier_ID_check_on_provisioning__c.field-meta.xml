@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Skip_Supplier_ID_check_on_provisioning__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>S-01206: Field to indicate if the Supplier Id mandatory check should be skipped at the time of provisioning on vendor application provisioning UI. Default value: false.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Should the supplier Id mandatory check be skipped at the time of provisioning on vendor/contractor provisioning UI? Default value: false.</inlineHelpText>
+    <label>Skip Supplier ID check on provisioning</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

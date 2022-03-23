@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advanced Materials</fullName>
+                <default>false</default>
+                <label>Advanced Materials</label>
+            </value>
+            <value>
+                <fullName>Basic Materials</fullName>
+                <default>false</default>
+                <label>Basic Materials</label>
+            </value>
+            <value>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+                <label>Chemicals</label>
+            </value>
+            <value>
+                <fullName>College/University</fullName>
+                <default>false</default>
+                <label>College/University</label>
+            </value>
+            <value>
+                <fullName>Commercial Office</fullName>
+                <default>false</default>
+                <label>Commercial Office</label>
+            </value>
+            <value>
+                <fullName>Commercial Retail</fullName>
+                <default>false</default>
+                <label>Commercial Retail</label>
+            </value>
+            <value>
+                <fullName>Food/Beverage</fullName>
+                <default>false</default>
+                <label>Food/Beverage</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+                <label>Healthcare</label>
+            </value>
+            <value>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+                <label>Hospitality</label>
+            </value>
+            <value>
+                <fullName>K-12 School</fullName>
+                <default>false</default>
+                <label>K-12 School</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Mining/Extraction</fullName>
+                <default>false</default>
+                <label>Mining/Extraction</label>
+            </value>
+            <value>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+                <label>Not For Profit</label>
+            </value>
+            <value>
+                <fullName>Pulp and Paper Products</fullName>
+                <default>false</default>
+                <label>Pulp and Paper Products</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Multifamily</fullName>
+                <default>false</default>
+                <label>Multifamily</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Food Sales</fullName>
+                <default>false</default>
+                <label>Food Sales</label>
+            </value>
+            <value>
+                <fullName>Food Service</fullName>
+                <default>false</default>
+                <label>Food Service</label>
+            </value>
+            <value>
+                <fullName>Health Care (Inpatient)</fullName>
+                <default>false</default>
+                <label>Health Care (Inpatient)</label>
+            </value>
+            <value>
+                <fullName>Health Care (Outpatient)</fullName>
+                <default>false</default>
+                <label>Health Care (Outpatient)</label>
+            </value>
+            <value>
+                <fullName>Lodging</fullName>
+                <default>false</default>
+                <label>Lodging</label>
+            </value>
+            <value>
+                <fullName>Mercantile</fullName>
+                <default>false</default>
+                <label>Mercantile</label>
+            </value>
+            <value>
+                <fullName>Multiuse</fullName>
+                <default>false</default>
+                <label>Multiuse</label>
+            </value>
+            <value>
+                <fullName>Office</fullName>
+                <default>false</default>
+                <label>Office</label>
+            </value>
+            <value>
+                <fullName>Public Assembly</fullName>
+                <default>false</default>
+                <label>Public Assembly</label>
+            </value>
+            <value>
+                <fullName>Public Order and Safety</fullName>
+                <default>false</default>
+                <label>Public Order and Safety</label>
+            </value>
+            <value>
+                <fullName>Religious Worship Service</fullName>
+                <default>false</default>
+                <label>Religious Worship Service</label>
+            </value>
+            <value>
+                <fullName>Warehouse and Storage</fullName>
+                <default>false</default>
+                <label>Warehouse and Storage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

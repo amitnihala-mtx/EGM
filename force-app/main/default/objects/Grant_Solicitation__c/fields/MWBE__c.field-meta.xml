@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MWBE__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this box if Minority &amp; Women-Owned Business Enterprise (MWBE)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if this solicitation has Minority &amp; Women-Owned Business Enterprise (MWBE) Goals.If it does, also find the corresponding checklist question in the Program Contents section and set it to Active.</inlineHelpText>
+    <label>MWBE Goals?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

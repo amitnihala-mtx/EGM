@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDA_Signed_Date__c</fullName>
+    <description>Timestamp of the scoring committee member signing NDA.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Timestamp of the scoring committee member signing NDA. Do not set this field when setting up a review team member.</inlineHelpText>
+    <label>NDA Signed Date</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,56 @@
+<template>
+    <div class="slds-var-p-around_small">
+        <template if:true={showSpinner}>
+            <lightning-spinner variant="brand" size="large"></lightning-spinner>
+        </template>
+        
+        
+<div class="backButton">
+    <span onclick={handleback}><lightning-icon icon-name="utility:back"  alternative-text="Approved"
+        title="Approved"></lightning-icon>  Back</span>
+
+        <button  onclick={handleApplyOnline} class="applyOnline" >Apply</button>
+           
+      
+</div>
+
+<div class="daseGrantsDetails">
+
+
+    <div class="slds-grid slds-wrap dashboardDetailsCard" >
+        <!-- <div  class="slds-size_2-of-12 dueDate">Due Date: <strong >{grant.Due_Date__c}</strong></div> -->
+        <div class="slds-col slds-wrap slds-align_absolute-center slds-size_2-of-12">
+            <img src={grantsdashboard}  />
+            <!-- <img src={grantsdashboard} /> -->
+        </div>
+        <div class="slds-col slds-wrap slds-size_10-of-12">
+            <div class="row">
+                <span class="grants-name">{grant.Name}</span>
+                <span class="dueDate">Due Date: <strong>{grant.Due_Date__c}</strong></span>
+        </div>
+            <!-- <b  >Description</b> -->
+            <lightning-formatted-rich-text value={grant.Description__c} ></lightning-formatted-rich-text>
+
+        </div>
+        </div>
+
+</div>
+
+
+          <!--     <lightning-card  style=" border-top: 4px #14558F solid; font-size: 12px; background:#F3F6F9" title={grant.Name}  icon-name="standard:account">
+      <h3 slot="title">
+                <lightning-icon icon-name="standard:product_item" size="small"></lightning-icon>
+                {grant.name}
+            </h3> 
+            <div slot="actions">
+                <lightning-button variant="brand" data-id={grant.Id} label="Apply Online" onclick={handleApplyOnline}>
+                </lightning-button>
+            </div>
+            <p class="slds-var-p-around_small"><b>Description</b>
+
+
+                <lightning-formatted-rich-text value={grant.Description__c} ></lightning-formatted-rich-text>
+            </p>
+        </lightning-card>-->
+    </div>
+</template>

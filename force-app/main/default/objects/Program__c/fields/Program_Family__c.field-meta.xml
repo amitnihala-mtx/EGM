@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Family__c</fullName>
+    <description>Please choose from the available Program Families to see which active programs are available</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please choose from the available Program Families to see which active programs are available</inlineHelpText>
+    <label>Program Family</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NY-Sun</fullName>
+                <default>false</default>
+                <label>NY-Sun</label>
+            </value>
+            <value>
+                <fullName>Innovation</fullName>
+                <default>false</default>
+                <label>Innovation</label>
+            </value>
+            <value>
+                <fullName>Performance &amp; Market Standards</fullName>
+                <default>false</default>
+                <label>Performance &amp; Market Standards</label>
+            </value>
+            <value>
+                <fullName>Communities &amp; Local Government</fullName>
+                <default>false</default>
+                <label>Communities &amp; Local Government</label>
+            </value>
+            <value>
+                <fullName>Multi Family</fullName>
+                <default>false</default>
+                <label>Multi Family</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Onsite Power</fullName>
+                <default>false</default>
+                <label>Onsite Power</label>
+            </value>
+            <value>
+                <fullName>Renewable Heating and Cooling</fullName>
+                <default>false</default>
+                <label>Renewable Heating and Cooling</label>
+            </value>
+            <value>
+                <fullName>Environmental Research</fullName>
+                <default>false</default>
+                <label>Environmental Research</label>
+            </value>
+            <value>
+                <fullName>Advanced Buildings</fullName>
+                <default>false</default>
+                <label>Advanced Buildings</label>
+            </value>
+            <value>
+                <fullName>Innovation Capacity and Business Development</fullName>
+                <default>false</default>
+                <label>Innovation Capacity and Business Development</label>
+            </value>
+            <value>
+                <fullName>Smart Grid Systems and Distributed Energy</fullName>
+                <default>false</default>
+                <label>Smart Grid Systems and Distributed Energy</label>
+            </value>
+            <value>
+                <fullName>Technology and Business Innovation</fullName>
+                <default>false</default>
+                <label>Technology and Business Innovation</label>
+            </value>
+            <value>
+                <fullName>Renewable Resource Optimization</fullName>
+                <default>false</default>
+                <label>Renewable Resource Optimization</label>
+            </value>
+            <value>
+                <fullName>NY Green Bank</fullName>
+                <default>false</default>
+                <label>NY Green Bank</label>
+            </value>
+            <value>
+                <fullName>Clean Energy Standard</fullName>
+                <default>false</default>
+                <label>Clean Energy Standard</label>
+            </value>
+            <value>
+                <fullName>Commercial Type</fullName>
+                <default>false</default>
+                <label>Commercial Type</label>
+            </value>
+            <value>
+                <fullName>NY-Sun Type</fullName>
+                <default>false</default>
+                <label>NY-Sun Type</label>
+            </value>
+            <value>
+                <fullName>Workforce Development</fullName>
+                <default>false</default>
+                <label>Workforce Development</label>
+            </value>
+            <value>
+                <fullName>New Construction</fullName>
+                <default>false</default>
+                <label>New Construction</label>
+            </value>
+            <value>
+                <fullName>Solar for All</fullName>
+                <default>false</default>
+                <label>Solar for All</label>
+            </value>
+            <value>
+                <fullName>Clean Heating and Cooling</fullName>
+                <default>false</default>
+                <label>Clean Heating and Cooling</label>
+            </value>
+            <value>
+                <fullName>Energy Storage</fullName>
+                <default>false</default>
+                <label>Energy Storage</label>
+            </value>
+            <value>
+                <fullName>Energy &amp; Environmental Analysis</fullName>
+                <default>false</default>
+                <label>Energy &amp; Environmental Analysis</label>
+            </value>
+            <value>
+                <fullName>WV-State Lics&apos;d Disposal Area</fullName>
+                <default>false</default>
+                <label>WV-State Lics&apos;d Disposal Area</label>
+            </value>
+            <value>
+                <fullName>Low/Moderate Income</fullName>
+                <default>false</default>
+                <label>Low/Moderate Income</label>
+            </value>
+            <value>
+                <fullName>Large-Scale Renewables</fullName>
+                <default>false</default>
+                <label>Large-Scale Renewables</label>
+            </value>
+            <value>
+                <fullName>Standards &amp; Quality Assurance</fullName>
+                <default>false</default>
+                <label>Standards &amp; Quality Assurance</label>
+            </value>
+            <value>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+                <label>Information Technology</label>
+            </value>
+            <value>
+                <fullName>Industrial &amp; Agriculture</fullName>
+                <default>false</default>
+                <label>Industrial &amp; Agriculture</label>
+            </value>
+            <value>
+                <fullName>Program Not Managed In Salesforce</fullName>
+                <default>false</default>
+                <label>Program Not Managed In Salesforce</label>
+            </value>
+            <value>
+                <fullName>Broker Referral</fullName>
+                <default>false</default>
+                <label>Broker Referral</label>
+            </value>
+            <value>
+                <fullName>Generic Project Management</fullName>
+                <default>false</default>
+                <label>Generic Project Management</label>
+            </value>
+            <value>
+                <fullName>Residential</fullName>
+                <default>false</default>
+                <label>Residential</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

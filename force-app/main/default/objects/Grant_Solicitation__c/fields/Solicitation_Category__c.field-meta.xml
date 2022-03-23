@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solicitation_Category__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>RFP, RFQL, RFQ, RFI, or PON
+
+This field is used to classify the solicitation on the Current Funding Opportunities website.</inlineHelpText>
+    <label>Solicitation Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RFP</fullName>
+                <default>false</default>
+                <label>RFP</label>
+            </value>
+            <value>
+                <fullName>RFQL</fullName>
+                <default>false</default>
+                <label>RFQL</label>
+            </value>
+            <value>
+                <fullName>RFQ</fullName>
+                <default>false</default>
+                <label>RFQ</label>
+            </value>
+            <value>
+                <fullName>RFI</fullName>
+                <default>false</default>
+                <label>RFI</label>
+            </value>
+            <value>
+                <fullName>PON</fullName>
+                <default>false</default>
+                <label>PON</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

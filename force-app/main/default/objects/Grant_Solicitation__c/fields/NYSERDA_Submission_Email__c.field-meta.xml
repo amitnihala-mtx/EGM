@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NYSERDA_Submission_Email__c</fullName>
+    <description>S-00781: i) Field to track the Green back specific emails for submission notifications. ii) Ability to add multiple emails that will be notified upon all proposal submission.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Email address(es) to be notified on proposal submission. In case of multiple emails enter them by separating with comma.</inlineHelpText>
+    <label>NYSERDA Submission Email</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

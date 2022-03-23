@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Documents_for_Submission_Proposal__c</fullName>
+    <description>I-02806 count Total Documents for Submission: Proposal and put validations</description>
+    <externalId>false</externalId>
+    <label>Total Documents for Submission: Proposal</label>
+    <summaryFilterItems>
+        <field>Program_Content__c.Concept_Paper__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Program_Content__c.Upload_Document__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Program_Content__c.Grant_Solicitation__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

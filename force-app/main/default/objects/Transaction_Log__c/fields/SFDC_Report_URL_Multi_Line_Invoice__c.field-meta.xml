@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFDC_Report_URL_Multi_Line_Invoice__c</fullName>
+    <description>S-00402: Invoice Multiple Line Report is Report: Invoice Load - Under 200 - Multiple Line.</description>
+    <externalId>false</externalId>
+    <formula>/*
+TEXT(MONTH( DATEVALUE(CreatedDate) )) + &apos;/&apos; + TEXT(DAY( DATEVALUE(CreatedDate))) + &apos;/&apos; + TEXT(YEAR( DATEVALUE(CreatedDate)))+
+*/
+
+$Label.Core_NYSERDA_Internal_URL + $Setup.CORE_Constants_Setting__c.Invoice_Multiple_Line_Report_Id__c + 
+&apos;?pv0=&apos; + Invoice_Calc_Date_Effective__c +
+&apos;&amp;pv1=&apos; + Grant_Solicitation__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SFDC Report URL (Multi Line Invoice)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

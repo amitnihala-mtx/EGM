@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Utility_Company__c</fullName>
+    <externalId>false</externalId>
+    <label>Electric Utility Company</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Central Hudson Gas &amp; Electric</fullName>
+                <default>false</default>
+                <label>Central Hudson Gas &amp; Electric</label>
+            </value>
+            <value>
+                <fullName>Consolidated Edison</fullName>
+                <default>false</default>
+                <label>Consolidated Edison</label>
+            </value>
+            <value>
+                <fullName>Municipal Electric</fullName>
+                <default>false</default>
+                <label>Municipal Electric</label>
+            </value>
+            <value>
+                <fullName>National Grid</fullName>
+                <default>false</default>
+                <label>National Grid</label>
+            </value>
+            <value>
+                <fullName>National Grid - NYC</fullName>
+                <default>false</default>
+                <label>National Grid - NYC</label>
+            </value>
+            <value>
+                <fullName>National Grid - Upstate</fullName>
+                <default>false</default>
+                <label>National Grid - Upstate</label>
+            </value>
+            <value>
+                <fullName>New York State Electric and Gas</fullName>
+                <default>false</default>
+                <label>New York State Electric and Gas</label>
+            </value>
+            <value>
+                <fullName>Orange and Rockland</fullName>
+                <default>false</default>
+                <label>Orange and Rockland</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PSEG</fullName>
+                <default>false</default>
+                <label>PSEG</label>
+            </value>
+            <value>
+                <fullName>Rochester Gas and Electric</fullName>
+                <default>false</default>
+                <label>Rochester Gas and Electric</label>
+            </value>
+            <value>
+                <fullName>LIPA</fullName>
+                <default>false</default>
+                <label>LIPA</label>
+            </value>
+            <value>
+                <fullName>NMPC</fullName>
+                <default>false</default>
+                <label>NMPC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

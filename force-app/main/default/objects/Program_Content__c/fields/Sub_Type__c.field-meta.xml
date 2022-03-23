@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Affordable Solar Incentive</fullName>
+                <default>false</default>
+                <label>Affordable Solar Incentive</label>
+            </value>
+            <value>
+                <fullName>Base Incentive</fullName>
+                <default>false</default>
+                <label>Base Incentive</label>
+            </value>
+            <value>
+                <fullName>Battery Storage Incentive</fullName>
+                <default>false</default>
+                <label>Battery Storage Incentive</label>
+            </value>
+            <value>
+                <fullName>Bonus</fullName>
+                <default>false</default>
+                <label>Bonus</label>
+            </value>
+            <value>
+                <fullName>Building Permit</fullName>
+                <default>false</default>
+                <label>Building Permit</label>
+            </value>
+            <value>
+                <fullName>CDG Initial Allocation Member Information</fullName>
+                <default>false</default>
+                <label>CDG Initial Allocation Member Information</label>
+            </value>
+            <value>
+                <fullName>Certificate of Completion</fullName>
+                <default>false</default>
+                <label>Certificate of Completion</label>
+            </value>
+            <value>
+                <fullName>Email Confirmation-NYSERDA data agent</fullName>
+                <default>false</default>
+                <label>Email Confirmation-NYSERDA data agent</label>
+            </value>
+            <value>
+                <fullName>Energy Audit</fullName>
+                <default>false</default>
+                <label>Energy Audit</label>
+            </value>
+            <value>
+                <fullName>Energy Efficiency Incentive</fullName>
+                <default>false</default>
+                <label>Energy Efficiency Incentive</label>
+            </value>
+            <value>
+                <fullName>Energy Storage Integration Deliverables</fullName>
+                <default>false</default>
+                <label>Energy Storage Integration Deliverables</label>
+            </value>
+            <value>
+                <fullName>Executed CDG Agreement with Host Utility</fullName>
+                <default>false</default>
+                <label>Executed CDG Agreement with Host Utility</label>
+            </value>
+            <value>
+                <fullName>Final Inspection Certificate</fullName>
+                <default>false</default>
+                <label>Final Inspection Certificate</label>
+            </value>
+            <value>
+                <fullName>Inspection Report</fullName>
+                <default>false</default>
+                <label>Inspection Report</label>
+            </value>
+            <value>
+                <fullName>NYSERDA System Installation</fullName>
+                <default>false</default>
+                <label>NYSERDA System Installation</label>
+            </value>
+            <value>
+                <fullName>Permission to operate from IOU</fullName>
+                <default>false</default>
+                <label>Permission to operate from IOU</label>
+            </value>
+            <value>
+                <fullName>Project Close-out</fullName>
+                <default>false</default>
+                <label>Project Close-out</label>
+            </value>
+            <value>
+                <fullName>Proof Energy Assessment sent to customer</fullName>
+                <default>false</default>
+                <label>Proof Energy Assessment sent to customer</label>
+            </value>
+            <value>
+                <fullName>Recycling Receipt</fullName>
+                <default>false</default>
+                <label>Recycling Receipt</label>
+            </value>
+            <value>
+                <fullName>Request Extension Document</fullName>
+                <default>false</default>
+                <label>Request Extension Document</label>
+            </value>
+            <value>
+                <fullName>SEQR Notice of Determination</fullName>
+                <default>false</default>
+                <label>SEQR Notice of Determination</label>
+            </value>
+            <value>
+                <fullName>Signed Application</fullName>
+                <default>false</default>
+                <label>Signed Application</label>
+            </value>
+            <value>
+                <fullName>Signed Invoice</fullName>
+                <default>false</default>
+                <label>Signed Invoice</label>
+            </value>
+            <value>
+                <fullName>System Installation Incentive</fullName>
+                <default>false</default>
+                <label>System Installation Incentive</label>
+            </value>
+            <value>
+                <fullName>Utility Interconnect Letter</fullName>
+                <default>false</default>
+                <label>Utility Interconnect Letter</label>
+            </value>
+            <value>
+                <fullName>Year 1</fullName>
+                <default>false</default>
+                <label>Year 1</label>
+            </value>
+            <value>
+                <fullName>Year 2</fullName>
+                <default>false</default>
+                <label>Year 2</label>
+            </value>
+            <value>
+                <fullName>Year 3</fullName>
+                <default>false</default>
+                <label>Year 3</label>
+            </value>
+            <value>
+                <fullName>Year 4</fullName>
+                <default>false</default>
+                <label>Year 4</label>
+            </value>
+            <value>
+                <fullName>Year 5</fullName>
+                <default>false</default>
+                <label>Year 5</label>
+            </value>
+            <value>
+                <fullName>CESIR Extension Request Document</fullName>
+                <default>false</default>
+                <label>CESIR Extension Request Document</label>
+            </value>
+            <value>
+                <fullName>Modeler Qualification</fullName>
+                <default>false</default>
+                <label>Modeler Qualification</label>
+            </value>
+            <value>
+                <fullName>Project Application</fullName>
+                <default>false</default>
+                <label>Project Application</label>
+            </value>
+            <value>
+                <fullName>Signed Application - Primary Energy Consultant</fullName>
+                <default>false</default>
+                <label>Signed Application - Primary Energy Consultant</label>
+            </value>
+            <value>
+                <fullName>Signed Application - Tenant</fullName>
+                <default>false</default>
+                <label>Signed Application - Tenant</label>
+            </value>
+            <value>
+                <fullName>Signed Application - Site Owner</fullName>
+                <default>false</default>
+                <label>Signed Application - Site Owner</label>
+            </value>
+            <value>
+                <fullName>Signed Application - Payee</fullName>
+                <default>false</default>
+                <label>Signed Application - Payee</label>
+            </value>
+            <value>
+                <fullName>Signed Application - Applicant</fullName>
+                <default>false</default>
+                <label>Signed Application - Applicant</label>
+            </value>
+            <value>
+                <fullName>Signed Application - Stakeholder</fullName>
+                <default>false</default>
+                <label>Signed Application - Stakeholder</label>
+            </value>
+            <value>
+                <fullName>Signed Application - Sub Contracting Energy Consultant</fullName>
+                <default>false</default>
+                <label>Signed Application - Sub Contracting Energy Consultant</label>
+            </value>
+            <value>
+                <fullName>Signed Application - Property Manager</fullName>
+                <default>false</default>
+                <label>Signed Application - Property Manager</label>
+            </value>
+            <value>
+                <fullName>LSR Step 2 Document</fullName>
+                <default>false</default>
+                <label>LSR Step 2 Document</label>
+            </value>
+            <value>
+                <fullName>LSR Redacted Application</fullName>
+                <default>false</default>
+                <label>LSR Redacted Application</label>
+            </value>
+            <value>
+                <fullName>Qualification Application</fullName>
+                <default>false</default>
+                <label>Qualification Application</label>
+            </value>
+            <value>
+                <fullName>LSR Step 3 Document</fullName>
+                <default>false</default>
+                <label>LSR Step 3 Document</label>
+            </value>
+            <value>
+                <fullName>Change Mode</fullName>
+                <default>false</default>
+                <label>Change Mode</label>
+            </value>
+            <value>
+                <fullName>Energy Storage Incentive</fullName>
+                <default>false</default>
+                <label>Energy Storage Incentive</label>
+            </value>
+            <value>
+                <fullName>Employment Document</fullName>
+                <default>false</default>
+                <label>Employment Document</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Contractor Application</controllingFieldValue>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Signed Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Request Extension Document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>CESIR Extension Request Document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Modeler Qualification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Project Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Signed Application - Primary Energy Consultant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Signed Application - Tenant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Signed Application - Site Owner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Signed Application - Payee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Signed Application - Applicant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Signed Application - Stakeholder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Signed Application - Sub Contracting Energy Consultant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Signed Application - Property Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>LSR Step 2 Document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>LSR Redacted Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Qualification Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>LSR Step 3 Document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Change Mode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Application</controllingFieldValue>
+            <valueName>Employment Document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NYSERDA Incentive</controllingFieldValue>
+            <valueName>Affordable Solar Incentive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NYSERDA Incentive</controllingFieldValue>
+            <valueName>Base Incentive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NYSERDA Incentive</controllingFieldValue>
+            <valueName>Battery Storage Incentive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NYSERDA Incentive</controllingFieldValue>
+            <valueName>Bonus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NYSERDA Incentive</controllingFieldValue>
+            <valueName>Energy Efficiency Incentive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NYSERDA Incentive</controllingFieldValue>
+            <valueName>System Installation Incentive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NYSERDA Incentive</controllingFieldValue>
+            <valueName>Energy Storage Incentive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yearly Performance Payment</controllingFieldValue>
+            <controllingFieldValue>Yearly Report Deliverable</controllingFieldValue>
+            <valueName>Year 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yearly Performance Payment</controllingFieldValue>
+            <controllingFieldValue>Yearly Report Deliverable</controllingFieldValue>
+            <valueName>Year 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yearly Performance Payment</controllingFieldValue>
+            <controllingFieldValue>Yearly Report Deliverable</controllingFieldValue>
+            <valueName>Year 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yearly Performance Payment</controllingFieldValue>
+            <valueName>Year 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yearly Performance Payment</controllingFieldValue>
+            <valueName>Year 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Building Permit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>CDG Initial Allocation Member Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Certificate of Completion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Email Confirmation-NYSERDA data agent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Energy Audit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Energy Storage Integration Deliverables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Executed CDG Agreement with Host Utility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Final Inspection Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Inspection Report</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>NYSERDA System Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Permission to operate from IOU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Proof Energy Assessment sent to customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Recycling Receipt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>SEQR Notice of Determination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Signed Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Project Deliverable</controllingFieldValue>
+            <valueName>Utility Interconnect Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contractor Checklist</controllingFieldValue>
+            <controllingFieldValue>Project Manager Checklist</controllingFieldValue>
+            <valueName>Project Close-out</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

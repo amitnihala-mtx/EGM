@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EVSE_Will_Be_Paying_Or_Free_To_Use__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Will drivers need to pay to use charging station?</inlineHelpText>
+    <label>EVSE Will Be Paying Or Free To Use?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pay</fullName>
+                <default>false</default>
+                <label>Pay</label>
+            </value>
+            <value>
+                <fullName>Free</fullName>
+                <default>false</default>
+                <label>Free</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

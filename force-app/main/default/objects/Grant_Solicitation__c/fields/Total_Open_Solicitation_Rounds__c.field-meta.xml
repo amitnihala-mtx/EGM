@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Open_Solicitation_Rounds__c</fullName>
+    <description>I-02806</description>
+    <externalId>false</externalId>
+    <label>Total Open Solicitation Rounds</label>
+    <summaryFilterItems>
+        <field>Grant_Solicitation_Rounds__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Grant_Solicitation_Rounds__c.Solicitation__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

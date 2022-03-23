@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tenant_Project_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Tenant Project Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Renovating existing space</fullName>
+                <default>false</default>
+                <label>Renovating existing space</label>
+            </value>
+            <value>
+                <fullName>Moving into a new space</fullName>
+                <default>false</default>
+                <label>Moving into a new space</label>
+            </value>
+            <value>
+                <fullName>Renewing Lease</fullName>
+                <default>false</default>
+                <label>Renewing Lease</label>
+            </value>
+            <value>
+                <fullName>Signing new lease</fullName>
+                <default>false</default>
+                <label>Signing new lease</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

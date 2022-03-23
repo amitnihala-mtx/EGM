@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Company Type(s)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Consulting &amp; Advisory</fullName>
+                <default>false</default>
+                <label>Consulting &amp; Advisory</label>
+            </value>
+            <value>
+                <fullName>Financial - Boutique Investment Banks/Advisory</fullName>
+                <default>false</default>
+                <label>Financial - Boutique Investment Banks/Advisory</label>
+            </value>
+            <value>
+                <fullName>Financial - Funds</fullName>
+                <default>false</default>
+                <label>Financial - Funds</label>
+            </value>
+            <value>
+                <fullName>Financial - Global, Corporate and/or Investment Bank</fullName>
+                <default>false</default>
+                <label>Financial - Global, Corporate and/or Investment Bank</label>
+            </value>
+            <value>
+                <fullName>Financial - Insurance Company</fullName>
+                <default>false</default>
+                <label>Financial - Insurance Company</label>
+            </value>
+            <value>
+                <fullName>Financial - Regional Bank</fullName>
+                <default>false</default>
+                <label>Financial - Regional Bank</label>
+            </value>
+            <value>
+                <fullName>Financial - Specialty Finance Company</fullName>
+                <default>false</default>
+                <label>Financial - Specialty Finance Company</label>
+            </value>
+            <value>
+                <fullName>Government Authority</fullName>
+                <default>false</default>
+                <label>Government Authority</label>
+            </value>
+            <value>
+                <fullName>Industry - Energy Project Developer</fullName>
+                <default>false</default>
+                <label>Industry - Energy Project Developer</label>
+            </value>
+            <value>
+                <fullName>Industry - Energy Service Company/Equipment Provider/Equipment Manufacturer</fullName>
+                <default>false</default>
+                <label>Industry - Energy Service Company/Equipment Provider/Equipment Manufacturer</label>
+            </value>
+            <value>
+                <fullName>Industry - Independent Power Producer</fullName>
+                <default>false</default>
+                <label>Industry - Independent Power Producer</label>
+            </value>
+            <value>
+                <fullName>Industry - Other Energy Technology Providers &amp; Vendors</fullName>
+                <default>false</default>
+                <label>Industry - Other Energy Technology Providers &amp; Vendors</label>
+            </value>
+            <value>
+                <fullName>Industry - Property Owner/Developer</fullName>
+                <default>false</default>
+                <label>Industry - Property Owner/Developer</label>
+            </value>
+            <value>
+                <fullName>Industry - Utility</fullName>
+                <default>false</default>
+                <label>Industry - Utility</label>
+            </value>
+            <value>
+                <fullName>MUSH - Hospital (Healthcare Provider)</fullName>
+                <default>false</default>
+                <label>MUSH - Hospital (Healthcare Provider)</label>
+            </value>
+            <value>
+                <fullName>MUSH - Municipality</fullName>
+                <default>false</default>
+                <label>MUSH - Municipality</label>
+            </value>
+            <value>
+                <fullName>MUSH - School</fullName>
+                <default>false</default>
+                <label>MUSH - School</label>
+            </value>
+            <value>
+                <fullName>MUSH - University</fullName>
+                <default>false</default>
+                <label>MUSH - University</label>
+            </value>
+            <value>
+                <fullName>Other - Engineering Firm</fullName>
+                <default>false</default>
+                <label>Other - Engineering Firm</label>
+            </value>
+            <value>
+                <fullName>Other - Legal Firm</fullName>
+                <default>false</default>
+                <label>Other - Legal Firm</label>
+            </value>
+            <value>
+                <fullName>Other - Media</fullName>
+                <default>false</default>
+                <label>Other - Media</label>
+            </value>
+            <value>
+                <fullName>Other - Support Services</fullName>
+                <default>false</default>
+                <label>Other - Support Services</label>
+            </value>
+            <value>
+                <fullName>Other - External Legal Firm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other - External Legal Firm</label>
+            </value>
+            <value>
+                <fullName>Other - Internal Legal Firm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other - Internal Legal Firm</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

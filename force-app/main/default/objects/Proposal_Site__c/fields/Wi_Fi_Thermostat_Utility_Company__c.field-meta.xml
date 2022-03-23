@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wi_Fi_Thermostat_Utility_Company__c</fullName>
+    <externalId>false</externalId>
+    <label>Wi-Fi Thermostat Utility Company</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A</fullName>
+                <default>true</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Bath Electric Gas and Water</fullName>
+                <default>false</default>
+                <label>Bath Electric Gas and Water</label>
+            </value>
+            <value>
+                <fullName>Central Hudson Gas and Electric</fullName>
+                <default>false</default>
+                <label>Central Hudson Gas and Electric</label>
+            </value>
+            <value>
+                <fullName>Consolidated Edison</fullName>
+                <default>false</default>
+                <label>Consolidated Edison</label>
+            </value>
+            <value>
+                <fullName>Filmore Natural Gas</fullName>
+                <default>false</default>
+                <label>Filmore Natural Gas</label>
+            </value>
+            <value>
+                <fullName>NYS Electric and Gas</fullName>
+                <default>false</default>
+                <label>NYS Electric and Gas</label>
+            </value>
+            <value>
+                <fullName>National Fuel Gas Distribution</fullName>
+                <default>false</default>
+                <label>National Fuel Gas Distribution</label>
+            </value>
+            <value>
+                <fullName>National Grid</fullName>
+                <default>false</default>
+                <label>National Grid</label>
+            </value>
+            <value>
+                <fullName>National Grid - Long Island</fullName>
+                <default>false</default>
+                <label>National Grid - Long Island</label>
+            </value>
+            <value>
+                <fullName>National grid - NYC</fullName>
+                <default>false</default>
+                <label>National grid - NYC</label>
+            </value>
+            <value>
+                <fullName>Change and Rockland Utilities</fullName>
+                <default>false</default>
+                <label>Change and Rockland Utilities</label>
+            </value>
+            <value>
+                <fullName>Reserve Gas Company</fullName>
+                <default>false</default>
+                <label>Reserve Gas Company</label>
+            </value>
+            <value>
+                <fullName>Rochester Gas and Electric</fullName>
+                <default>false</default>
+                <label>Rochester Gas and Electric</label>
+            </value>
+            <value>
+                <fullName>St. Lawrence Gas</fullName>
+                <default>false</default>
+                <label>St. Lawrence Gas</label>
+            </value>
+            <value>
+                <fullName>Valley Energy</fullName>
+                <default>false</default>
+                <label>Valley Energy</label>
+            </value>
+            <value>
+                <fullName>Woodhull Municipal Gas Company</fullName>
+                <default>false</default>
+                <label>Woodhull Municipal Gas Company</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dwelling_Type__c</fullName>
+    <description>Select the customer&apos;s home type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Which of the following best describes the home?</inlineHelpText>
+    <label>Dwelling Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Single-family detached house</fullName>
+                <default>false</default>
+                <label>Single-family detached house</label>
+            </value>
+            <value>
+                <fullName>Single-family attached house such as a duplex, townhouse or rowhouse</fullName>
+                <default>false</default>
+                <label>Single-family attached house such as a duplex, townhouse or rowhouse</label>
+            </value>
+            <value>
+                <fullName>Apartment building or condominium with 2 to 4 units</fullName>
+                <default>false</default>
+                <label>Apartment building or condominium with 2 to 4 units</label>
+            </value>
+            <value>
+                <fullName>Apartment building or condominium with 5 or more units</fullName>
+                <default>false</default>
+                <label>Apartment building or condominium with 5 or more units</label>
+            </value>
+            <value>
+                <fullName>Mobile home</fullName>
+                <default>false</default>
+                <label>Mobile home</label>
+            </value>
+            <value>
+                <fullName>Single-Family (1-4 units)</fullName>
+                <default>false</default>
+                <label>Single-Family (1-4 units)</label>
+            </value>
+            <value>
+                <fullName>Multi-Family (5+ units)</fullName>
+                <default>false</default>
+                <label>Multi-Family (5+ units)</label>
+            </value>
+            <value>
+                <fullName>Manufactured/Mobile Home</fullName>
+                <default>false</default>
+                <label>Manufactured/Mobile Home</label>
+            </value>
+            <value>
+                <fullName>Group Home/Shelter</fullName>
+                <default>false</default>
+                <label>Group Home/Shelter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

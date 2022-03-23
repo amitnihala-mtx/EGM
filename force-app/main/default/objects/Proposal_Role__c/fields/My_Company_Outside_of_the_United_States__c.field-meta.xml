@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Company_Outside_of_the_United_States__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To identify the company is registered outside USA. Helps to get the international address.</description>
+    <externalId>false</externalId>
+    <label>My Company Outside of the United States</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

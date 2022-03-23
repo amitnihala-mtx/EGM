@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outage_End_Date__c</fullName>
+    <description>The end date of the required outage of the electric generating facility. (used by LSR)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The end date of the required outage of the electric generating facility. (used by LSR)</inlineHelpText>
+    <label>Outage End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

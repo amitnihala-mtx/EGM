@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Description__c</fullName>
+    <description>General Description of the Facility on the Site(used by RES). Changed label from Facility Description to General Description of Bid Facility.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>General Description of the Facility on the Site</inlineHelpText>
+    <label>General Description of Bid Facility</label>
+    <length>6000</length>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

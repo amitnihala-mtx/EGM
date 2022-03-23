@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reimbursement_Percent__c</fullName>
+    <description>The percent of this roles salary that NYSERDA will reimburse for. Used by WFD.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Refer to PON 3982 Reimbursement Details for guidance on applicable reimbursement percentage. https://www.nyserda.ny.gov/All-Programs/Programs/Clean-Energy-Workforce-Development/On-the-job-training</inlineHelpText>
+    <label>Reimbursement Percent</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,86 @@
+.dashboardCard {
+    cursor: pointer;
+    margin: 0 8rem 4rem;
+    padding: 20px;
+    font-size: 18px;
+    background: #F3F6F9;
+    border: 1px solid rgba(20, 85, 143, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgb(29 41 83 / 20%);
+}
+
+.dashboardCard:hover {
+    box-shadow: 18px 17px 19px rgba(185, 185, 185, 0.25);
+}
+
+.dashboardCard .footer {
+    padding: 15px 10px;
+    background: #CFDCE8;
+    color: #14558F;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    width: -webkit-fill-available;
+    margin: 30px -20px -20px;
+    --sds-c-icon-color-foreground-default: #000;
+}
+
+.dashboardCard .footer lightning-icon {
+    margin-right: 2%;
+}
+
+.dashboardCard .footer span {
+    margin-right: 16px
+}
+
+
+.dueDate {
+    background: #388557;
+    border-radius: 50px;
+    text-align: center;
+    padding: 1rem 4rem;
+    color: #ffffff;
+    width: fit-content;
+
+    margin-bottom: 2rem;
+}
+
+.dashboardCard img {
+    width: 144px;
+    height: 144px;
+    border-radius: 100px;
+    margin: 0px auto;
+
+}
+
+.dashboardCard p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555;
+}
+
+.dashboardCard h3 {
+    /* font-weight: bold; */
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+}
+
+.dashboardCard h3:hover {
+    text-decoration: underline;
+    color: #14558F;
+    transition: all 0.5s;
+}
+
+.dashboardCard b {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    color: #14558F
+}
+
+.topSpace {
+    margin-top: 3%;
+}

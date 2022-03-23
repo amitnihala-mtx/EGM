@@ -1,0 +1,134 @@
+<template>
+
+    <template if:false={isLoaded}>
+        <lightning-spinner variant="brand" size="large"></lightning-spinner>
+    </template>
+
+    <div class="applicationContainer slds-p-around_large" if:true={isLoaded}>
+
+        <div class="slds-grid slds-wrap slds-p-around_medium">
+            <div class="slds-col slds-size_3-of-12">
+                <div class="slds-float_left backButton">
+                    <span onclick={handleback}><lightning-icon icon-name="utility:back"  alternative-text="Approved"
+                        title="Approved"></lightning-icon>  Back</span>
+                </div>
+            </div>
+            <div class="slds-col slds-size_9-of-12">
+                <div class="slds-float_right">
+                    <lightning-button variant="neutral" label="Create New Submission" onclick={handleNewSubmission}>
+                    </lightning-button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="slds-box instructionBox">
+            <h3><u>Instructions</u></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+        </div> -->
+
+        <div class="slds-box grantContainer slds-m-vertical_large">
+            <div class="grantDetailContainer slds-p-around_large">
+                <div class="grantHeading slds-p-vertical_medium">
+                    <p>{grantName}</p>
+                </div>
+                <div class="grantDetail">
+                    <p class="slds-p-vertical_medium">Our records indicate that you have one or more existing records
+                        that for this Grant Opportunity. Before you proceed, please indicate whether you would like to
+                        make changes to an existing record or create a new submission.
+                    </p>
+                    <p class="slds-p-vertical_medium"><span style="color:blue">Proposals</span> - Would you like to make
+                        changes to an existing record?</p>
+                </div>
+            </div>
+            <div class="tableContainer">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped"
+                    aria-label="Example table of Opportunities with striped rows">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <!-- <th class="" scope="col">
+                                <div class="slds-truncate" title="Primary Contact">Primary Contact</div>
+                            </th> -->
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Proposal Title">Proposal Title</div>
+                            </th>
+                            <!-- <th class="" scope="col">
+                                <div class="slds-truncate" title="Round">Round</div>
+                            </th> -->
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Proposal Cost">Proposal Cost</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Status">Status</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Action">Action</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Action">Action Items</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={applications} for:item="application">
+                            <tr class="slds-hint-parent" key={application.Id}>
+
+                                <!-- <td data-label="Primary Contact">
+                                    <div class="slds-truncate">{application.primaryContact}</div>
+                                </td> -->
+                                <td data-label="Proposal Title">
+                                    <div class="slds-truncate">{application.Name}</div>
+                                </td>
+                                <!-- <td data-label="Round">
+                                    <div class="slds-truncate">1</div>
+                                </td> -->
+                                <td data-label="Proposal">
+                                    <div class="slds-truncate">$ {application.Proposed_Total_Cost__c}</div>
+                                </td>
+                                <td data-label="Status">
+                                    <div class={application.statusStyle} title={application.Status__c}>
+                                        {application.Status__c}</div>
+                                </td>
+                                <th data-label="Action" scope="row">
+                                    <div class="slds-truncate">
+                                        <a href={application.editLink} tabindex="-1"
+                                            if:true={application.showEditLink}>Edit</a>
+                                    </div>
+                                </th>
+                                <th data-label="Task And Deliverabled" scope="row">
+                                    <div class="slds-truncate">
+                                        <!-- <div if:true={application.showSubmittedFinalReportButton}>
+                                            <lightning-button variant="brand" label="Final Report Submitted"
+                                                data-appid={application.Id} disabled=true
+                                                onclick={goToFinalReportSubmission} data-caseid={application.Id}
+                                                class="slds-m-left_x-small"></lightning-button>
+                                        </div> -->
+                                        <div if:false={application.showSubmittedFinalReportButton}>
+                                            <div if:true={application.showSubmitButton}>
+                                                <lightning-button variant="brand" label="Submit Final Report"
+                                                    data-appid={application.Id} disabled={application.isTandDDisabled}
+                                                    onclick={goToFinalReportSubmission} data-caseid={application.Id}
+                                                    class="slds-m-left_x-small applicationButton"></lightning-button>
+                                            </div>
+                                            <div if:false={application.showSubmitButton}>
+                                                <lightning-button variant="brand" label="Task and Deliverables"
+                                                    data-appid={application.Id} disabled={application.isTandDDisabled}
+                                                    onclick={openTandD} data-caseid={application.Id}
+                                                    class="slds-m-left_x-small applicationButton"></lightning-button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </th>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- <c-psr-task-deliverable-window if:true={taskAndDeliverable} record-id={tdRecordId} onclose={closeModal}
+        heading-label="Task and Deliverables"></c-psr-task-deliverable-window> -->
+</template>

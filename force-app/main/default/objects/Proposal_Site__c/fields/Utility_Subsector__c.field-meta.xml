@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Utility_Subsector__c</fullName>
+    <externalId>false</externalId>
+    <label>Residential Sub Sector</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Utility_Sector__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Single Family</fullName>
+                <default>false</default>
+                <label>Single Family</label>
+            </value>
+            <value>
+                <fullName>2-4 Family</fullName>
+                <default>false</default>
+                <label>2-4 Family</label>
+            </value>
+            <value>
+                <fullName>Multi Family</fullName>
+                <default>false</default>
+                <label>Multi Family</label>
+            </value>
+            <value>
+                <fullName>Educational</fullName>
+                <default>false</default>
+                <label>Educational</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Not-for-profit</fullName>
+                <default>false</default>
+                <label>Not-for-profit</label>
+            </value>
+            <value>
+                <fullName>Agricultural</fullName>
+                <default>false</default>
+                <label>Agricultural</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Residential</controllingFieldValue>
+            <valueName>Single Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Residential</controllingFieldValue>
+            <valueName>2-4 Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Residential</controllingFieldValue>
+            <valueName>Multi Family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Residential</controllingFieldValue>
+            <controllingFieldValue>Non-Residential</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Residential</controllingFieldValue>
+            <valueName>Educational</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Residential</controllingFieldValue>
+            <valueName>Government</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Residential</controllingFieldValue>
+            <valueName>Not-for-profit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Residential</controllingFieldValue>
+            <valueName>Agricultural</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Residential</controllingFieldValue>
+            <valueName>Industrial</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

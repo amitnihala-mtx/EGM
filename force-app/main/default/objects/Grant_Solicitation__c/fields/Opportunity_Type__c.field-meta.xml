@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Type__c</fullName>
+    <description>00011455: permanent solution to having Service Provider RFP&apos;s go to the correct NYGB page. Solicitation API</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Green Bank specific field in Salesforce that allows them to specify which of the two pages the solicitation should be published to.</inlineHelpText>
+    <label>Opportunity Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Investment Opportunities</fullName>
+                <default>false</default>
+                <label>Investment Opportunities</label>
+            </value>
+            <value>
+                <fullName>Service Provider Opportunities</fullName>
+                <default>false</default>
+                <label>Service Provider Opportunities</label>
+            </value>
+            <value>
+                <fullName>Other Opportunities</fullName>
+                <default>false</default>
+                <label>Other Opportunities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

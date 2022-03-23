@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contracts</fullName>
+                <default>false</default>
+                <label>Contracts</label>
+            </value>
+            <value>
+                <fullName>Invoices</fullName>
+                <default>false</default>
+                <label>Invoices</label>
+            </value>
+            <value>
+                <fullName>Purchase Orders</fullName>
+                <default>false</default>
+                <label>Purchase Orders</label>
+            </value>
+            <value>
+                <fullName>Payments</fullName>
+                <default>false</default>
+                <label>Payments</label>
+            </value>
+            <value>
+                <fullName>SQA Extract</fullName>
+                <default>false</default>
+                <label>SQA Extract</label>
+            </value>
+            <value>
+                <fullName>Upload</fullName>
+                <default>false</default>
+                <label>Upload</label>
+            </value>
+            <value>
+                <fullName>External Invoices</fullName>
+                <default>false</default>
+                <label>External Invoices</label>
+            </value>
+            <value>
+                <fullName>Email Preferences Sync</fullName>
+                <default>false</default>
+                <label>Email Preferences Sync</label>
+            </value>
+            <value>
+                <fullName>EJRegion</fullName>
+                <default>false</default>
+                <label>EJRegion</label>
+            </value>
+            <value>
+                <fullName>Metrics</fullName>
+                <default>false</default>
+                <label>Metrics</label>
+            </value>
+            <value>
+                <fullName>Uplight Post</fullName>
+                <default>false</default>
+                <label>Uplight Post</label>
+            </value>
+            <value>
+                <fullName>Uplight Get</fullName>
+                <default>false</default>
+                <label>Uplight Get</label>
+            </value>
+            <value>
+                <fullName>Apex Sharing Request</fullName>
+                <default>false</default>
+                <label>Apex Sharing Request</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

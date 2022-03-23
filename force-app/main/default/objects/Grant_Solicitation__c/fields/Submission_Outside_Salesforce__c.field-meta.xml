@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submission_Outside_Salesforce__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If this field is checked, you must populate the &apos;External Link&apos; field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is checked, you must populate the &apos;External Link&apos; field</inlineHelpText>
+    <label>Submission Outside Salesforce</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

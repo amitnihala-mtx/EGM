@@ -1,0 +1,88 @@
+.daseGrantsDetails{
+    background: #F3F6F9!important;
+    cursor: pointer;
+    border-top: 4px #14558F solid;
+    margin:10px auto;
+    padding:20px;
+    width: 92%;
+    font-size: 18px;
+    
+}
+
+.dashboardDetailsCard .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slds-align_absolute-center {
+    margin: unset;
+}
+.grants-name {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+.dueDate {
+    background: #388557;
+    border-radius: 50px;
+    text-align: center;
+    padding: 1rem 4rem;
+    color: #ffffff;
+    width: fit-content;
+
+    margin-bottom: 2rem;
+}
+.backButton{
+    margin: 5% 0px;
+    color:#000;
+    font-size: 20px;
+    --sds-c-icon-color-foreground-default: #000;
+    width: 92%;
+    margin: 2% auto;
+}
+
+.backButton span{
+    cursor: pointer;
+}
+.applyOnline{
+    float:right;
+
+}
+
+.applyOnline{
+    background: #fff;
+    border: 1px solid #14558F;
+    color: #14558F;
+    padding: 4px 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin:  0px;
+
+}
+
+
+.dashboardDetailsCard img{
+    width:144px;
+    height:144px;
+    border-radius: 100px;
+    margin: 0px auto;
+    
+}
+/* .dueDate{
+    text-align: right;
+    padding:10px 0px;
+    width:100%;
+    color:#14558F
+} */
+
+.slds-rich-text-editor__output li{
+    margin:10px 0px!important;
+}
+.slds-rich-text-editor__output ul {
+    margin-left: 8rem;
+}
+.slds-rich-text-editor__output dt{
+color:#14558F!important;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NYS_MWBE__c</fullName>
+    <description>Provide your NYS MWBE number. For more information, please refer to the NY State Division of Minority and Women’s Business Development website.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Provide your NYS MWBE number. Visit: ogs.ny.gov/mwbe for more information about MWBEs.</inlineHelpText>
+    <label>NYS MWBE</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

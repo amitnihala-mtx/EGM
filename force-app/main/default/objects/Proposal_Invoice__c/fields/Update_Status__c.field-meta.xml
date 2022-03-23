@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/&quot;&amp; Id &amp; &quot;/e?nooverride=1&quot;,
+&quot;Link&quot;)
+
+
+/*Use Standard version for situations of Difference in Amount only*/
+/*TBD: IF(NOT(PO_and_Incentive_Amount_Validated__c),&quot;/e?nooverride=1&quot;,&quot;&quot;)*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Update Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

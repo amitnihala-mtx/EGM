@@ -1,0 +1,96 @@
+<template>
+    <div class="slds-p-around_medium">
+        <h2 class="slds-text-heading_medium slds-hyphenate slds-m-bottom--large">Schedule Disbursements</h2>
+        <div class="slds-section slds-is-open">
+            <h3 class="slds-section__title slds-theme_shade">
+                <span class="slds-truncate slds-p-horizontal_small">Funding Request Information</span>
+            </h3>
+
+            <div class="slds-section__content">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_6-of-12">
+                        <p class="slds-p-around_xx-small">
+                            Applying Contact: {contactName}
+                        </p>
+                    </div>
+
+                    <div class="slds-col slds-size_6-of-12">
+                        <p class="slds-p-around_xx-small">
+                            Paid Disbursements: {paidDisbursements}
+                        </p>
+                    </div>
+
+                    <div class="slds-col slds-size_6-of-12">
+                        <p class="slds-p-around_xx-small">
+                            Awarded Amount: {awardedAmt}
+                        </p>
+                    </div>
+
+                    <div class="slds-col slds-size_6-of-12">
+                        <p class="slds-p-around_xx-small">
+                            Available for Disbursement: {availForDisbursement}
+                        </p>
+                    </div>
+                </div>
+                <div if:true={fundsNotAvailable}>
+                    <div class="slds-m-vertical_medium slds-box">
+                        <p class="slds-align_absolute-center">No funds available for Disbursement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slds-section slds-is-open">
+            <h3 class="slds-section__title slds-theme_shade">
+                <span class="slds-truncate slds-p-horizontal_small">Calculate Disbursements</span>
+            </h3>
+
+            <div class="slds-section__content">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_5-of-12">
+                        <lightning-input type="number" label="Number of Disbursements" value={disbursementValue} onchange={handleInput} name="DisbursementsCnt" class="slds-p-around_xx-small">
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-12">
+                    </div>
+                    <div class="slds-col slds-size_5-of-12">
+                        <lightning-input type="date" label="First Date" onchange={handleInput} value={firstDate} name="FirstDate" class="slds-p-around_xx-small">
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-12">
+                    </div>
+
+                    <div class="slds-col slds-size_2-of-12">
+                        <lightning-input type="number" label="Interval" value={intervalValue} onchange={handleInput} name="Interval" class="slds-p-around_xx-small">
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12">
+                        <lightning-combobox label="Period" value={periodValue} options={options} onchange={handleInput} name="Period" class="slds-p-around_xx-small"></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-12">
+                    </div>
+                    <div class="slds-col slds-size_5-of-12">
+                        <lightning-input type="number" label="Amount" formatter="currency" step=".01" onchange={handleInput} name="TotalDisbursementAmount" class="slds-p-around_xx-small" value={amount}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slds-p-around_medium slds-align_absolute-center">
+            <lightning-button label="Calculate" onclick={calculateDisbursements} disabled={fundsNotAvailable}></lightning-button>
+        </div>
+
+        <div if:true={disbursementsRecordsAvailable}>
+            <div class="slds-p-around_medium">
+                <lightning-datatable key-field="idx" data={disbursementsArr} show-row-number-column columns={columns} 
+                hide-checkbox-column suppress-bottom-bar></lightning-datatable>
+                <div class="slds-p-around_medium slds-align_absolute-center">
+                    <lightning-button label="Cancel" onclick={closeModal}></lightning-button>
+                    <lightning-button label="Create" variant="brand" class="slds-p-left_medium" onclick={createDisbursements}></lightning-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

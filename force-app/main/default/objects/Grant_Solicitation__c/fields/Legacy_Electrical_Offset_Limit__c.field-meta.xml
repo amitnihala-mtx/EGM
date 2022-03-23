@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_Electrical_Offset_Limit__c</fullName>
+    <description>Legacy Electrical Offset Limit: NY Sun Application should check this field for all migrated projects to identify the limit for electrical offset. This is applicable in Change Modification only.</description>
+    <externalId>false</externalId>
+    <label>Legacy Electrical Offset Limit</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

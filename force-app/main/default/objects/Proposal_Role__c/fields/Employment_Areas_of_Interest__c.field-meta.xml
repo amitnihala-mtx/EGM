@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employment_Areas_of_Interest__c</fullName>
+    <description>Used by WFD Intern Application</description>
+    <externalId>false</externalId>
+    <label>Employment Areas of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alternative Transportation</fullName>
+                <default>false</default>
+                <label>Alternative Transportation</label>
+            </value>
+            <value>
+                <fullName>Energy Efficiency</fullName>
+                <default>false</default>
+                <label>Energy Efficiency</label>
+            </value>
+            <value>
+                <fullName>Grid Modernization and Energy Storage</fullName>
+                <default>false</default>
+                <label>Grid Modernization and Energy Storage</label>
+            </value>
+            <value>
+                <fullName>Renewable Electric Power Generation</fullName>
+                <default>false</default>
+                <label>Renewable Electric Power Generation</label>
+            </value>
+            <value>
+                <fullName>Renewable Fuels</fullName>
+                <default>false</default>
+                <label>Renewable Fuels</label>
+            </value>
+            <value>
+                <fullName>Alternative Transportation Energy Efficiency</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alternative Transportation Energy Efficiency</label>
+            </value>
+            <value>
+                <fullName>Alternative Transportation Grid Modernization and Energy Storage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alternative Transportation Grid Modernization and Energy Storage</label>
+            </value>
+            <value>
+                <fullName>Energy Efficiency Renewable Fuels</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Energy Efficiency Renewable Fuels</label>
+            </value>
+            <value>
+                <fullName>Grid Modernization and Energy Storage Renewable Electric Power Generation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Grid Modernization and Energy Storage Renewable Electric Power Generation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

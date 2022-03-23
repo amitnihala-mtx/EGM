@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date__c</fullName>
+    <description>The end of the proposal submission period.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The end of the proposal submission period. This field is used to move solicitations onto the closed funding opportunity page after this date (not at 3PM since there is no time on this field).</inlineHelpText>
+    <label>End Date</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

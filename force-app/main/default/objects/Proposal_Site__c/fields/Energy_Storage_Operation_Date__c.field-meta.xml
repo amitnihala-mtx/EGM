@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Energy_Storage_Operation_Date__c</fullName>
+    <description>Energy Storage Actual or Expected Operation Date</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Energy Storage Actual or Expected Operation Date</inlineHelpText>
+    <label>Energy Storage Operation Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Uplight_Log_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Uplight Call Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Success Post Approved Project</fullName>
+                <default>false</default>
+                <label>Success Post Approved Project</label>
+            </value>
+            <value>
+                <fullName>Failed Post Approved Project</fullName>
+                <default>false</default>
+                <label>Failed Post Approved Project</label>
+            </value>
+            <value>
+                <fullName>Modify and Resend Email Failures</fullName>
+                <default>false</default>
+                <label>Modify and Resend Email Failures</label>
+            </value>
+            <value>
+                <fullName>Resend Approved Project</fullName>
+                <default>false</default>
+                <label>Resend Approved Project</label>
+            </value>
+            <value>
+                <fullName>Success Pull/Get</fullName>
+                <default>false</default>
+                <label>Success Pull/Get</label>
+            </value>
+            <value>
+                <fullName>Failed Pull/Get</fullName>
+                <default>false</default>
+                <label>Failed Pull/Get</label>
+            </value>
+            <value>
+                <fullName>Apex Exception</fullName>
+                <default>false</default>
+                <label>Apex Exception</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

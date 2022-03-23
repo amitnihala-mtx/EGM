@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Relationships__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if Contractors/Builders may only select other Contractors/Builders they have an established relationship with during Application Intake.  Leaving it unchecked allows selection of any Contractor/Builder that does business with the program.</inlineHelpText>
+    <label>Enforce Relationships</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

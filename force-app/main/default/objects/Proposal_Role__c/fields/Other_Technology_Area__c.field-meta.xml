@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Technology_Area__c</fullName>
+    <description>If Primary_Technology_Area_of_New_Hire__c is &apos;Other&apos;, this must be filled in. (WFD - New Hire business application)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If you selected &quot;Other&quot; for the Primary Technology Area, please fill it in here.</inlineHelpText>
+    <label>Other Technology Area</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

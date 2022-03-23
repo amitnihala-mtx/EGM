@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Automatically_generate_Incentive_Funding__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this on Incentive Voucher Programs so that the Project Incentive Funding Source will be added automatically.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this on Incentive Voucher Programs so that the Project Incentive Funding Source will be added automatically and the invoice will have the correct funding fields.</inlineHelpText>
+    <label>Automatically generate Incentive Funding</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

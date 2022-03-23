@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Measured_Site_RPI__c</fullName>
+    <description>Measured Site Renewable Production Intensity (RPI). The actual annual on-site renewable energy produced (kBtu) per gross square foot (sf) of the building floor area. SF-30463</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Measured Site Renewable Production Intensity (RPI). The actual annual on-site renewable energy produced (kBtu) per gross square foot (sf) of the building floor area.</inlineHelpText>
+    <label>Measured Site RPI</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

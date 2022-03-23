@@ -1,0 +1,14 @@
+<template>
+    <div if:false={filesNotFound}>
+        <div class="slds-box file-review">
+            <lightning-datatable key-field="value" data={filesList} columns={columns} hide-checkbox-column onrowaction={previewHandler}>
+            </lightning-datatable>
+        </div>
+    </div>
+
+    <div if:true={filesNotFound}>
+        <div class="slds-box ">
+            <p class="slds-align_absolute-center">Files not found.</p>
+        </div>
+    </div>
+</template>

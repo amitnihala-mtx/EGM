@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Start_Date__c</fullName>
+    <description>When will the hire start working? Created for the WFD/OJT New Hire &amp; Intern applications.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date the hire starts and the OJT period begins</inlineHelpText>
+    <label>Job Start Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

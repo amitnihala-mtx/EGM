@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Class__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Class</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SC1 Residential</fullName>
+                <default>false</default>
+                <label>SC1 Residential</label>
+            </value>
+            <value>
+                <fullName>SC2 Small General</fullName>
+                <default>false</default>
+                <label>SC2 Small General</label>
+            </value>
+            <value>
+                <fullName>SC2 Non-demand Small General</fullName>
+                <default>false</default>
+                <label>SC2 Non-demand Small General</label>
+            </value>
+            <value>
+                <fullName>SC3 Large General Demand</fullName>
+                <default>false</default>
+                <label>SC3 Large General Demand</label>
+            </value>
+            <value>
+                <fullName>Other non-demand</fullName>
+                <default>false</default>
+                <label>Other non-demand</label>
+            </value>
+            <value>
+                <fullName>Other demand</fullName>
+                <default>false</default>
+                <label>Other demand</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

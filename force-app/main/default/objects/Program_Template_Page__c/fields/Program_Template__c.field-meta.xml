@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Template__c</fullName>
+    <description>Template page associated with this program template.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Template page associated with this program template.</inlineHelpText>
+    <label>Program Template</label>
+    <referenceTo>Program_Template__c</referenceTo>
+    <relationshipLabel>Program Template Pages</relationshipLabel>
+    <relationshipName>Program_Template_Pages</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

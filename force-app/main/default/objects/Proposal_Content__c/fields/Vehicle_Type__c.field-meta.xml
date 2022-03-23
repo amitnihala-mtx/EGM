@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Vehicle Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HEV</fullName>
+                <default>false</default>
+                <label>HEV</label>
+            </value>
+            <value>
+                <fullName>CNG</fullName>
+                <default>false</default>
+                <label>CNG</label>
+            </value>
+            <value>
+                <fullName>LPG</fullName>
+                <default>false</default>
+                <label>LPG</label>
+            </value>
+            <value>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+                <label>Electrical</label>
+            </value>
+            <value>
+                <fullName>Bi-Fuel</fullName>
+                <default>false</default>
+                <label>Bi-Fuel</label>
+            </value>
+            <value>
+                <fullName>Diesel Retrofit</fullName>
+                <default>false</default>
+                <label>Diesel Retrofit</label>
+            </value>
+            <value>
+                <fullName>Anti Idling</fullName>
+                <default>false</default>
+                <label>Anti Idling</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

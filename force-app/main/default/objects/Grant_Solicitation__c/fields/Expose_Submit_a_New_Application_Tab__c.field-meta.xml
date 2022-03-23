@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expose_Submit_a_New_Application_Tab__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Expose Submit a New Application tab to community.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Expose Submit a New Application tab to community users who are under an Account with a Program Partnership with this program.</inlineHelpText>
+    <label>Expose Submit a New Application Tab</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

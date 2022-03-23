@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Site_Energy_Use_Intensity_EUI__c</fullName>
+    <description>The designed annual energy use (kBtu) per gross square foot (sf) of building floor area. Energy use includes consumption from all fuels. SF-30463</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The designed annual energy use (kBtu) per gross square foot (sf) of building floor area. Energy use includes consumption from all fuels.</inlineHelpText>
+    <label>Total Site Energy Use Intensity</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

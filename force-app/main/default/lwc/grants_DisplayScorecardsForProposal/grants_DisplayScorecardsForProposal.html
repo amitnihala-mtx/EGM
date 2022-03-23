@@ -1,0 +1,71 @@
+<template>
+
+    <div if:false={scorecardsNotFound}>
+        <ul class="slds-has-dividers_bottom-space">
+            <div class="slds-p-top_small slds-grid card-heading slds-wrap">
+                <div class="slds-size_6-of-12">
+                    <p class="">Average Score</p>
+                </div>
+                <div class="slds-size_2-of-12">
+                </div>
+                <div class="slds-size_2-of-12">
+                    <b >{avgScore}</b>
+                </div>
+            </div>
+            <br/>
+            <div class="slds-box score-card">
+                <template for:each={scorecardsArr} for:item="scorecardRec">
+                    <li key={scorecardRec.Id} class="slds-item">
+                        <article class="slds-tile slds-media ">
+                            <div class="slds-media__figure">
+                                <span class="slds-avatar slds-avatar_circle slds-avatar_medium">
+                                    <img alt="" src={scorecardRec.Assign_To_User__r.FullPhotoUrl} title={scorecardRec.Assign_To_User__r.Name} />
+                                </span>
+                            </div>
+                            <div class="slds-media__body">
+                                <h3 class="slds-tile__title slds-truncate" title={scorecardRec.Assign_To_User__r.Name}>
+                                    <a data-record-id={scorecardRec.Id} onclick={openScorecardModal}>{scorecardRec.Assign_To_User__r.Name}</a>
+                                </h3>
+                                <div class="slds-tile__detail">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-size_6-of-12">
+                                            <p>{scorecardRec.Assign_To_User__r.Email}</p>
+                                        </div>
+                                        <div class="slds-size_2-of-12">
+                                            <lightning-formatted-date-time value={scorecardRec.LastModifiedDate}></lightning-formatted-date-time>
+                                        </div>
+                                        <div class="slds-size_2-of-12">
+                                            <p>{scorecardRec.Status__c}</p>
+                                        </div>
+                                        <!--div class="slds-size_1-of-12">
+                                            <p>{scorecardRec.Scored_Points__c}</p>
+                                        </div-->
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <hr/>
+                    </li>
+                </template>
+            </div>
+        </ul>
+    </div>
+
+    <div if:true={scorecardsNotFound}>
+        <div class="slds-box">
+            <p class="slds-align_absolute-center">Scorecards not found.</p>
+        </div>
+    </div>
+
+    <template if:true={openModal}>  
+        <div class="slds-modal slds-fade-in-open slds-backdrop">  
+            <div class="slds-modal__container">  
+                <lightning-button-icon icon-name="utility:close" alternative-text="Close this window" size="large"  
+                variant="bare-inverse" onclick={closeScorecardModal} class="slds-modal__close"></lightning-button-icon>  
+                <div class="slds-modal__content slds-modal__content_headless">  
+                    <c-decd-scorecardlwc record-id={scorecardRecId} onsuccess={handleSuccess}></c-decd-scorecardlwc>
+                </div>  
+            </div>  
+        </div>  
+    </template> 
+</template>

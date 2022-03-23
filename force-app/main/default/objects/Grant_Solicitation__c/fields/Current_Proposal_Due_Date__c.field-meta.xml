@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Proposal_Due_Date__c</fullName>
+    <description>Proposal Due date from current open solicitation round.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Proposal Due date from current open solicitation round. This is when the solicitation will move from Open to Closed.</inlineHelpText>
+    <label>Current Proposal Due Date</label>
+    <summarizedField>Grant_Solicitation_Rounds__c.Due_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>Grant_Solicitation_Rounds__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Grant_Solicitation_Rounds__c.Solicitation__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

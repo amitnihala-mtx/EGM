@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligible_to_work_in_United_States__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used by WFD.</description>
+    <externalId>false</externalId>
+    <label>Eligible to work in United States</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Concept_Paper_Due_Date__c</fullName>
+    <description>Concept Paper Due date from current open solicitation round.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Concept Paper Due date from current open solicitation round. If this is a concept paper solicitation and this date is reached, the solicitation status will go to Closed on this date.</inlineHelpText>
+    <label>Current Concept Paper Due Date</label>
+    <summarizedField>Grant_Solicitation_Rounds__c.Concept_Paper_Due_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>Grant_Solicitation_Rounds__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Grant_Solicitation_Rounds__c.Solicitation__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

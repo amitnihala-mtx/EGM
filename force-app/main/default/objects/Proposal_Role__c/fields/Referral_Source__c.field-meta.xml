@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Referral Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Utility</fullName>
+                <default>false</default>
+                <label>Utility</label>
+            </value>
+            <value>
+                <fullName>Department of Social Service</fullName>
+                <default>false</default>
+                <label>Department of Social Service</label>
+            </value>
+            <value>
+                <fullName>Weatherization Agency</fullName>
+                <default>false</default>
+                <label>Weatherization Agency</label>
+            </value>
+            <value>
+                <fullName>Office for the Aging</fullName>
+                <default>false</default>
+                <label>Office for the Aging</label>
+            </value>
+            <value>
+                <fullName>Human Service Organization</fullName>
+                <default>false</default>
+                <label>Human Service Organization</label>
+            </value>
+            <value>
+                <fullName>Self Referral</fullName>
+                <default>false</default>
+                <label>Self Referral</label>
+            </value>
+            <value>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+                <label>Contractor</label>
+            </value>
+            <value>
+                <fullName>Healthy Homes Pilot</fullName>
+                <default>false</default>
+                <label>Healthy Homes Pilot</label>
+            </value>
+            <value>
+                <fullName>Community Energy Advisor</fullName>
+                <default>false</default>
+                <label>Community Energy Advisor</label>
+            </value>
+            <value>
+                <fullName>Community Blitz</fullName>
+                <default>false</default>
+                <label>Community Blitz</label>
+            </value>
+            <value>
+                <fullName>NYS Agency</fullName>
+                <default>false</default>
+                <label>NYS Agency</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

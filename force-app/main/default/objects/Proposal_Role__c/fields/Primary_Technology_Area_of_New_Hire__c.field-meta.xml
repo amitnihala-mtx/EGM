@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Technology_Area_of_New_Hire__c</fullName>
+    <description>What is the primary technology type for the position that the new hire will hold.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the technology type most closely associated with the new hire&apos;s job description.</inlineHelpText>
+    <label>Primary Technology Area of New Hire</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Building Automations &amp; Controls</fullName>
+                <default>false</default>
+                <label>Building Automations &amp; Controls</label>
+            </value>
+            <value>
+                <fullName>Energy Efficiency</fullName>
+                <default>false</default>
+                <label>Energy Efficiency</label>
+            </value>
+            <value>
+                <fullName>Energy Storage</fullName>
+                <default>false</default>
+                <label>Energy Storage</label>
+            </value>
+            <value>
+                <fullName>EV Charging Stations</fullName>
+                <default>false</default>
+                <label>EV Charging Stations</label>
+            </value>
+            <value>
+                <fullName>Heat Pumps</fullName>
+                <default>false</default>
+                <label>Heat Pumps</label>
+            </value>
+            <value>
+                <fullName>High Efficiency HVAC</fullName>
+                <default>false</default>
+                <label>High Efficiency HVAC</label>
+            </value>
+            <value>
+                <fullName>Lighting &amp; Controls</fullName>
+                <default>false</default>
+                <label>Lighting &amp; Controls</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Smart Grid</fullName>
+                <default>false</default>
+                <label>Smart Grid</label>
+            </value>
+            <value>
+                <fullName>Solar Electric</fullName>
+                <default>false</default>
+                <label>Solar Electric</label>
+            </value>
+            <value>
+                <fullName>Offshore Wind</fullName>
+                <default>false</default>
+                <label>Offshore Wind</label>
+            </value>
+            <value>
+                <fullName>Land Based Wind</fullName>
+                <default>false</default>
+                <label>Land Based Wind</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

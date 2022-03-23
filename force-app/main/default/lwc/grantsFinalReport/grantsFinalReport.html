@@ -1,0 +1,289 @@
+<template>
+    <!-- <div class="finalReport header">
+        <div class="  header-info">
+            <div class="information">
+                <div class="info">
+                   <div class="info__main">
+                      Standard Contract Form and Application for Program Grants
+                   </div>
+                   <div class="info__sub">
+                      {projectName}
+                   </div>
+                </div>
+                <div class="date">
+                   <div class="date__dueD">
+                      Due Date
+                   </div>
+                   <div class="date__format slds-is-today ">
+                      <lightning-formatted-date-time value={projectDate} year="numeric"
+                      day="2-digit"
+                      month="long" class="dateFormate"></lightning-formatted-date-time>
+                   </div>
+                </div>
+             </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="content-container ">
+            <lightning-card>
+                <template if:true={showSpinner}>
+                    <lightning-spinner variant="brand" size="large"></lightning-spinner>
+                </template>
+                <div class="allocation-content dasePagePadding">
+                    <!-- Instruction -->
+                    <div class=" instructions-section slds-box slds-m-bottom_medium">
+                        <div class="instructions__data">
+                            All Grantees must submit a Final Financial Report at the close of the grant period for each individual grant they have received for the current fiscal year. One report is to be submitted for each individual grant to EEC within sixty days of the close of the grant.
+                        </div>
+                    </div>
+                    <!-- Detail -->
+                    <div class="report-grid slds-m-top_large slds-m-bottom_large">
+                        <div class="grid-item">
+                            <div class="head">Lorem ipsum</div>
+                            <div class="body">Lead Agency</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="head">Sample Program Name</div>
+                            <div class="body">Program Name</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="head">$20,000</div>
+                            <div class="body">Eligibility</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="head">{userName}</div>
+                            <div class="body">Name</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="head">{userTitle}</div>
+                            <div class="body">Title</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="head">{userEmail}</div>
+                            <div class="body">Email Address</div>
+                        </div>
+                    </div>
+                    <!-- Budget Table -->
+                    <div class="subheader slds-m-bottom_x-large">
+                        Approved Budget
+                    </div>
+                    <div class="table-header slds-m-bottom_small">
+                        <div class="small-header">Administrators</div>
+                        <div class=" paragraph slds-text-body_medium slds-text_align-right">Budget Submission Date: 5/16/2019</div>
+                    </div>
+                    <div class="schedule-table">
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered"
+                            aria-label="Example default base table of Opportunities">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Expenditure Category">Expenditure Category
+                                        </div>
+                                    </th>
+                                    <th class="column-width" scope="col">
+                                        <div class="slds-truncate" title="Approved Budget">Approved Budget</div>
+                                    </th>
+                                    <th class="column-width" scope="col">
+                                        <div class="slds-truncate" title="Funds Expended">Funds Expended</div>
+                                    </th>
+                                    <th class="column-width" scope="col">
+                                        <div class="slds-truncate" title="Balance Unexpended">Balance Unexpended</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="slds-hint-parent">
+                                    <th data-label="Expenditure Category" scope="row">
+                                        <div class="slds-truncate" title="">
+                                            Supervisor/Director
+                                        </div>
+                                    </th>
+                                    <td data-label="Approved Budget">
+                                        <div class="combobox">
+                                            <lightning-input name="approvedBudgetSupervisor" formatter="currency"
+                                                type="number" variant="label-hidden" value={approvedBudgetSupervisor}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+
+                                    </td>
+                                    <td data-label="Funds Expended">
+                                        <div class="combobox">
+                                            <lightning-input name="fundsExpendedSupervisor" formatter="currency"
+                                                type="number" variant="label-hidden" value={fundsExpendedSupervisor}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+                                    </td>
+                                    <td data-label="Balance Unexpended">
+                                        <div class="combobox">
+                                            <lightning-input name="balanceUnexpendedSupervisor" formatter="currency"
+                                                type="number" variant="label-hidden" value={balanceUnexpendedSupervisor}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="slds-hint-parent">
+                                    <th data-label="Expenditure Category" scope="row">
+                                        <div class="slds-truncate" title="">
+                                            Project Coordinator
+                                        </div>
+                                    </th>
+                                    <td data-label="Approved Budget">
+                                        <div class="combobox">
+                                            <lightning-input name="approvedBudgetPC" formatter="currency" type="number"
+                                                variant="label-hidden" value={approvedBudgetPC}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+
+                                    </td>
+                                    <td data-label="Funds Expended">
+                                        <div class="combobox">
+                                            <lightning-input name="fundsExpendedPC" formatter="currency" type="number"
+                                                variant="label-hidden" value={fundsExpendedPC}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+                                    </td>
+                                    <td data-label="Balance Unexpended">
+                                        <div class="combobox">
+                                            <lightning-input name="balanceUnexpendedPC" formatter="currency"
+                                                type="number" variant="label-hidden" value={balanceUnexpendedPC}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="slds-hint-parent">
+                                    <th data-label="Expenditure Category" scope="row">
+                                        <div class="slds-truncate" title="">
+                                            Stipend
+                                        </div>
+                                    </th>
+                                    <td data-label="Approved Budget">
+                                        <div class="combobox">
+                                            <lightning-input name="approvedBudgetStipend" formatter="currency"
+                                                type="number" variant="label-hidden" value={approvedBudgetStipend}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+
+                                    </td>
+                                    <td data-label="Funds Expended">
+                                        <div class="combobox">
+                                            <lightning-input name="fundsExpendedStipend" formatter="currency"
+                                                type="number" variant="label-hidden" value={fundsExpendedStipend}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+                                    </td>
+                                    <td data-label="Balance Unexpended">
+                                        <div class="combobox">
+                                            <lightning-input name="balanceUnexpendedStipend" formatter="currency"
+                                                type="number" variant="label-hidden" value={balanceUnexpendedStipend}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="slds-hint-parent">
+                                    <th data-label="Expenditure Category" scope="row">
+                                        <div class="slds-truncate" title="">
+                                            Other
+                                        </div>
+                                    </th>
+                                    <td data-label="Approved Budget">
+                                        <div class="combobox">
+                                            <lightning-input name="approvedBudgetOther" formatter="currency"
+                                                type="number" variant="label-hidden" value={approvedBudgetOther}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+
+                                    </td>
+                                    <td data-label="Funds Expended">
+                                        <div class="combobox">
+                                            <lightning-input name="fundsExpendedOther" formatter="currency"
+                                                type="number" variant="label-hidden" value={fundsExpendedOther}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+                                    </td>
+                                    <td data-label="Balance Unexpended">
+                                        <div class="combobox">
+                                            <lightning-input name="balanceUnexpendedOther" formatter="currency"
+                                                type="number" variant="label-hidden" value={balanceUnexpendedOther}
+                                                onchange={handleTableFields}>
+                                            </lightning-input>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="slds-hint-parent">
+                                    <th data-label="Expenditure Category" scope="row">
+                                        <div class="slds-truncate" title="">
+                                            Sub Total
+                                        </div>
+                                    </th>
+                                    <td data-label="Approved Budget">
+                                        <div class="combobox">
+                                            <lightning-input name="approvedBudgetSubTotal"
+                                                value={approvedBudgetSubTotal} formatter="currency" type="number"
+                                                variant="label-hidden" disabled>
+                                            </lightning-input>
+                                        </div>
+
+                                    </td>
+                                    <td data-label="Funds Expended">
+                                        <div class="combobox">
+                                            <lightning-input name="fundsExpendedSubTotal" value={fundsExpendedSubTotal}
+                                                formatter="currency" type="number" variant="label-hidden" disabled>
+                                            </lightning-input>
+                                        </div>
+                                    </td>
+                                    <td data-label="Balance Unexpended">
+                                        <div class="combobox">
+                                            <lightning-input name="balanceUnexpendedSubTotal"
+                                                value={balanceUnexpendedSubTotal} formatter="currency" type="number"
+                                                variant="label-hidden" disabled>
+                                            </lightning-input>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <!-- Amount Summary -->
+                    <div class="report-grid slds-m-top_large slds-m-bottom_large">
+                        <div class="grid-item">
+                            <div class="head">${approvedBudgetSubTotal}</div>
+                            <div class="body">Total Funds Awarded</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="head">${fundsExpendedSubTotal}</div>
+                            <div class="body">Total Funds Expended</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="head">${balanceUnexpendedSubTotal}</div>
+                            <div class="body">Total Unexpended Funds</div>
+                        </div>
+                    </div>
+                    <lightning-input type="checkbox" class="finalReport-checkbox slds-m-bottom_medium slds-m-top_medium" onchange={handleClick}
+                        label="I certify that all the information contained in this final financial report is true and correct">
+                    </lightning-input>
+                </div>
+                <div slot="footer" if:false={readOnly}>
+                    <div class="button">
+                        <lightning-button variant="brand-outline" label="Cancel"
+                            title="Primary action with lighter look" onclick={handleCancel}
+                            class="slds-m-left_x-small button__white"></lightning-button>
+                        <lightning-button variant="brand" label="Submit" title="Primary action" onclick={handleFinalSubmit}
+                            disabled={disableSubmit} class="slds-m-left_x-small"></lightning-button>
+                    </div>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

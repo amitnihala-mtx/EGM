@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source_Renewable_Production_Intensity__c</fullName>
+    <description>Source Renewable Production Intensity (RPI)
+Source renewable energy accounts for upstream generation impacts of the fuel source associated with delivering usable energy to the site.  Source energy more accurately represents the carbon impacts of different fuel sources.
+SF-30463</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Source renewable energy accounts for upstream generation impacts of the fuel source associated with delivering usable energy to the site.  Source energy more accurately represents the carbon impacts of different fuel sources.</inlineHelpText>
+    <label>Source Renewable Production Intensity</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

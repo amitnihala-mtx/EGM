@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regional_Economic_Development_Council__c</fullName>
+    <externalId>false</externalId>
+    <label>Regional Economic Development Council</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Capital Region</fullName>
+                <default>false</default>
+                <label>Capital Region</label>
+            </value>
+            <value>
+                <fullName>Central New York</fullName>
+                <default>false</default>
+                <label>Central New York</label>
+            </value>
+            <value>
+                <fullName>Finger Lakes</fullName>
+                <default>false</default>
+                <label>Finger Lakes</label>
+            </value>
+            <value>
+                <fullName>Long Island</fullName>
+                <default>false</default>
+                <label>Long Island</label>
+            </value>
+            <value>
+                <fullName>Mid-Hudson</fullName>
+                <default>false</default>
+                <label>Mid-Hudson</label>
+            </value>
+            <value>
+                <fullName>Mohawk Valley</fullName>
+                <default>false</default>
+                <label>Mohawk Valley</label>
+            </value>
+            <value>
+                <fullName>New York City</fullName>
+                <default>false</default>
+                <label>New York City</label>
+            </value>
+            <value>
+                <fullName>North Country</fullName>
+                <default>false</default>
+                <label>North Country</label>
+            </value>
+            <value>
+                <fullName>Southern Tier</fullName>
+                <default>false</default>
+                <label>Southern Tier</label>
+            </value>
+            <value>
+                <fullName>Western New York</fullName>
+                <default>false</default>
+                <label>Western New York</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
