@@ -2,7 +2,7 @@ import { LightningElement, api, wire } from 'lwc';
 import { getRecord } from "lightning/uiRecordApi";
 import { CloseActionScreenEvent } from 'lightning/actions';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
-import createDelegatedAdmin from '@salesforce/apex/Grants_EnableOrganizationController.createDelegatedAdminForOrganization';
+import createDelegatedAdmin from '@salesforce/apex/GrantsEnableOrganizationController.createDelegatedAdminForOrganization';
 import grantstheme from '@salesforce/resourceUrl/Grants_Design'; 
 import { loadStyle, loadScript } from 'lightning/platformResourceLoader';  
 const fields = [

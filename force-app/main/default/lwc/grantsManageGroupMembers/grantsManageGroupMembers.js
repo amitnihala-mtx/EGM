@@ -1,9 +1,9 @@
 import { LightningElement,track,api } from 'lwc';
 import grantstheme from '@salesforce/resourceUrl/Grants_Design'; 
 import { loadStyle, loadScript } from 'lightning/platformResourceLoader'; 
-import fetchGroupMembersInfo  from '@salesforce/apex/Grants_ManageGroupMembersController.fetchGroupMembersInfo';
-import deleteGroupMember  from '@salesforce/apex/Grants_ManageGroupMembersController.deleteGroupMember';
-import addGroupMember  from '@salesforce/apex/Grants_ManageGroupMembersController.addGroupMember';
+import fetchGroupMembersInfo  from '@salesforce/apex/GrantsManageGroupMembersController.fetchGroupMembersInfo';
+import deleteGroupMember  from '@salesforce/apex/GrantsManageGroupMembersController.deleteGroupMember';
+import addGroupMember  from '@salesforce/apex/GrantsManageGroupMembersController.addGroupMember';
 export default class Grants_ManageGroupMembers extends LightningElement {
     @api recordId;
     @track existingmembers=[];

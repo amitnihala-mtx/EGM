@@ -40,21 +40,24 @@ export default class GrantsDetail extends NavigationMixin(LightningElement) {
     
     handleApplyOnline(){
         this.showSpinner = true;
-        createNewProposal({
-            grantId : this.grantId
-        })
-        .then(data=>{
-            this[NavigationMixin.Navigate]({
-                type: "standard__webPage",
-                attributes: {
-                    url: data
-                }
-            });
-        })
-        .catch(error=>{
-            console.log(JSON.stringify(error));
-        })
-        
+        if(this.isGuestUser) {
+            window.open('/s/login','_self');
+        } else {
+            createNewProposal({
+                grantId : this.grantId
+            })
+            .then(data=>{
+                this[NavigationMixin.Navigate]({
+                    type: "standard__webPage",
+                    attributes: {
+                        url: data
+                    }
+                });
+            })
+            .catch(error=>{
+                console.log(JSON.stringify(error));
+            })
+        }        
     }
 
     get grantName(){
